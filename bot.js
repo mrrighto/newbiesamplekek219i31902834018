@@ -190,4 +190,4 @@ bot.on('presenceUpdate', (oldMember, newMember) => {
     
   });
 
-bot.login(botconfig.token);
+//bot.login(botconfig.token);
