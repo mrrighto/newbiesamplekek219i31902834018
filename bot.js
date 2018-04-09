@@ -25,7 +25,7 @@ bot.on("message", async message => {
     let args = messageArray.slice(1);
 
 try {
-    if ((message.isMemberMentioned()) && (message.channel.name == "mentions-enabled") && (message.content.length <= 5) ) {
+    if ((message.isMemberMentioned()) && (message.channel.name == "lfg1-main") && (message.content.length <= 5) ) {
         bot.channels.get("381392359507623939").send(message.author + " heyhoe, nxt time attach **@here** on your LFG msg");
      }
 
