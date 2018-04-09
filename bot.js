@@ -191,4 +191,4 @@ bot.on('presenceUpdate', (oldMember, newMember) => {
   });
 
 //bot.login(botconfig.token);
-client.login(process.env.BOT_TOKEN);
+bot.login(process.env.BOT_TOKEN);
