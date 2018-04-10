@@ -8,7 +8,7 @@ const bot = new Discord.Client({ disableEveryone: true })
 bot.on("ready", async () => {
     console.log(`${bot.user.username} is online!`);
     bot.user.setActivity("rize", { type: "WATCHING" });
-    bot.user.setUsername("pedomonogatari");
+    bot.user.setUsername("pedo");
 });
 
 
@@ -25,8 +25,11 @@ bot.on("message", async message => {
     let args = messageArray.slice(1);
 
 try {
-    if ((message.isMemberMentioned()) && (message.channel.name == "lfg1-main") && (message.content.length <= 5) ) {
+    if ((message.isMemberMentioned()) && (message.channel.name == "lfg1-main") && (message.content.length <= 5) && !(message.author.id("144538528108380161"))) {
         bot.channels.get("381392359507623939").send(message.author + " heyhoe, nxt time attach **@here** on your LFG msg");
+     }
+     if ((message.isMemberMentioned()) && (message.channel.name == "lfg1-main") && (message.content.length <= 5) && (message.author.id("144538528108380161")) ) {
+        bot.channels.get("381392359507623939").send(message.author + " hey EPAL, nxt time attach **@here** on your LFG msg");
      }
 
      
