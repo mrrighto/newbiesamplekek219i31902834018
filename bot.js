@@ -194,7 +194,7 @@ bot.on('presenceUpdate', (oldMember, newMember) => {
 bot.on('guildMemberRemove', member => {
     let guild = member.guild;
   
-bot.channels.get("425266854014222377").send(`${member.user.username}!` + ` has committed seduko`)
+bot.channels.get("425266854014222377").send(member.user + ` has committed seduko`)
   });  
 
 //bot.login(botconfig.token);
