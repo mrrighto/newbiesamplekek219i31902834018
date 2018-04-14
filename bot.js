@@ -116,7 +116,7 @@ bot.on("message", async message => {
             bot.channels.get("425266854014222377").send("Error: " + error);
           }
         
-      }, 16260000)
+      }, 5000)
   }
 
 
