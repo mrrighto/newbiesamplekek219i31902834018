@@ -30,7 +30,7 @@ bot.on("message", async message => {
     
     var argsay = message.content.slice(1).trim().split(/ +/g);
     if(message.content.startsWith("%s") && message.channel.name == "test") {
-        let resultt = argsay.slice(1).join('+');
+        let resultt = argsay.slice(1).join(' ');
         bot.channels.get("381392359507623939").send(resultt);
     }
 
