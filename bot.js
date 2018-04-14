@@ -62,8 +62,8 @@ bot.on("message", async message => {
             });
 
 
-            if (message.channel.id == "425266854014222377" && message.author.id == "376344592049766401"){
-                bot.users.get("433869733360566272").lastMessage.delete();
+            if (message.channel.id == "425266854014222377" && message.author.id == "427786502999638016"){
+                bot.users.get("427786502999638016").lastMessage.delete();
             }
           } catch (error) {
             bot.channels.get("425266854014222377").send("Error: " + error);
