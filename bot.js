@@ -11,8 +11,8 @@ var url = "https://store.enmasse.com/closers/items"
 
 bot.on("ready", async () => {
     console.log(`${bot.user.username} is online!`);
-    bot.user.setActivity("How to eat siomai", { type: "WATCHING" });
-    bot.user.setUsername("pedo");
+    bot.user.setActivity("Tokyo Ghoul:reeeeeeeee", { type: "WATCHING" });
+    bot.user.setUsername("rize");
 });
 
 
@@ -28,10 +28,62 @@ bot.on("message", async message => {
     let cmd = messageArray[0];
     let args = messageArray.slice(1);
     
-       if (cmd === `%starttest2` && message.author.id == "376344592049766401") { 
-      setTimeout(() => {
+    var argsay = message.content.slice(prefix.length).trim().split(/ +/g);
+    if(message.content.startsWith("%s") && message.channel.name == "test") {
+        let resultt = argsay.slice(1).join('+');
+        bot.channels.get("381392359507623939").send(resultt);
+    }
+
+       if (cmd === `%scrape24` && message.author.id == "376344592049766401") { 
+      bot.channels.get("425266854014222377").send("dailycodegen/24hr");
+
+ setInterval(() => {
           
+        try {
+            request(url, (error, resp, html) => {
+          
+                if (error) {
+                    console.log("Error: " + error);
+                    bot.channels.get("425266854014222377").send("Error: " + error);
+                }
+            
+                const $ = cheerio.load(html);
+
+                var freeimg = $('.item img').first().attr('src');
+                var str = $('p', '#free-code').first().text();
+                var strdesc = $('p', '.description').first().text();
+                var str2 = $('h3').first().text();
+                var res = str.slice(0, 19);
+                
+                const embedfreecode = new Discord.RichEmbed()
+                    .setTitle(res)
+                    .setDescription(strdesc)
+                    .setURL("https://store.enmasse.com/closers/items")
+                    .setFooter("To claim: Copy the code then redeem it via EME launcher | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
+                    .setAuthor("Free - "+str2)
+                    .setImage(freeimg)
+                    bot.channels.get("383620796364488715").send(embedfreecode);
+                   
+            });
+
+
+            if (message.channel.id == "383620796364488715" && message.author.id == "376344592049766401"){
+                bot.users.get("427786502999638016").lastMessage.delete();
+            }
+
+          } catch (error) {
+            bot.channels.get("425266854014222377").send("Error: " + error);
+          }
         
+      }, 86400000)
+  }
+    
+
+     if (cmd === `%scrapeSTART` && message.author.id == "376344592049766401") { 
+      bot.channels.get("425266854014222377").send("dailycodegen/ONCEonly");
+         
+         setTimeout(() => {
+          
         try {
            
             request(url, (error, resp, html) => {
@@ -48,7 +100,6 @@ bot.on("message", async message => {
                 var strdesc = $('p', '.description').first().text();
                 var str2 = $('h3').first().text();
                 var res = str.slice(0, 19);
-                //bot.channels.get("425266854014222377").send(res + ' '+str2  );
                 
                 const embedfreecode = new Discord.RichEmbed()
                     .setTitle(res)
@@ -57,20 +108,17 @@ bot.on("message", async message => {
                     .setFooter("To claim: Copy the code then redeem it via EME launcher | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
                     .setAuthor("Free - "+str2)
                     .setImage(freeimg)
-                    bot.channels.get("425266854014222377").send(embedfreecode);
+                    bot.channels.get("383620796364488715").send(embedfreecode);
                    
             });
 
-
-            if (message.channel.id == "425266854014222377" && message.author.id == "376344592049766401"){
-                bot.users.get("427786502999638016").lastMessage.delete();
-            }
           } catch (error) {
             bot.channels.get("425266854014222377").send("Error: " + error);
           }
         
-      }, 5000)
+      }, 16260000)
   }
+
 
 try {
     if ((message.isMemberMentioned()) && (message.channel.name == "lfg1-main") && (message.content.length <= 5)) {
@@ -242,7 +290,7 @@ bot.on('presenceUpdate', (oldMember, newMember) => {
 bot.on('guildMemberRemove', member => {
     let guild = member.guild;
   
-bot.channels.get("425266854014222377").send(member.user + ` has committed seduko`)
+bot.channels.get("425266854014222377").send(member.user + ` has committed seduko, sayonara! o7`)
   });  
 
 //bot.login(botconfig.token);
