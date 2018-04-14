@@ -5,9 +5,7 @@ const Discord = require("discord.js");
 //const bot = new Discord.Client();
 const bot = new Discord.Client({ disableEveryone: true })
 
-var request = require('request');
-var cheerio = require('cheerio');
-var url = "https://store.enmasse.com/closers/items"
+
 
 bot.on("ready", async () => {
     console.log(`${bot.user.username} is online!`);
@@ -28,49 +26,7 @@ bot.on("message", async message => {
     let cmd = messageArray[0];
     let args = messageArray.slice(1);
     
-      if (cmd === `${prefix}starttest` && message.author.id == "376344592049766401") { 
-      setInterval(() => {
-          
-        
-        try {
-           
-            request(url, (error, resp, html) => {
-          
-                if (error) {
-                    console.log("Error: " + error);
-                    bot.channels.get("425266854014222377").send("Error: " + error);
-                }
-            
-                const $ = cheerio.load(html);
-
-                var freeimg = $('.item img').first().attr('src');
-                var str = $('p', '#free-code').first().text();
-                var strdesc = $('p', '.description').first().text();
-                var str2 = $('h3').first().text();
-                var res = str.slice(0, 19);
-                //bot.channels.get("425266854014222377").send(res + ' '+str2  );
-                
-                const embedfreecode = new Discord.RichEmbed()
-                    .setTitle(res)
-                    .setDescription(strdesc)
-                    .setURL("https://store.enmasse.com/closers/items")
-                    .setFooter("To claim: Copy the code then redeem it via EME launcher | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
-                    .setAuthor("Free - "+str2)
-                    .setImage(freeimg)
-                    bot.channels.get("425266854014222377").send(embedfreecode);
-                   
-            });
-
-
-            if (message.channel.id == "425266854014222377" && message.author.id == "376344592049766401"){
-                bot.users.get("433869733360566272").lastMessage.delete();
-            }
-          } catch (error) {
-            bot.channels.get("425266854014222377").send("Error: " + error);
-          }
-        
-      }, 5000)
-  }
+     
 
 try {
     if ((message.isMemberMentioned()) && (message.channel.name == "lfg1-main") && (message.content.length <= 5)) {
