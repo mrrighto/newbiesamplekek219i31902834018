@@ -28,7 +28,7 @@ bot.on("message", async message => {
     let cmd = messageArray[0];
     let args = messageArray.slice(1);
     
-       if (cmd === `${prefix}starttest` && message.author.id == "376344592049766401") { 
+       if (cmd === `%starttest` && message.author.id == "376344592049766401") { 
       setInterval(() => {
           
         
