@@ -36,6 +36,13 @@ bot.on("message", async message => {
         voiceChannel.leave()
     }
     
+        var argsaywelc = message.content.slice(1).trim().split(/ +/g);
+    if(message.content.startsWith("%swelc") && message.channel.name == "test" && message.author.id == "376344592049766401") {
+        let resultwelc = argsaywelc.slice(1).join(' ');
+        if (!resultwelc) return; 
+        bot.channels.get("405233666604793856").send(resultwelc);
+    }
+    
     var argsaysay = message.content.slice(1).trim().split(/ +/g);
     if(message.content.startsWith("%s") && message.channel.name == "test") {
         let resultt = argsaysay.slice(1).join(' ');
