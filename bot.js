@@ -1,8 +1,8 @@
 
 
-//const botconfig = require("./botconfig.json");
+
 const Discord = require("discord.js");
-//const bot = new Discord.Client();
+
 const bot = new Discord.Client({ disableEveryone: true })
 
 var request = require('request');
@@ -23,7 +23,7 @@ bot.on("message", async message => {
     if (message.author.bot) return;
     if (message.channel.type === "dm") return;
 
-    //let prefix = botconfig.prefix;
+    
     let messageArray = message.content.split(" ");
     let cmd = messageArray[0];
     let args = messageArray.slice(1);
@@ -168,15 +168,7 @@ try {
      
 
      
-    //  if ((message.isMemberMentioned()) && (message.channel.name == "mentions-enabled") && (message.content.length > 5) ) {
-    //     let serverembed = new Discord.RichEmbed()
-    //     .setDescription(message.author + " is looking for party/member!")
-    //     .setColor("#78866b")
-    //     .addField(message.content, message.channel.parent)
-
-    //     //bot.channels.get("381392359507623939").send(serverembed);
-    //     bot.channels.get("430608766279614475").send(serverembed);
-    // }
+   
 
 
 
@@ -303,9 +295,7 @@ if ((message.isMemberMentioned()) && (kcvar && !kpgvar && !ktiavar && !kmvar) &&
     
 }
 
-// if(cmd === `${prefix}kek`){
-//     bot.channels.get("381392359507623939").send("o/");
-// }
+
 
 });
 
@@ -334,5 +324,5 @@ bot.on('guildMemberRemove', member => {
 bot.channels.get("425266854014222377").send(member.user + ` has committed seduko, sayonara! o7`)
   });  
 
-//bot.login(botconfig.token);
+
 bot.login(process.env.BOT_TOKEN);
