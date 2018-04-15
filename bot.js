@@ -120,7 +120,7 @@ bot.on("message", async message => {
   }
     
 
-     if (message.content == `%scrapeSTART` && message.author.id == "376344592049766401") { 
+     if (message.content.startsWith("##crape")` && message.author.id == "376344592049766401") { 
       bot.channels.get("425266854014222377").send("dailycodegen/ONCEonly");
          
          setTimeout(() => {
