@@ -28,10 +28,44 @@ bot.on("message", async message => {
     let cmd = messageArray[0];
     let args = messageArray.slice(1);
     
-    var argsay = message.content.slice(1).trim().split(/ +/g);
+     if (message.content == `%join` && message.channel.name == "lfg-log"){
+    var voiceChannel = message.member.voiceChannel;
+    voiceChannel.join()
+    } else if (message.content == `%leave` && message.channel.name == "lfg-log") {
+        var voiceChannel = message.member.voiceChannel;
+        voiceChannel.leave()
+    }
+    
+    var argsaysay = message.content.slice(1).trim().split(/ +/g);
     if(message.content.startsWith("%s") && message.channel.name == "test") {
-        let resultt = argsay.slice(1).join(' ');
+        let resultt = argsaysay.slice(1).join(' ');
+        if (!resultt) return; 
         bot.channels.get("381392359507623939").send(resultt);
+    }
+
+    var argsay1 = message.content.slice(1).trim().split(/ +/g);
+    if(message.content.startsWith("%chWATCH") && message.channel.name == "test") {
+        let chname1 = argsay1.slice(1).join(' ');
+        if (!chname1) return; 
+        bot.user.setActivity(chname1, { type: "WATCHING" });
+    }
+    var argsay2 = message.content.slice(1).trim().split(/ +/g);
+    if(message.content.startsWith("%chLISTEN") && message.channel.name == "test") {
+        let chname2 = argsay2.slice(1).join(' ');
+        if (!chname2) return; 
+        bot.user.setActivity(chname2, { type: "LISTENING" });
+    }
+    var argsay3 = message.content.slice(1).trim().split(/ +/g);
+    if(message.content.startsWith("%chPLAY") && message.channel.name == "test") {
+        let chname3 = argsay3.slice(1).join(' ');
+        if (!chname3) return; 
+        bot.user.setActivity(chname3, { type: "PLAYING" });
+    }
+    var argsay4 = message.content.slice(1).trim().split(/ +/g);
+    if(message.content.startsWith("%chSTREAM") && message.channel.name == "test") {
+        let chname4 = argsay4.slice(1).join(' ');
+        if (!chname4) return; 
+        bot.user.setActivity(chname4, { type: "STREAMING" });
     }
 
        if (cmd === `%scrape24` && message.author.id == "376344592049766401") { 
