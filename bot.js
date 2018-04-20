@@ -36,8 +36,15 @@ bot.on("message", async message => {
         voiceChannel.leave()
     }
     
+    var argsaybots = message.content.slice(1).trim().split(/ +/g);
+    if(message.content.startsWith("%bots") && message.channel.name == "test" && message.author.id == "376344592049766401") {
+        let resultbots = argsaybots.slice(1).join(' ');
+        if (!resultbots) return; 
+        bot.channels.get("386494149114724353").send(resultbots);
+    }
+    
         var argsaywelc = message.content.slice(1).trim().split(/ +/g);
-    if(message.content.startsWith("%swelc") && message.channel.name == "test" && message.author.id == "376344592049766401") {
+    if(message.content.startsWith("%welc") && message.channel.name == "test" && message.author.id == "376344592049766401") {
         let resultwelc = argsaywelc.slice(1).join(' ');
         if (!resultwelc) return; 
         bot.channels.get("405233666604793856").send(resultwelc);
