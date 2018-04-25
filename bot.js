@@ -154,7 +154,8 @@ bot.on("message", async message => {
                     .setFooter("To claim: Copy the code then redeem it via EME launcher | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
                     .setAuthor("Free - "+str2)
                     .setImage(freeimg)
-                    bot.channels.get("438689460016644097").send("Requested by: " + message.author + embedfreecode);
+                    bot.channels.get("438689460016644097").send("Requested by: " + message.author);
+                    bot.channels.get("438689460016644097").send(embedfreecode);
                    
             });
 
