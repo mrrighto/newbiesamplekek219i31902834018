@@ -37,46 +37,46 @@ bot.on("message", async message => {
     }
     
     var argsaybots = message.content.slice(1).trim().split(/ +/g);
-    if(message.content.startsWith("%bots") && message.channel.name == "test" && message.author.id == "376344592049766401") {
+    if(message.content.startsWith("%bots") && message.channel.name == "squires-tavern" && message.author.id == "376344592049766401") {
         let resultbots = argsaybots.slice(1).join(' ');
         if (!resultbots) return; 
         bot.channels.get("386494149114724353").send(resultbots);
     }
     
         var argsaywelc = message.content.slice(1).trim().split(/ +/g);
-    if(message.content.startsWith("%welc") && message.channel.name == "test" && message.author.id == "376344592049766401") {
+    if(message.content.startsWith("%welc") && message.channel.name == "squires-tavern" && message.author.id == "376344592049766401") {
         let resultwelc = argsaywelc.slice(1).join(' ');
         if (!resultwelc) return; 
         bot.channels.get("405233666604793856").send(resultwelc);
     }
     
     var argsaysay = message.content.slice(1).trim().split(/ +/g);
-    if(message.content.startsWith("%s") && message.channel.name == "test") {
+    if(message.content.startsWith("%s") && message.channel.name == "squires-tavern") {
         let resultt = argsaysay.slice(1).join(' ');
         if (!resultt) return; 
         bot.channels.get("381392359507623939").send(resultt);
     }
 
     var argsay1 = message.content.slice(1).trim().split(/ +/g);
-    if(message.content.startsWith("%chWATCH") && message.channel.name == "test") {
+    if(message.content.startsWith("%chWATCH") && message.channel.name == "squires-tavern") {
         let chname1 = argsay1.slice(1).join(' ');
         if (!chname1) return; 
         bot.user.setActivity(chname1, { type: "WATCHING" });
     }
     var argsay2 = message.content.slice(1).trim().split(/ +/g);
-    if(message.content.startsWith("%chLISTEN") && message.channel.name == "test") {
+    if(message.content.startsWith("%chLISTEN") && message.channel.name == "squires-tavern") {
         let chname2 = argsay2.slice(1).join(' ');
         if (!chname2) return; 
         bot.user.setActivity(chname2, { type: "LISTENING" });
     }
     var argsay3 = message.content.slice(1).trim().split(/ +/g);
-    if(message.content.startsWith("%chPLAY") && message.channel.name == "test") {
+    if(message.content.startsWith("%chPLAY") && message.channel.name == "squires-tavern") {
         let chname3 = argsay3.slice(1).join(' ');
         if (!chname3) return; 
         bot.user.setActivity(chname3, { type: "PLAYING" });
     }
     var argsay4 = message.content.slice(1).trim().split(/ +/g);
-    if(message.content.startsWith("%chSTREAM") && message.channel.name == "test") {
+    if(message.content.startsWith("%chSTREAM") && message.channel.name == "squires-tavern") {
         let chname4 = argsay4.slice(1).join(' ');
         if (!chname4) return; 
         bot.user.setActivity(chname4, { type: "STREAMING" });
@@ -127,11 +127,9 @@ bot.on("message", async message => {
   }
     
 
-     if (message.content.startsWith("##crape") && message.author.id == "376344592049766401") { 
-      bot.channels.get("425266854014222377").send("dailycodegen/ONCEonly");
+     if (message.content.startsWith("##freecode") && message.channel.name == "squires-tavern") { 
+      bot.channels.get("425266854014222377").send("Now scraping... *Please don't spam this command*");
          
-         setTimeout(() => {
-          
         try {
            
             request(url, (error, resp, html) => {
@@ -156,7 +154,7 @@ bot.on("message", async message => {
                     .setFooter("To claim: Copy the code then redeem it via EME launcher | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
                     .setAuthor("Free - "+str2)
                     .setImage(freeimg)
-                    bot.channels.get("383620796364488715").send(embedfreecode);
+                    bot.channels.get("438689460016644097").send("Requested by: " + message.author + embedfreecode);
                    
             });
 
@@ -164,7 +162,7 @@ bot.on("message", async message => {
             bot.channels.get("425266854014222377").send("Error: " + error);
           }
         
-      }, 5000)
+    
   }
 
 
