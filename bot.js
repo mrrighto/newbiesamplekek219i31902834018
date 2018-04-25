@@ -128,7 +128,7 @@ bot.on("message", async message => {
     
 
      if (message.content.startsWith("##freecode") && message.channel.name == "squires-tavern") { 
-      bot.channels.get("425266854014222377").send("Now scraping... *Please don't spam this command*");
+      bot.channels.get("425266854014222377").send("Now scraping... *Please don't spam this command* \nPlease take note that, daily free code will reset every 01:00 GMT+8");
          
         try {
            
@@ -147,8 +147,9 @@ bot.on("message", async message => {
                 var str2 = $('h3').first().text();
                 var res = str.slice(0, 19);
                 
+                if(str.length == 19){
                 const embedfreecode = new Discord.RichEmbed()
-                    .setTitle(res)
+                    .setTitle(str)
                     .setDescription(strdesc)
                     .setURL("https://store.enmasse.com/closers/items")
                     .setFooter("To claim: Copy the code then redeem it via EME launcher | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
@@ -156,7 +157,9 @@ bot.on("message", async message => {
                     .setImage(freeimg)
                     bot.channels.get("438689460016644097").send("Requested by: " + message.author);
                     bot.channels.get("438689460016644097").send(embedfreecode);
-                   
+                }else {
+                bot.channels.get("425266854014222377").send("EME hasn't updated their page yet, please try again later..");
+                }   
             });
 
           } catch (error) {
