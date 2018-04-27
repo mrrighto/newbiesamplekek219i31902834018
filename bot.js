@@ -304,7 +304,33 @@ if ((message.isMemberMentioned()) && (kcvar && !kpgvar && !ktiavar && !kmvar) &&
     
 }
 
+if(message.content.startsWith("%warn") && message.channel.name == "squires-tavern") {
+       
+        let bUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
+        if(!bUser) return message.channel.send("Can't find user! \nTo input correctly the <@username#tag>, try to copy the user's original name along the tag number \n*Note: This command wont work on mobile* \nhttps://i.imgur.com/Vsb2c7g.png");
+        let bReason = args.join(" ").slice(22);
 
+        if(!bUser.roles.has("438627661447823361") && !bUser.roles.has("438628872817475584")){
+            bUser.addRole('438627661447823361').catch(console.error);
+            bot.channels.get("438620882408177665").send(bUser.user + " *You have been warned* | Reason: " + bReason);
+        }else if (bUser.roles.has("438627661447823361")&& !bUser.roles.has("438628872817475584")){
+            bUser.addRole('438628872817475584').catch(console.error);
+            bot.channels.get("438620882408177665").send(bUser.user + " **Last warning** | Reason: " + bReason);
+        }else if (bUser.roles.has("438627661447823361") && bUser.roles.has("438628872817475584")) {
+                
+            if(bUser.roles.has("394119776030687242") || bUser.roles.has("438570138330202112") || bUser.roles.has("437923100978577408") || bUser.roles.has("386764500788838402")){
+                    bot.channels.get("425266854014222377").send("Can't ban the user, pinging..." + bot.users.get("376344592049766401") + " Reason: " + bReason);
+                }else {
+                    message.guild.member(bUser).ban(bReason);
+                    let banEmbed = new Discord.RichEmbed()
+                    .setColor("#ff0000")
+                    .addField("Banned User", `${bUser} with ID ${bUser.id}`)
+                    .addField("Time", message.createdAt)
+                    .addField("Reason", bReason);
+                    bot.channels.get("438620882408177665").send(banEmbed);
+                }
+        }
+    }
 
 });
 
@@ -337,5 +363,82 @@ bot.on('guildMemberAdd', member => {
   bot.channels.get("432774887032094726").send(member.user + ` Hi! if you're looking for a party, you can ping those desparate peeps here. \n~~spam mention if they wont respond~~`)
 });
 
+
+bot.on("messageReactionAdd", (reaction, user) => {
+    
+    let target1 = reaction.message.guild.member(user);
+    if(reaction.message.channel.name == "welcome" && reaction.emoji.name == "seha8"){
+        target1.addRole('392286019753607168').catch(console.error);
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.name == "sylvimeme") {
+        target1.addRole('392286131485671425').catch(console.error);
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.name == "yuri6") {
+        target1.addRole('392287538284331019').catch(console.error);
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.name == "mistel7") {
+        target1.addRole('392287432206319616').catch(console.error);
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.name == "jmeme") {
+        target1.addRole('392287574154280970').catch(console.error);
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.name == "natacry") {
+        target1.addRole('408923291936620544').catch(console.error);
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.name == "leviainanutshell") {
+        target1.addRole('392497213093445632').catch(console.error);
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.name == "tinaping") {
+        target1.addRole('408923420311683072').catch(console.error);
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.name == "harpy1") {
+        target1.addRole('408923379731791884').catch(console.error);
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%E2%9C%85" && reaction.message.content == "**2.**  Press check if you reached Lv75 on any of your alt(s).") {
+        target1.addRole('392505371018788876').catch(console.error);
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%E2%9C%85" && reaction.message.content == "**3.** Press check if you are actively farming in Planar Gate.") {
+        target1.addRole('394384407940825101').catch(console.error);
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%E2%9C%85" && reaction.message.content == "**4.** Press check if you are actively farming in Dimensional Ops Center (Tiamat).") {
+        target1.addRole('410302699867734018').catch(console.error);
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%F0%9F%85%B0" && reaction.message.content.startsWith("**5.** Choose:")) {
+        target1.addRole('392193289723445248').catch(console.error);
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%F0%9F%85%B1" && reaction.message.content.startsWith("**5.** Choose:")) {
+        target1.addRole('397653925131452416').catch(console.error);
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%F0%9F%87%A8" && reaction.message.content.startsWith("**5.** Choose:")) {
+        target1.addRole('423698087371079683').catch(console.error);
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%F0%9F%85%B0" && reaction.message.content.startsWith("**6.** **Choose wisely here:**")) {
+        target1.addRole('432384823068459018').catch(console.error);
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%F0%9F%85%B1" && reaction.message.content.startsWith("**6.** **Choose wisely here:**")) {
+        target1.addRole('432877618954764289').catch(console.error);
+    }
+    
+
+});
+
+bot.on("messageReactionRemove", (reaction, user) => {
+    let target2 = reaction.message.guild.member(user);
+    
+    if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%F0%9F%85%B0" && reaction.message.content.startsWith("**6.** **Choose wisely here:**")) {
+        target2.removeRole('432384823068459018').catch(console.error);
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%F0%9F%85%B1" && reaction.message.content.startsWith("**6.** **Choose wisely here:**")) {
+        target2.removeRole('432877618954764289').catch(console.error);
+    }
+
+});
+
+
+
+bot.on('raw', async event => {
+	// `event.t` is the raw event name
+	if (event.t !== 'MESSAGE_REACTION_ADD') return;
+
+	const { d: data } = event;
+	const user = bot.users.get(data.user_id);
+	const channel = bot.channels.get(data.channel_id) || await user.createDM();
+
+	// if the message is already in the cache, don't re-emit the event
+	if (channel.messages.has(data.message_id)) return;
+
+	// if you're on the master/v12 branch, use `channel.messages.fetch()`
+	const message = await channel.fetchMessage(data.message_id);
+
+	// custom emojis reactions are keyed in a `name:ID` format, while unicode emojis are keyed by names
+	// if you're on the master/v12 branch, custom emojis reactions are keyed by their ID
+	const emojiKey = (data.emoji.id) ? `${data.emoji.name}:${data.emoji.id}` : data.emoji.name;
+	const reaction = message.reactions.get(emojiKey);
+
+	bot.emit('messageReactionAdd', reaction, user);
+});
 
 bot.login(process.env.BOT_TOKEN);
