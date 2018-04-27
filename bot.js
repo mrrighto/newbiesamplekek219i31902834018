@@ -364,4 +364,81 @@ bot.on('guildMemberAdd', member => {
 });
 
 
+bot.on("messageReactionAdd", (reaction, user) => {
+    
+    let target1 = reaction.message.guild.member(user);
+    if(reaction.message.channel.name == "welcome" && reaction.emoji.name == "seha8"){
+        target1.addRole('392286019753607168').catch(console.error);
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.name == "sylvimeme") {
+        target1.addRole('392286131485671425').catch(console.error);
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.name == "yuri6") {
+        target1.addRole('392287538284331019').catch(console.error);
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.name == "mistel7") {
+        target1.addRole('392287432206319616').catch(console.error);
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.name == "jmeme") {
+        target1.addRole('392287574154280970').catch(console.error);
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.name == "natacry") {
+        target1.addRole('408923291936620544').catch(console.error);
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.name == "leviainanutshell") {
+        target1.addRole('392497213093445632').catch(console.error);
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.name == "tinaping") {
+        target1.addRole('408923420311683072').catch(console.error);
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.name == "harpy1") {
+        target1.addRole('408923379731791884').catch(console.error);
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%E2%9C%85" && reaction.message.content == "**2.**  Press check if you reached Lv75 on any of your alt(s).") {
+        target1.addRole('392505371018788876').catch(console.error);
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%E2%9C%85" && reaction.message.content == "**3.** Press check if you are actively farming in Planar Gate.") {
+        target1.addRole('394384407940825101').catch(console.error);
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%E2%9C%85" && reaction.message.content == "**4.** Press check if you are actively farming in Dimensional Ops Center (Tiamat).") {
+        target1.addRole('410302699867734018').catch(console.error);
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%F0%9F%85%B0" && reaction.message.content.startsWith("**5.** Choose:")) {
+        target1.addRole('392193289723445248').catch(console.error);
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%F0%9F%85%B1" && reaction.message.content.startsWith("**5.** Choose:")) {
+        target1.addRole('397653925131452416').catch(console.error);
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%F0%9F%87%A8" && reaction.message.content.startsWith("**5.** Choose:")) {
+        target1.addRole('423698087371079683').catch(console.error);
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%F0%9F%85%B0" && reaction.message.content.startsWith("**6.** **Choose wisely here:**")) {
+        target1.addRole('432384823068459018').catch(console.error);
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%F0%9F%85%B1" && reaction.message.content.startsWith("**6.** **Choose wisely here:**")) {
+        target1.addRole('432877618954764289').catch(console.error);
+    }
+    
+
+});
+
+bot.on("messageReactionRemove", (reaction, user) => {
+    let target2 = reaction.message.guild.member(user);
+    
+    if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%F0%9F%85%B0" && reaction.message.content.startsWith("**6.** **Choose wisely here:**")) {
+        target2.removeRole('432384823068459018').catch(console.error);
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%F0%9F%85%B1" && reaction.message.content.startsWith("**6.** **Choose wisely here:**")) {
+        target2.removeRole('432877618954764289').catch(console.error);
+    }
+
+});
+
+
+
+bot.on('raw', async event => {
+	// `event.t` is the raw event name
+	if (event.t !== 'MESSAGE_REACTION_ADD') return;
+
+	const { d: data } = event;
+	const user = bot.users.get(data.user_id);
+	const channel = bot.channels.get(data.channel_id) || await user.createDM();
+
+	// if the message is already in the cache, don't re-emit the event
+	if (channel.messages.has(data.message_id)) return;
+
+	// if you're on the master/v12 branch, use `channel.messages.fetch()`
+	const message = await channel.fetchMessage(data.message_id);
+
+	// custom emojis reactions are keyed in a `name:ID` format, while unicode emojis are keyed by names
+	// if you're on the master/v12 branch, custom emojis reactions are keyed by their ID
+	const emojiKey = (data.emoji.id) ? `${data.emoji.name}:${data.emoji.id}` : data.emoji.name;
+	const reaction = message.reactions.get(emojiKey);
+
+	bot.emit('messageReactionAdd', reaction, user);
+});
+
 bot.login(process.env.BOT_TOKEN);
