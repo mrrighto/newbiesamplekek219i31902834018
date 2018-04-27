@@ -47,7 +47,7 @@ bot.on("message", async message => {
     if(message.content.startsWith("%welc") && message.channel.name == "squires-tavern" && message.author.id == "376344592049766401") {
         let resultwelc = argsaywelc.slice(1).join(' ');
         if (!resultwelc) return; 
-        bot.channels.get("405233666604793856").send(resultwelc);
+        bot.channels.get("439353017960235018").send(resultwelc);
     }
     
     var argsaysay = message.content.slice(1).trim().split(/ +/g);
