@@ -395,7 +395,10 @@ bot.on("messageReactionAdd", (reaction, user) => {
     }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%E2%9C%85" && reaction.message.content == "**4.** Press check if you are actively farming in Dimensional Ops Center (Tiamat).") {
         target1.addRole('410302699867734018').catch(console.error);
     }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%F0%9F%85%B0" && reaction.message.content.startsWith("**5.** Choose:")) {
-        target1.addRole('392193289723445248').catch(console.error);
+	    if (!target1.roles.has("392193289723445248")){
+            bot.channels.get("381392359507623939").send(target1.user + " **You chose to join our crew yey!** 🎉🎉 \n~Now, try mentioning `@Admin` & `@HR Group` here along with your account name <:yurilike:383533891119742977> \nAlso join the crew via crew search, **see you in game!** \nhttps://i.imgur.com/sF3C3xB.gif");
+            target1.addRole('392193289723445248').catch(console.error);
+        }
     }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%F0%9F%85%B1" && reaction.message.content.startsWith("**5.** Choose:")) {
         target1.addRole('397653925131452416').catch(console.error);
     }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%F0%9F%87%A8" && reaction.message.content.startsWith("**5.** Choose:")) {
