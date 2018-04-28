@@ -311,7 +311,7 @@ if ((message.isMemberMentioned()) && (kcvar && !kpgvar && !ktiavar && !kmvar) &&
         let bReason = args.join(" ").slice(22);
 
         if (bUser.roles.has("394119776030687242") || bUser.roles.has("438570138330202112") || bUser.roles.has("437923100978577408") || bUser.roles.has("386764500788838402") || bUser.roles.has("432417814725394442")) {
-            bot.channels.get("425266854014222377").send("Can't ban the user, pinging..." + bot.users.get("376344592049766401") + " Reason: " + bReason);
+            bot.channels.get("425266854014222377").send("*Can't issue a warning to this user*, pinging..." + bot.users.get("376344592049766401") + " Reason: " + bReason);
         } else {
 
             if (!bUser.roles.has("438627661447823361") && !bUser.roles.has("438628872817475584")) {
@@ -362,7 +362,8 @@ bot.channels.get("425266854014222377").send(member.user + ` has committed seduko
   });  
 
 bot.on('guildMemberAdd', member => {
-  bot.channels.get("432774887032094726").send(member.user + ` Hi! if you're looking for a party, you can ping those desparate peeps here. \n~~spam mention if they wont respond~~`)
+    bot.channels.get("432774887032094726").send(member.user + `Sorry for the ping! But, if you're looking for a party, you can ping those desparate peeps here.`)
+    bot.channels.get("381392359507623939").send(member.user + `Welcome! :tinausual: \nPlease go to #welcome to get started! *also, you might want to read our* #server-info-rules`)
 });
 
 
