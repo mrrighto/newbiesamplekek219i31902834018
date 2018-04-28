@@ -362,7 +362,8 @@ bot.channels.get("425266854014222377").send(member.user + ` has committed seduko
   });  
 
 bot.on('guildMemberAdd', member => {
-  bot.channels.get("432774887032094726").send(member.user + ` Hi! if you're looking for a party, you can ping those desparate peeps here. \n~~spam mention if they wont respond~~`)
+    bot.channels.get("432774887032094726").send(member.user + `Sorry for the ping! But, if you're looking for a party, you can ping those desparate peeps here.`)
+    bot.channels.get("381392359507623939").send(member.user + `Welcome! :tinausual: \nPlease go to #welcome to get started! *also, you might want to read our* #server-info-rules`)
 });
 
 
