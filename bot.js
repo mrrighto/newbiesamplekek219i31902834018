@@ -363,7 +363,7 @@ bot.channels.get("425266854014222377").send(member.user + ` has committed seduko
 
 bot.on('guildMemberAdd', member => {
     bot.channels.get("432774887032094726").send(member.user + ` Sorry for the ping! But, if you're looking for a party, you can ping those desparate peeps here.`)
-    bot.channels.get("381392359507623939").send(member.user + ` **Welcome!** <:tinausual:383533892336091136> \n\nPlease go to <#439353017960235018> to get started! *also, you might want to read our* <#438285913919979521> \n\n*Please enjoy your stay!* <:seulbinut:411458765414596608>`)
+    bot.channels.get("381392359507623939").send(member.user + ` **Welcome!** <:tinausual:383533892336091136> \nPlease go to <#439353017960235018> to get started! *also, you might want to read our* <#438285913919979521> \n*Please enjoy your stay!* <:seulbinut:411458765414596608>`)
 });
 
 
