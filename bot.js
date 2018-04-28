@@ -311,7 +311,7 @@ if ((message.isMemberMentioned()) && (kcvar && !kpgvar && !ktiavar && !kmvar) &&
         let bReason = args.join(" ").slice(22);
 
         if (bUser.roles.has("394119776030687242") || bUser.roles.has("438570138330202112") || bUser.roles.has("437923100978577408") || bUser.roles.has("386764500788838402") || bUser.roles.has("432417814725394442")) {
-            bot.channels.get("425266854014222377").send("Can't ban the user, pinging..." + bot.users.get("376344592049766401") + " Reason: " + bReason);
+            bot.channels.get("425266854014222377").send("*Can't issue a warning of this user*, pinging..." + bot.users.get("376344592049766401") + " Reason: " + bReason);
         } else {
 
             if (!bUser.roles.has("438627661447823361") && !bUser.roles.has("438628872817475584")) {
