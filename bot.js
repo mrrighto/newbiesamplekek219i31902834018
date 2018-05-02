@@ -304,35 +304,36 @@ if ((message.isMemberMentioned()) && (kcvar && !kpgvar && !ktiavar && !kmvar) &&
     
 }
 
-    if (message.content.startsWith("%warn") && message.channel.name == "squires-tavern") {
+   if (message.content.startsWith("%warn") && message.channel.name == "squires-tavern") {
 
-        let bUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
-        if (!bUser) return message.channel.send("**Can't find user!** \nTo input correctly the <@username#tag>, try to copy the user's original name along the tag number \n*Note: This command wont work on mobile* \nhttps://i.imgur.com/Vsb2c7g.png");
-        let bReason = args.join(" ").slice(22);
+    let bUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
+    if (!bUser) return message.channel.send("**Can't find user!** \nTo input correctly the <@username#tag>, try to copy the user's original name along the tag number \n*Note: This command wont work on mobile* \nhttps://i.imgur.com/Vsb2c7g.png");
+    let bReason = args.join(" ").slice(22);
 
-        if (bUser.roles.has("394119776030687242") || bUser.roles.has("438570138330202112") || bUser.roles.has("437923100978577408") || bUser.roles.has("386764500788838402") || bUser.roles.has("432417814725394442")) {
-            bot.channels.get("425266854014222377").send("*Can't issue a warning to this user*, pinging..." + bot.users.get("376344592049766401") + " Reason: " + bReason);
-        } else {
+    if (bUser.roles.has("394119776030687242") || bUser.roles.has("438570138330202112") || bUser.roles.has("437923100978577408") || bUser.roles.has("386764500788838402") || bUser.roles.has("432417814725394442")) {
+        bot.channels.get("425266854014222377").send(message.author + " *Can't issue a warning to this user*, pinging..." + bot.users.get("376344592049766401") + " Reason: " + bReason + " \nWarned user: " + bUser.user);
+    } else {
 
-            if (!bUser.roles.has("438627661447823361") && !bUser.roles.has("438628872817475584")) {
-                bUser.addRole('438627661447823361').catch(console.error);
-                bot.channels.get("438620882408177665").send(bUser.user + " *You have been warned* | Reason: " + bReason);
-
-            } else if (bUser.roles.has("438627661447823361") && !bUser.roles.has("438628872817475584")) {
-                bUser.addRole('438628872817475584').catch(console.error);
-                bot.channels.get("438620882408177665").send(bUser.user + " **Last warning** | Reason: " + bReason);
-
-            } else if (bUser.roles.has("438627661447823361") && bUser.roles.has("438628872817475584")) {
-                message.guild.member(bUser).ban(bReason);
-                let banEmbed = new Discord.RichEmbed()
-                    .setColor("#ff0000")
-                    .addField("Banned User", `${bUser} with ID ${bUser.id}`)
-                    .addField("Time", message.createdAt)
-                    .addField("Reason", bReason);
-                bot.channels.get("438620882408177665").send(banEmbed);
-            }
+        if (!bUser.roles.has("438627661447823361") && !bUser.roles.has("438628872817475584")) {
+            bUser.addRole('438627661447823361').catch(console.error);
+            bot.channels.get("425266854014222377").send(bUser.user + " have been warned by " + message.author + ", Reason: "+ bReason);
+            bUser.send(bUser.user + " A message from the Nobility Server! \n\n*You have been warned* | Reason: " + bReason + "\n\n**NOTE: THERE WILL BE ONLY 2 WARNINGS, ONCE YOU IGNORED THEM, YOU WILL BE BANNED!**");
+        } else if (bUser.roles.has("438627661447823361") && !bUser.roles.has("438628872817475584")) {
+            bUser.addRole('438628872817475584').catch(console.error);
+            bot.channels.get("425266854014222377").send(bUser.user + " have been warned by " + message.author + ", Reason: "+ bReason);
+            bUser.send(bUser.user + " A Message from the Nobility Server! \n\n**Last warning** | Reason: " + bReason+ "\n\n**NOTE: THERE WILL BE ONLY 2 WARNINGS, ONCE YOU IGNORED THEM, YOU WILL BE BANNED!**");
+        } else if (bUser.roles.has("438627661447823361") && bUser.roles.has("438628872817475584")) {
+            message.guild.member(bUser).ban(bReason);
+            let banEmbed = new Discord.RichEmbed()
+                .setColor("#ff0000")
+                .addField("Reported By", `${message.author} with ID: ${message.author.id}`)
+                .addField("Banned User", `${bUser} with ID ${bUser.id}`)
+                .addField("Time", message.createdAt)
+                .addField("Reason", bReason);
+            bot.channels.get("425266854014222377").send(banEmbed);
         }
     }
+}
 
 });
 
