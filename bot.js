@@ -359,7 +359,7 @@ bot.on('presenceUpdate', (oldMember, newMember) => {
 bot.on('guildMemberRemove', member => {
     let guild = member.guild;
   
-bot.channels.get("425266854014222377").send(member.user + ` has committed seduko, sayonara! o7`)
+bot.channels.get("425266854014222377").send(member.user + ` has fallen, rippu~`)
   });  
 
 bot.on('guildMemberAdd', member => {
@@ -397,7 +397,7 @@ bot.on("messageReactionAdd", (reaction, user) => {
         target1.addRole('410302699867734018').catch(console.error);
     }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%F0%9F%85%B0" && reaction.message.content.startsWith("**5.** Choose:")) {
 	    if (!target1.roles.has("392193289723445248")){
-            bot.channels.get("381392359507623939").send(target1.user + " **You chose to join our crew yey!** 🎉🎉 \n~Now, try mentioning `@Admin` & `@HR Group` here along with your account name <:yurilike:383533891119742977> \nAlso join the crew via crew search, **see you in game!** \nhttps://i.imgur.com/sF3C3xB.gif");
+            bot.channels.get("381392359507623939").send(target1.user + " **You chose to join our crew yey!** 🎉🎉 \n~Now, try mentioning `@Admin` & `@HR Group` here along with your account name <:yurilike:383533891119742977> \nAlso join the crew via crew search, **see you in game!** \nhttps://www.imgur.com/sF3C3xB.gif");
             target1.addRole('392193289723445248').catch(console.error);
         }
     }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%F0%9F%85%B1" && reaction.message.content.startsWith("**5.** Choose:")) {
