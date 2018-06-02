@@ -363,7 +363,7 @@ bot.on('presenceUpdate', (oldMember, newMember) => {
 	//if (newMember.id== "183276178105171968" && newMember.user.presence.game.streaming == true)  {
        // bot.users.get("201295790650556416").send(newMember.user+" is now streaming!" + "\n"+ "**Stream link:** "+ newMember.user.presence.game.url+ "\n"+ "**Streamer's discord tag:** "+newMember.user.username+"#"+newMember.user.tag);
     //}
-    
+    //
   });
 
 bot.on('guildMemberRemove', member => {
