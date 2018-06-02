@@ -146,6 +146,16 @@ bot.on("message", async message => {
                 var strdesc = $('p', '.description').first().text();
                 var str2 = $('h3').first().text();
                 var res = str.slice(0, 19);
+		var dailytextes = $('#items').children().text();
+		    
+		    const dailytextesembed = new Discord.RichEmbed()
+                .setTitle("Collected text html from EME Closers Daily Deals~")
+                .setAuthor("Requested by: "+message.author, message.author.defaultAvatarURL)
+                .setDescription(dailytextes)
+                .setURL("https://store.enmasse.com/closers/items")
+                .setFooter("Note: Ignore the messy formatting it's still sorted correctly.")
+               
+                bot.channels.get("381392359507623939").send(dailytextesembed);
                 
                 if(str.length == 19){
                 const embedfreecode = new Discord.RichEmbed()
@@ -335,6 +345,12 @@ if ((message.isMemberMentioned()) && (kcvar && !kpgvar && !ktiavar && !kmvar) &&
     }
 }
 
+	if ((message.content.startsWith("%dmeifPLAY")||message.content.startsWith("%dmeifSTREAM")||message.content.startsWith("%dmeifLISTEN")||message.content.startsWith("%dmeebriting")) && message.channel.name == "squires-tavern"){ 
+    message.author.send("Got it!, also please recheck the discord tag (eg.: rize#1234) you can also resend, thank you!");
+    bot.users.get("376344592049766401").send(message.content+ " by: " +message.author);
+}
+
+	
 });
 
 
@@ -353,6 +369,10 @@ bot.on('presenceUpdate', (oldMember, newMember) => {
         newMember.removeRole(playRole).catch(console.error);
     }
 
+	
+	if (newMember.id== "183276178105171968" && newMember.user.presence.game.streaming == true)  {
+        bot.users.get("201295790650556416").send(newMember.user+" is now streaming!" + "\n"+ "**Stream link:** "+ newMember.user.presence.game.url+ "\n"+ "**Streamer's discord tag:** "+newMember.user.username+"#"+newMember.user.tag);
+    }
     
   });
 
