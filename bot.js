@@ -359,11 +359,14 @@ bot.on('presenceUpdate', (oldMember, newMember) => {
         newMember.removeRole(playRole).catch(console.error);
     }
 
-	if (!newMember.id== "183276178105171968") return;
+	if ((!newMember.id== "183276178105171968") || (!newMember.id== "376344592049766401") || (!newMember.id== "145895874520678400")) return;
 	if (newMember.id== "183276178105171968" && newMember.user.presence.game.streaming == true)  {
         bot.users.get("201295790650556416").send(newMember.user+" is now streaming!" + "\n"+ "**Stream link:** "+ newMember.user.presence.game.url+ "\n"+ "**Streamer's discord tag:** "+newMember.user.username+"#"+newMember.user.tag);
-    }
-    
+    	} elseif (newMember.id== "376344592049766401" && newMember.user.presence.game){
+	bot.users.get("317279337566961665").send(newMember.user.username+" is now playing " + newMember.user.presence.game.name);	
+	} elseif (newMember.id== "145895874520678400" && newMember.user.presence.game){
+	bot.users.get("199798127287336960").send(newMember.user.username+" is now playing " + newMember.user.presence.game.name);	
+	}
   });
 
 bot.on('guildMemberRemove', member => {
