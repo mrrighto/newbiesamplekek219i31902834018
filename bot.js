@@ -146,16 +146,6 @@ bot.on("message", async message => {
                 var strdesc = $('p', '.description').first().text();
                 var str2 = $('h3').first().text();
                 var res = str.slice(0, 19);
-		var dailytextes = $('#items').children().text();
-		    
-		    const dailytextesembed = new Discord.RichEmbed()
-                .setTitle("Collected text html from EME Closers Daily Deals~")
-                .setAuthor("Requested by: "+message.author, message.author.defaultAvatarURL)
-                .setURL("https://store.enmasse.com/closers/items")
-                .setFooter("Note: Ignore the messy formatting it's still sorted correctly.")
-               
-                bot.channels.get("381392359507623939").send(dailytextesembed);
-		    bot.channels.get("381392359507623939").send(dailytextes);
                 
                 if(str.length == 19){
                 const embedfreecode = new Discord.RichEmbed()
