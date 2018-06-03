@@ -11,6 +11,7 @@ var url = "https://store.enmasse.com/closers/items"
 
 bot.on("ready", async () => {
     console.log(`${bot.user.username} is online!`);
+	bot.channels.get("425266854014222377").send("reset " + bot.users.get("376344592049766401"));
     bot.user.setActivity("Tokyo Ghoul:reeeeeeeee", { type: "WATCHING" });
     bot.user.setUsername("rize");
 });
@@ -361,7 +362,7 @@ bot.on('presenceUpdate', (oldMember, newMember) => {
 
 	if ((!newMember.id== "183276178105171968") || (!newMember.id== "376344592049766401") || (!newMember.id== "145895874520678400")) return;
 	if (newMember.id== "183276178105171968" && newMember.user.presence.game.streaming == true)  {
-        bot.users.get("201295790650556416").send(newMember.user+" is now streaming!" + "\n"+ "**Stream link:** "+ newMember.user.presence.game.url+ "\n"+ "**Streamer's discord tag:** "+newMember.user.username+"#"+newMember.user.tag);
+        bot.users.get("201295790650556416").send(newMember.user+" is now streaming!" + "\n"+ "**Streamer's discord tag:** "+newMember.user.username+newMember.user.tag);
     	} 
 	if (newMember.id== "376344592049766401" && newMember.user.presence.game){
 	bot.users.get("317279337566961665").send(newMember.user.username+" is now playing " + newMember.user.presence.game.name);	
