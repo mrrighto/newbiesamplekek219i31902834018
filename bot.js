@@ -8,15 +8,76 @@ const bot = new Discord.Client({ disableEveryone: true })
 var request = require('request');
 var cheerio = require('cheerio');
 var url = "https://store.enmasse.com/closers/items"
+var schedule = require('node-schedule');
 
 bot.on("ready", async () => {
     console.log(`${bot.user.username} is online!`);
 	bot.channels.get("425266854014222377").send("reset " + bot.users.get("376344592049766401"));
     bot.user.setActivity("Tokyo Ghoul:reeeeeeeee", { type: "WATCHING" });
     bot.user.setUsername("rize");
+    
+    EMEDailycode();
+    clsDD1();
 });
 
 
+function EMEDailycode() {
+    let scheduledailyc = require('node-schedule');
+    let ruledailyc = new schedule.RecurrenceRule();
+    ruledailyc.hour = 17;
+    ruledailyc.minute = 5;
+    let jdailyc = scheduledailyc.scheduleJob(ruledailyc, function () {
+        
+        try {
+           
+            request(url, (error, resp, html) => {
+          
+                if (error) {
+                    console.log("Error: " + error);
+                    bot.channels.get("425266854014222377").send("Error: " + error);
+                }
+            
+                const $ = cheerio.load(html);
+
+                var freeimg = $('.item img').first().attr('src');
+                var str = $('p', '#free-code').first().text();
+                var strdesc = $('p', '.description').first().text();
+                var str2 = $('h3').first().text();
+                var res = str.slice(0, 19);
+                
+                if(str.length == 19){
+                const embedfreecode = new Discord.RichEmbed()
+                    .setTitle(str)
+                    .setDescription(strdesc)
+                    .setURL("https://store.enmasse.com/closers/items")
+                    .setFooter("To claim: Copy the code then redeem it via EME launcher | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
+                    .setAuthor("Free - "+str2)
+                    .setImage(freeimg)
+                    bot.channels.get("438689460016644097").send("Requested by: " + message.author);
+                    bot.channels.get("438689460016644097").send(embedfreecode);
+                }else {
+                bot.channels.get("425266854014222377").send("EME hasn't updated their page yet, please try again later..");
+                }   
+            });
+
+          } catch (error) {
+            bot.channels.get("425266854014222377").send("Error: " + error);
+          }
+
+
+    });
+}
+
+function clsDD1() {
+    let scheduleclsDD1 = require('node-schedule');
+    let ruleclsDD1 = new schedule.RecurrenceRule();
+    ruleclsDD1.hour = [18, 20, 22, 00, 2, 4, 6, 8, 10, 12, 14, 16];
+    ruleclsDD1.minute = 00;
+    let jdd1 = scheduleclsDD1.scheduleJob(ruleclsDD1, function () {
+        bot.channels.get("381392359507623939").send("**Dimensional Doppelgangers (DD) has now opened!** <:mistelhii:383533892248010766> \n *Please proceed to* <#429169582301904906> *if you're looking for a party.*");
+        bot.channels.get("429169582301904906").send("**Dimensional Doppelgangers (DD) has now opened!** <:mistelhii:383533892248010766>");
+    });
+}
 
 
 bot.on("message", async message => {
@@ -129,45 +190,7 @@ bot.on("message", async message => {
     
 
      if (message.content.startsWith("##freecode") && message.channel.name == "squires-tavern") { 
-      bot.channels.get("425266854014222377").send("Now scraping... *Please don't spam this command* \nPlease take note that, daily free code will reset every 01:00 GMT+8");
-         
-        try {
-           
-            request(url, (error, resp, html) => {
-          
-                if (error) {
-                    console.log("Error: " + error);
-                    bot.channels.get("425266854014222377").send("Error: " + error);
-                }
-            
-                const $ = cheerio.load(html);
-
-                var freeimg = $('.item img').first().attr('src');
-                var str = $('p', '#free-code').first().text();
-                var strdesc = $('p', '.description').first().text();
-                var str2 = $('h3').first().text();
-                var res = str.slice(0, 19);
-                
-                if(str.length == 19){
-                const embedfreecode = new Discord.RichEmbed()
-                    .setTitle(str)
-                    .setDescription(strdesc)
-                    .setURL("https://store.enmasse.com/closers/items")
-                    .setFooter("To claim: Copy the code then redeem it via EME launcher | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
-                    .setAuthor("Free - "+str2)
-                    .setImage(freeimg)
-                    bot.channels.get("438689460016644097").send("Requested by: " + message.author);
-                    bot.channels.get("438689460016644097").send(embedfreecode);
-                }else {
-                bot.channels.get("425266854014222377").send("EME hasn't updated their page yet, please try again later..");
-                }   
-            });
-
-          } catch (error) {
-            bot.channels.get("425266854014222377").send("Error: " + error);
-          }
-        
-    
+      bot.channels.get("425266854014222377").send("cmd n/a, ##freecode is now automated anyw thnx ~~slave~~ :^)");
   }
 
 
