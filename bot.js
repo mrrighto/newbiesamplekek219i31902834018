@@ -73,7 +73,7 @@ function clsDD1() {
     ruleclsDD1.hour = [18, 20, 22, 00, 2, 4, 6, 8, 10, 12, 14, 16];
     ruleclsDD1.minute = 00;
     let jdd1 = scheduleclsDD1.scheduleJob(ruleclsDD1, function () {
-        bot.channels.get("381392359507623939").send("**Dimensional Doppelgangers (DD) has now opened!** <:mistelhii:383533892248010766> \n *Please proceed to* <#429169582301904906> *if you're looking for a party.*");
+        
         bot.channels.get("429169582301904906").send("**Dimensional Doppelgangers (DD) has now opened!** <:mistelhii:383533892248010766>");
     });
 }
