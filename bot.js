@@ -389,7 +389,7 @@ bot.on('presenceUpdate', (oldMember, newMember) => {
 	if (newMember.id== "376344592049766401" && newMember.user.presence.game){
 	bot.users.get("317279337566961665").send(newMember.user.username+" is now playing " + newMember.user.presence.game.name);	
 	} 
-	if (newMember.id== "145895874520678400" && newMember.user.presence.game){
+	if (newMember.id== "145895874520678400" && newMember.user.presence.game && newMember.user.presence.game.name === "Closers Dimension Conflict"){
 	bot.users.get("199798127287336960").send(newMember.user.username+" is now playing " + newMember.user.presence.game.name);	
 	}
   });
