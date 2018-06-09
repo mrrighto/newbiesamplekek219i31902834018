@@ -18,6 +18,8 @@ bot.on("ready", async () => {
     
     EMEDailycode();
     clsDD1();
+    clsPHR();
+    clsCAR();
 });
 
 
@@ -75,6 +77,24 @@ function clsDD1() {
     let jdd1 = scheduleclsDD1.scheduleJob(ruleclsDD1, function () {
         
         bot.channels.get("429169582301904906").send("**Dimensional Doppelgangers (DD) has now opened!** <:mistelhii:383533892248010766>");
+    });
+}
+function clsPHR() {
+    let scheduleclsPHR = require('node-schedule');
+    let ruleclsPHR = new schedule.RecurrenceRule();
+    ruleclsPHR.hour = [1, 3, 5, 17, 19, 21, 23];
+    ruleclsPHR.minute = 00;
+    let jclsPHR = scheduleclsPHR.scheduleJob(ruleclsPHR, function () {
+        bot.channels.get("381392359507623939").send("**Power Hour/Arena Brawl is now active** o/");
+    });
+}
+function clsCAR() {
+    let scheduleclsCAR = require('node-schedule');
+    let ruleclsCAR = new schedule.RecurrenceRule();
+    ruleclsCAR.hour = 5
+    ruleclsCAR.minute = 00;
+    let jclsCAR = scheduleclsCAR.scheduleJob(ruleclsCAR, function () {
+        bot.channels.get("416201903664267264").send("**Crew Brawl is now active o/**" + " <@&454867260327329803> " + "\n *To get pinged* Type `>rank Crew3v3` in <#386494149114724353>");
     });
 }
 
@@ -389,9 +409,6 @@ bot.on('presenceUpdate', (oldMember, newMember) => {
 	if (newMember.id== "376344592049766401" && newMember.user.presence.game){
 	bot.users.get("317279337566961665").send(newMember.user.username+" is now playing " + newMember.user.presence.game.name);	
 	} 
-	if (newMember.id== "145895874520678400" && newMember.user.presence.game && newMember.user.presence.game.name === "Closers Dimension Conflict"){
-	bot.users.get("199798127287336960").send(newMember.user.username+" is now playing " + newMember.user.presence.game.name);	
-	}
   });
 
 bot.on('guildMemberRemove', member => {
