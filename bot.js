@@ -82,7 +82,7 @@ function clsDD1() {
 function clsPHR() {
     let scheduleclsPHR = require('node-schedule');
     let ruleclsPHR = new schedule.RecurrenceRule();
-    ruleclsPHR.hour = [1, 3, 5, 17, 19, 21, 23];
+    ruleclsPHR.hour = [1, 3, 17, 19, 21, 23];
     ruleclsPHR.minute = 00;
     let jclsPHR = scheduleclsPHR.scheduleJob(ruleclsPHR, function () {
         bot.channels.get("381392359507623939").send("**Power Hour/Arena Brawl is now active** o/");
@@ -94,7 +94,7 @@ function clsCAR() {
     ruleclsCAR.hour = 5
     ruleclsCAR.minute = 00;
     let jclsCAR = scheduleclsCAR.scheduleJob(ruleclsCAR, function () {
-        bot.channels.get("416201903664267264").send("**Crew Brawl is now active o/**" + " <@&454867260327329803> " + "\n *To get pinged* Type `>rank Crew3v3` in <#386494149114724353>");
+        bot.channels.get("416201903664267264").send("**Crew Brawl is now active o/**" + " <@&454867260327329803> " + "\n *To get pinged, type* `>rank Crew3v3` in <#386494149114724353>");
     });
 }
 
