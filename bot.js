@@ -18,7 +18,7 @@ bot.on("ready", async () => {
     
     EMEDailycode();
     clsDD1();
-    clsPHR();
+    //clsPHR();
     clsCAR();
 });
 
