@@ -63,6 +63,10 @@ function EMEDailycode() {
                     itemsrpice[i] = $(this).text();
                 });
                 const textt = items.join(', ');
+               
+		var freefinder = $('div').eq(17).text();
+
+                if (freefinder == "FREE" || null){
 
                 const embedfreecode = new Discord.RichEmbed()
                 .setTitle(str)
@@ -180,6 +184,11 @@ function EMEDailycode() {
                         .setURL("https://store.enmasse.com/closers/items")
                     bot.channels.get("440724107458379777").send(embedfreecode12);
                 }
+	                } else {
+                    bot.channels.get("425266854014222377").send(bot.users.get("376344592049766401")+ " new html");
+                    bot.channels.get("425266854014222377").send("anywan here who can post the daily free code? from `https://store.enmasse.com/closers/items`  \nkindly post it on <#438689460016644097> <:tina11:392924198290587669>");
+                }
+
 
             });
 
