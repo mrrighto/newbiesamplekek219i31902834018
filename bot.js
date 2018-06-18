@@ -268,6 +268,13 @@ bot.on("message", async message => {
         bot.channels.get("381392359507623939").send(resultt);
     }
 
+    var argsaycrew = message.content.slice(1).trim().split(/ +/g);
+    if(message.content.startsWith("%s") && message.channel.name == "guild-lounge") {
+        let resultt = argsaycrew.slice(1).join(' ');
+        if (!resultt) return; 
+        bot.channels.get("416201903664267264").send(resultt);
+    }
+
     var argsay1 = message.content.slice(1).trim().split(/ +/g);
     if(message.content.startsWith("%chWATCH") && message.channel.name == "squires-tavern") {
         let chname1 = argsay1.slice(1).join(' ');
