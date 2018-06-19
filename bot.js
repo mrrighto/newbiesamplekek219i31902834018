@@ -607,8 +607,9 @@ bot.on("messageReactionAdd", (reaction, user) => {
         target1.addRole('432384823068459018').catch(console.error);
     }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%F0%9F%85%B1" && reaction.message.content.startsWith("**5.** **Choose wisely here:**")) {
         target1.addRole('432877618954764289').catch(console.error);
+      }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%E2%9C%85" && reaction.message.content.startsWith("**6.** **Merchant tag**, @rize#3801 will DM you specific items from the #marketplace, the items will be ")) {
+        target1.addRole('458508768175456268').catch(console.error);
     }
-    
 
 });
 
