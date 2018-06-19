@@ -584,24 +584,28 @@ bot.on("messageReactionAdd", (reaction, user) => {
         target1.addRole('408923420311683072').catch(console.error);
     }else if (reaction.message.channel.name == "welcome" && reaction.emoji.name == "harpy1") {
         target1.addRole('408923379731791884').catch(console.error);
-    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%E2%9C%85" && reaction.message.content == "**2.**  Press check if you reached Lv75 on any of your alt(s).") {
-        target1.addRole('392505371018788876').catch(console.error);
-    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%E2%9C%85" && reaction.message.content == "**3.** Press check if you are actively farming in Planar Gate.") {
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%E2%9C%85" && reaction.message.content == "**2.** Press check if you reached Lv80 on any of your alt(s).") {
+        target1.addRole('392505427155222528').catch(console.error);
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.name == ":one:" && reaction.message.content.startsWith("**3.** **Press 1** if you are actively farming in Planar Gate.")) {
         target1.addRole('394384407940825101').catch(console.error);
-    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%E2%9C%85" && reaction.message.content == "**4.** Press check if you are actively farming in Dimensional Ops Center (Tiamat).") {
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.name == ":two:" && reaction.message.content.startsWith("**3.** **Press 1** if you are actively farming in Planar Gate.")) {
         target1.addRole('410302699867734018').catch(console.error);
-    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%F0%9F%85%B0" && reaction.message.content.startsWith("**5.** Choose:")) {
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.name == ":three:" && reaction.message.content.startsWith("**3.** **Press 1** if you are actively farming in Planar Gate.")) {
+        target1.addRole('458475316537458710').catch(console.error);
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%E2%9C%85" && reaction.message.content == "**4.** Press check if you are actively farming in Dimensional Ops Center (Tiamat).") {
+        //target1.addRole('410302699867734018').catch(console.error);
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%F0%9F%85%B0" && reaction.message.content.startsWith("**4.** Choose:")) {
 	    if (!target1.roles.has("392193289723445248")){
             bot.channels.get("381392359507623939").send(target1.user + " **You chose to join our crew yey!** 🎉🎉 \n~Now, try mentioning `@Admin` & `@HR Group` here along with your account name <:yurilike:383533891119742977> \nAlso join the crew via crew search, **see you in game!** \nhttps://www.imgur.com/sF3C3xB.gif");
             target1.addRole('392193289723445248').catch(console.error);
         }
-    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%F0%9F%85%B1" && reaction.message.content.startsWith("**5.** Choose:")) {
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%F0%9F%85%B1" && reaction.message.content.startsWith("**4.** Choose:")) {
         target1.addRole('397653925131452416').catch(console.error);
-    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%F0%9F%87%A8" && reaction.message.content.startsWith("**5.** Choose:")) {
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%F0%9F%87%A8" && reaction.message.content.startsWith("**4.** Choose:")) {
         target1.addRole('423698087371079683').catch(console.error);
-    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%F0%9F%85%B0" && reaction.message.content.startsWith("**6.** **Choose wisely here:**")) {
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%F0%9F%85%B0" && reaction.message.content.startsWith("**5.** **Choose wisely here:**")) {
         target1.addRole('432384823068459018').catch(console.error);
-    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%F0%9F%85%B1" && reaction.message.content.startsWith("**6.** **Choose wisely here:**")) {
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%F0%9F%85%B1" && reaction.message.content.startsWith("**5.** **Choose wisely here:**")) {
         target1.addRole('432877618954764289').catch(console.error);
     }
     
