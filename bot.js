@@ -586,7 +586,7 @@ bot.on("messageReactionAdd", (reaction, user) => {
         target1.addRole('408923379731791884').catch(console.error);
     }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%E2%9C%85" && reaction.message.content == "**2.** Press check if you reached Lv80 on any of your alt(s).") {
         target1.addRole('392505427155222528').catch(console.error);
-    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%1%E2%83%A3" && reaction.message.content.startsWith("**3.** **Press 1** if you are actively farming in Planar Gate.")) {
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "1%E2%83%A3" && reaction.message.content.startsWith("**3.** **Press 1** if you are actively farming in Planar Gate.")) {
         target1.addRole('394384407940825101').catch(console.error);
     }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "2%E2%83%A3" && reaction.message.content.startsWith("**3.** **Press 1** if you are actively farming in Planar Gate.")) {
         target1.addRole('410302699867734018').catch(console.error);
