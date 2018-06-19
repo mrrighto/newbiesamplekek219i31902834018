@@ -615,9 +615,9 @@ bot.on("messageReactionAdd", (reaction, user) => {
 bot.on("messageReactionRemove", (reaction, user) => {
     let target2 = reaction.message.guild.member(user);
     
-    if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%F0%9F%85%B0" && reaction.message.content.startsWith("**6.** **Choose wisely here:**")) {
+    if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%F0%9F%85%B0" && reaction.message.content.startsWith("**5.** **Choose wisely here:**")) {
         target2.removeRole('432384823068459018').catch(console.error);
-    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%F0%9F%85%B1" && reaction.message.content.startsWith("**6.** **Choose wisely here:**")) {
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%F0%9F%85%B1" && reaction.message.content.startsWith("**5.** **Choose wisely here:**")) {
         target2.removeRole('432877618954764289').catch(console.error);
     }
 
