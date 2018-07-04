@@ -13,7 +13,7 @@ var schedule = require('node-schedule');
 bot.on("ready", async () => {
     console.log(`${bot.user.username} is online!`);
 	bot.channels.get("425266854014222377").send("reset " + bot.users.get("376344592049766401"));
-    bot.user.setActivity("Tokyo Ghoul:reeeeeeeee", { type: "WATCHING" });
+    bot.user.setActivity("ISLAND", { type: "WATCHING" });
     bot.user.setUsername("rize");
     
     EMEDailycode();
@@ -221,7 +221,7 @@ function clsPHR() {
 function clsCAR() {
     let scheduleclsCAR = require('node-schedule');
     let ruleclsCAR = new schedule.RecurrenceRule();
-    ruleclsCAR.hour = 5
+    ruleclsCAR.hour = [5, 21, 13];
     ruleclsCAR.minute = 00;
     let jclsCAR = scheduleclsCAR.scheduleJob(ruleclsCAR, function () {
         bot.channels.get("416201903664267264").send("**Crew Brawl is now active o/**" + " <@&454867260327329803> " + "\n *To get pinged, type* `>rank Crew3v3` in <#386494149114724353>");
