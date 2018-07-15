@@ -559,7 +559,7 @@ bot.channels.get("425266854014222377").send(member.user + ` has fallen, rippu~`)
 
 bot.on('guildMemberAdd', member => {
     bot.channels.get("432774887032094726").send(member.user + ` Sorry for the ping! But, if you're looking for a party, you can ping those desparate peeps here.`)
-    bot.channels.get("381392359507623939").send(member.user + ` **Welcome!** <:tinausual:383533892336091136> \nPlease go to <#439353017960235018> to get started! *also, you might want to read our* <#438285913919979521> \n*Please enjoy your stay!* <:seulbinut:411458765414596608>`)
+    bot.channels.get("467923880611282965").send(member.user + ` **Welcome!** <:tinausual:383533892336091136> \nPlease go to <#439353017960235018> to get started! *also, you might want to read our* <#438285913919979521> \n*Please enjoy your stay!* <:seulbinut:411458765414596608>`)
 });
 
 
@@ -598,8 +598,8 @@ bot.on("messageReactionAdd", (reaction, user) => {
         //target1.addRole('410302699867734018').catch(console.error);
     }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%F0%9F%85%B0" && reaction.message.content.startsWith("**4.** Choose:")) {
 	    if (!target1.roles.has("392193289723445248")){
-	     bot.channels.get("381392359507623939").send(target1.user + " Hi! Thank you for your interest in joining our crew, but sad to say we are currently full at this moment.");
-	    //bot.channels.get("381392359507623939").send(target1.user + " **You chose to join our crew yey!** 🎉🎉 \n~Now, try mentioning `@Admin` & `@HR Group` here along with your account name <:yurilike:383533891119742977> \nAlso join the crew via crew search, **see you in game!** \nhttps://www.imgur.com/sF3C3xB.gif");
+	     //bot.channels.get("381392359507623939").send(target1.user + " Hi! Thank you for your interest in joining our crew, but sad to say we are currently full at this moment.");
+	    bot.channels.get("467923880611282965").send(target1.user + " **You chose to join our crew yey!** 🎉🎉 \n~Now, try mentioning `@Admin` & `@HR Group` here along with your account name <:yurilike:383533891119742977> \nAlso join the crew via crew search, **see you in game!** \nhttps://www.imgur.com/sF3C3xB.gif");
             //target1.addRole('392193289723445248').catch(console.error);
         }
     }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%F0%9F%85%B1" && reaction.message.content.startsWith("**4.** Choose:")) {
