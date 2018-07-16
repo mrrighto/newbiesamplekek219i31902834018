@@ -520,6 +520,24 @@ if ((message.isMemberMentioned()) && (kcvar && !kpgvar && !ktiavar && !kmvar) &&
     bot.users.get("376344592049766401").send(message.content+ " by: " +message.author);
 }
 
+if (message.content.startsWith("S> ") && message.channel.name == "lounge") {
+        const efsell = new Discord.RichEmbed()
+        .setColor(0xFF0000)
+        .setDescription("**"+message.content + "**"+ "\n\nMerchant: " + message.author)
+    bot.channels.get("440724107458379777").send(efsell);
+    }
+    if (message.content.startsWith("B> ") && message.channel.name == "lounge") {
+        const efbuy = new Discord.RichEmbed()
+        .setColor(0x00FF00)
+        .setDescription("**"+message.content + "**"+ "\n\nMerchant: " + message.author)
+    bot.channels.get("440724107458379777").send(efbuy);
+    }
+    if (message.content.startsWith("T> ") && message.channel.name == "lounge") {
+        const eftrade = new Discord.RichEmbed()
+        .setColor(0x000000)
+        .setDescription("**"+message.content + "**"+ "\n\nMerchant: " + message.author)
+    bot.channels.get("440724107458379777").send(eftrade);
+    }
 	
 });
 
