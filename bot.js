@@ -604,6 +604,15 @@ bot.on("messageReactionAdd", (reaction, user) => {
         target1.addRole('408923379731791884').catch(console.error);
     }else if (reaction.message.channel.name == "welcome" && reaction.emoji.name == "violet") {
         target1.addRole('408923457095467008').catch(console.error);
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.name == "WolfgangConfuse") {
+        target1.addRole('483572119591059467').catch(console.error);
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.name == "baithinkfuge") {
+        target1.addRole('483572276554629120').catch(console.error);
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.name == "SomaSilly") {
+        target1.addRole('483572227002990601').catch(console.error);
+    }else if (reaction.message.channel.name == "welcome" && reaction.emoji.name == "LunaSelfie") {
+        target1.addRole('483572168693907457').catch(console.error);
+
     }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%E2%9C%85" && reaction.message.content == "**2.** Press check if you reached Lv80 on any of your alt(s).") {
         target1.addRole('392505427155222528').catch(console.error);
     }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "1%E2%83%A3" && reaction.message.content.startsWith("**3.** **Press 1** if you are actively farming in Planar Gate.")) {
@@ -617,7 +626,7 @@ bot.on("messageReactionAdd", (reaction, user) => {
     }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%F0%9F%85%B0" && reaction.message.content.startsWith("**4.** Choose:")) {
 	    if (!target1.roles.has("392193289723445248")){
 	     //bot.channels.get("381392359507623939").send(target1.user + " Hi! Thank you for your interest in joining our crew, but sad to say we are currently full at this moment.");
-	    bot.channels.get("467923880611282965").send(target1.user + " **You chose to join our crew yey!** 🎉🎉 \n~Now, try mentioning `@Admin` & `@HR Group` here along with your account name <:yurilike:383533891119742977> \nAlso join the crew via crew search, **see you in game!** \nhttps://www.imgur.com/sF3C3xB.gif");
+	    bot.channels.get("467923880611282965").send(target1.user + " **You chose to join our crew yey!** 🎉🎉 \n~Now, try mentioning `@Admin • NA` here along with your account name <:yurilike:383533891119742977> \nAlso join the crew via crew search, **see you in game!** \nhttps://www.imgur.com/sF3C3xB.gif");
             //target1.addRole('392193289723445248').catch(console.error);
         }
     }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%F0%9F%85%B1" && reaction.message.content.startsWith("**4.** Choose:")) {
