@@ -557,16 +557,20 @@ bot.on('presenceUpdate', (oldMember, newMember) => {
         newMember.removeRole(playRole).catch(console.error);
     }
 
-	if ((!newMember.id== "183276178105171968") || (!newMember.id== "376344592049766401") || (!newMember.id== "145895874520678400")) return;
-	if (newMember.id== "183276178105171968" && newMember.user.presence && newMember.user.presence.game && newMember.user.presence.game.streaming)  {
-        bot.users.get("201295790650556416").send(newMember.user+" is now streaming!" + "\n"+ "**Stream link:** "+ newMember.user.presence.game.url+ "\n"+ "**Streamer's discord tag:** "+newMember.user.username+"#"+newMember.user.tag);
-    	} 
-	if (newMember.id== "145895874520678400" && newMember.user.presence && newMember.user.presence.game && newMember.user.presence.game.streaming)  {
-        bot.users.get("201295790650556416").send(newMember.user+" is now streaming!" + "\n"+ "**Stream link:** "+ newMember.user.presence.game.url+ "\n"+ "**Streamer's discord tag:** "+newMember.user.username+"#"+newMember.user.tag);
-    	} 
-	if (newMember.id== "376344592049766401" && newMember.user.presence.game){
-	bot.users.get("317279337566961665").send(newMember.user.username+" is now playing " + newMember.user.presence.game.name);	
-	} 
+   if (newMember.roles.has("397285952810123274") && newMember.user.presence.game && newMember.user.presence.game.name === "Closers Dimension Conflict") {
+       bot.channels.get("381392359507623939").send(newMember.user + " welcome back <:seha8:391896068129947650> if you're joining back on our crew, ping `@admin • NA` with your account name/ign and don't forget to re-apply ingame <:yurilike:383533891119742977> see you ingame o/");
+    }
+
+	//if ((!newMember.id== "183276178105171968") || (!newMember.id== "376344592049766401") || (!newMember.id== "145895874520678400")) return;
+	//if (newMember.id== "183276178105171968" && newMember.user.presence && newMember.user.presence.game && newMember.user.presence.game.streaming)  {
+        //bot.users.get("201295790650556416").send(newMember.user+" is now streaming!" + "\n"+ "**Stream link:** "+ newMember.user.presence.game.url+ "\n"+ "**Streamer's discord tag:** "+newMember.user.username+"#"+newMember.user.tag);
+    	//} 
+	//if (newMember.id== "145895874520678400" && newMember.user.presence && newMember.user.presence.game && newMember.user.presence.game.streaming)  {
+        //bot.users.get("201295790650556416").send(newMember.user+" is now streaming!" + "\n"+ "**Stream link:** "+ newMember.user.presence.game.url+ "\n"+ "**Streamer's discord tag:** "+newMember.user.username+"#"+newMember.user.tag);
+    	//} 
+	//if (newMember.id== "376344592049766401" && newMember.user.presence.game){
+	//bot.users.get("317279337566961665").send(newMember.user.username+" is now playing " + newMember.user.presence.game.name);	
+	//} 
   });
 
 bot.on('guildMemberRemove', member => {
@@ -616,6 +620,7 @@ bot.on("messageReactionAdd", (reaction, user) => {
         if (!target1.roles.has("448835168258752515")){
 	target1.addRole('448835168258752515').catch(console.error);
 	bot.channels.get("432775028757626890").send(target1.user + " go ping `@admin • KR` with your ign/username then dont forget to apply ingame, our circle's name is **NobilityKR** btw, cya ingame o/");
+	bot.channels.get("432775028757626890").send(target1.user + " welcome back <:seha8:391896068129947650> if you're joining back on our crew, ping `@admin • NA` with your account name/ign and don't forget to re-apply ingame <:yurilike:383533891119742977> see you ingame o/");
 	}
     }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%E2%9C%85" && reaction.message.content == "**2.** Press check if you reached Lv80 on any of your alt(s).") {
         target1.addRole('392505427155222528').catch(console.error);
