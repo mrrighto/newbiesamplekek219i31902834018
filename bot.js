@@ -557,9 +557,11 @@ bot.on('presenceUpdate', (oldMember, newMember) => {
         newMember.removeRole(playRole).catch(console.error);
     }
 
-   if (newMember.roles.has("397285952810123274") && newMember.user.presence.game && newMember.user.presence.game.name === "Closers Dimension Conflict") {
-       bot.channels.get("381392359507623939").send(newMember.user + " welcome back <:seha8:391896068129947650> if you're joining back on our crew, ping `@admin • NA` with your account name/ign and don't forget to re-apply ingame <:yurilike:383533891119742977> see you ingame o/");
-    }
+    if (newMember.roles.has("397285952810123274") && newMember.user.presence.game && newMember.user.presence.game.name === "Closers Dimension Conflict") {
+	if (!newMember.roles.has("448835168258752515")){
+	bot.channels.get("381392359507623939").send(newMember.user + " welcome back <:seha8:391896068129947650> if you're joining back on our crew, ping `@admin • NA` with your account name/ign and don't forget to re-apply ingame <:yurilike:383533891119742977>");
+	}
+	}
 
 	//if ((!newMember.id== "183276178105171968") || (!newMember.id== "376344592049766401") || (!newMember.id== "145895874520678400")) return;
 	//if (newMember.id== "183276178105171968" && newMember.user.presence && newMember.user.presence.game && newMember.user.presence.game.streaming)  {
@@ -619,8 +621,7 @@ bot.on("messageReactionAdd", (reaction, user) => {
     }else if (reaction.message.channel.name == "crew-info" && reaction.emoji.identifier == "%E2%9C%85" && reaction.message.content.startsWith("-KR account creation guide can be found in")) {
         if (!target1.roles.has("448835168258752515")){
 	target1.addRole('448835168258752515').catch(console.error);
-	bot.channels.get("432775028757626890").send(target1.user + " go ping `@admin • KR` with your ign/username then dont forget to apply ingame, our circle's name is **NobilityKR** btw, cya ingame o/");
-	bot.channels.get("432775028757626890").send(target1.user + " welcome back <:seha8:391896068129947650> if you're joining back on our crew, ping `@admin • NA` with your account name/ign and don't forget to re-apply ingame <:yurilike:383533891119742977> see you ingame o/");
+	bot.channels.get("381392359507623939").send(target1.user + " go ping `@admin • KR` with your ign/username then dont forget to apply ingame, our circle's name is **NobilityKR** btw, cu ingame o/");
 	}
     }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%E2%9C%85" && reaction.message.content == "**2.** Press check if you reached Lv80 on any of your alt(s).") {
         target1.addRole('392505427155222528').catch(console.error);
