@@ -558,7 +558,7 @@ bot.on('presenceUpdate', (oldMember, newMember) => {
     }
 
     if (newMember.roles.has("397285952810123274") && newMember.user.presence.game && newMember.user.presence.game.name === "Closers Dimension Conflict") {
-	if (!newMember.roles.has("448835168258752515") || !newMember.roles.has("423698087371079683")){
+	if (!newMember.roles.has("448835168258752515")){
 	bot.channels.get("381392359507623939").send(newMember.user + " welcome back <:seha8:391896068129947650> if you're joining back on our crew, ping `@admin • NA` with your account name/ign and don't forget to re-apply ingame <:yurilike:383533891119742977>");
 	}
 	}
