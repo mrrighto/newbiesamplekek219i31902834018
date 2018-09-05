@@ -13,13 +13,27 @@ var schedule = require('node-schedule');
 bot.on("ready", async () => {
     console.log(`${bot.user.username} is online!`);
 	bot.channels.get("425266854014222377").send("reset " + bot.users.get("376344592049766401"));
-    bot.user.setActivity("Hataraku Saibou", { type: "WATCHING" });
+    bot.user.setActivity("Closers Dimension Conflict", { type: "PLAYING" });
     bot.user.setUsername("Siomai Vending Machine");
     
     EMEDailycode();
-    clsDD1();
+    //clsDD1();
     //clsPHR();
     clsCAR();
+    clsDDmon1();
+    clsDDmon2();
+    clsDDtue1();
+    clsDDtue2();
+    clsDDwed1();
+    clsDDwed2();
+    clsDDthu1();
+    clsDDthu2();
+    clsDDfri1();
+    clsDDfri2();  
+    clsDDsat1();
+    clsDDsat2();
+    clsDDsun1();
+    clsDDsun2();
 });
 
 
@@ -228,6 +242,416 @@ function clsCAR() {
     });
 }
 
+//START OF CLSDD
+    function clsDDmon1() {
+
+        let schMON1 = require('node-schedule');
+        let ruleDD1 = new schedule.RecurrenceRule();
+        ruleDD1.dayOfWeek = [1];
+        ruleDD1.hour = [18, 20, 22, 6, 8, 10, 12, 14, 16];
+        ruleDD1.minute = 00;
+        let jclsDDmon1 = schMON1.scheduleJob(ruleDD1, function () {
+
+            const user = bot.users.get("427786502999638016");
+            const amount = 2;
+
+            bot.channels.get("429169582301904906").fetchMessages({
+                limit: amount,
+            }).then((messages) => {
+                if (user) {
+                    const filterBy = user ? user.id : bot.user.id;
+                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
+                }
+                message.channel.bulkDelete(messages).catch(error => console.log(error.stack));
+            });
+    
+            const emon = new Discord.RichEmbed()
+            .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
+            .setImage("https://imgur.com/RXAVWQ9.gif")
+            bot.channels.get("429169582301904906").send(emon);
+
+        });
+    }
+    
+    function clsDDmon2() {
+
+        let schMON2 = require('node-schedule');
+        let ruleDD2 = new schedule.RecurrenceRule();
+        ruleDD2.dayOfWeek = [2];
+        ruleDD2.hour = [00, 2, 4];
+        ruleDD2.minute = 00;
+        let jclsDDmon2 = schMON2.scheduleJob(ruleDD2, function () {
+
+            const user = bot.users.get("427786502999638016");
+            const amount = 2;
+
+            bot.channels.get("429169582301904906").fetchMessages({
+                limit: amount,
+            }).then((messages) => {
+                if (user) {
+                    const filterBy = user ? user.id : bot.user.id;
+                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
+                }
+                message.channel.bulkDelete(messages).catch(error => console.log(error.stack));
+            });
+    
+            const emon = new Discord.RichEmbed()
+            .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
+            .setImage("https://imgur.com/RXAVWQ9.gif")
+            bot.channels.get("429169582301904906").send(emon);
+
+        });
+    }
+    
+    function clsDDtue1() {
+
+        let schTUE1 = require('node-schedule');
+        let ruleDD3 = new schedule.RecurrenceRule();
+        ruleDD3.dayOfWeek = [2];
+        ruleDD3.hour = [18, 20, 22, 6, 8, 10, 12, 14, 16];
+        ruleDD3.minute = 00;
+        let jclsDDtue1 = schTUE1.scheduleJob(ruleDD3, function () {
+
+            const user = bot.users.get("427786502999638016");
+            const amount = 2;
+
+            bot.channels.get("429169582301904906").fetchMessages({
+                limit: amount,
+            }).then((messages) => {
+                if (user) {
+                    const filterBy = user ? user.id : bot.user.id;
+                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
+                }
+                message.channel.bulkDelete(messages).catch(error => console.log(error.stack));
+            });
+    
+            const etue = new Discord.RichEmbed()
+            .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
+            .setImage("https://i.imgur.com/DWgPxhR.gif")
+            bot.channels.get("429169582301904906").send(etue);
+
+        });
+    }
+    function clsDDtue2() {
+
+        let schTUE2 = require('node-schedule');
+        let ruleDD4 = new schedule.RecurrenceRule();
+        ruleDD4.dayOfWeek = [3];
+        ruleDD4.hour = [00, 2, 4];
+        ruleDD4.minute = 00;
+        let jclsDDtue2 = schTUE2.scheduleJob(ruleDD4, function () {
+
+            const user = bot.users.get("427786502999638016");
+            const amount = 2;
+
+            bot.channels.get("429169582301904906").fetchMessages({
+                limit: amount,
+            }).then((messages) => {
+                if (user) {
+                    const filterBy = user ? user.id : bot.user.id;
+                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
+                }
+                message.channel.bulkDelete(messages).catch(error => console.log(error.stack));
+            });
+    
+            const etue = new Discord.RichEmbed()
+            .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
+            .setImage("https://i.imgur.com/DWgPxhR.gif")
+            bot.channels.get("429169582301904906").send(etue);
+
+        });
+    }
+    function clsDDwed1() {
+
+        let schWED1 = require('node-schedule');
+        let ruleDD5 = new schedule.RecurrenceRule();
+        ruleDD5.dayOfWeek = [3];
+        ruleDD5.hour = [18, 20, 22, 6, 8, 10, 12, 14, 16];
+        ruleDD5.minute = 00;
+        let jclsDDwed1 = schWED1.scheduleJob(ruleDD5, function () {
+
+            const user = bot.users.get("427786502999638016");
+            const amount = 2;
+
+            bot.channels.get("429169582301904906").fetchMessages({
+                limit: amount,
+            }).then((messages) => {
+                if (user) {
+                    const filterBy = user ? user.id : bot.user.id;
+                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
+                }
+                message.channel.bulkDelete(messages).catch(error => console.log(error.stack));
+            });
+    
+            const ewed = new Discord.RichEmbed()
+            .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
+            .setImage("https://imgur.com/BfyCzrq.gif")
+            bot.channels.get("429169582301904906").send(ewed);
+
+        });
+    }
+    function clsDDwed2() {
+
+        let schWED2 = require('node-schedule');
+        let ruleDD6 = new schedule.RecurrenceRule();
+        ruleDD6.dayOfWeek = [4];
+        ruleDD6.hour = [00, 2, 4];
+        ruleDD6.minute = 00;
+        let jclsDDwed2 = schWED2.scheduleJob(ruleDD6, function () {
+
+            const user = bot.users.get("427786502999638016");
+            const amount = 2;
+
+            bot.channels.get("429169582301904906").fetchMessages({
+                limit: amount,
+            }).then((messages) => {
+                if (user) {
+                    const filterBy = user ? user.id : bot.user.id;
+                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
+                }
+                message.channel.bulkDelete(messages).catch(error => console.log(error.stack));
+            });
+    
+            const ewed = new Discord.RichEmbed()
+            .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
+            .setImage("https://imgur.com/BfyCzrq.gif")
+            bot.channels.get("429169582301904906").send(ewed);
+
+        });
+    }
+    function clsDDthu1() {
+
+        let schTHU1 = require('node-schedule');
+        let ruleDD7 = new schedule.RecurrenceRule();
+        ruleDD7.dayOfWeek = [4];
+        ruleDD7.hour = [18, 20, 22, 6, 8, 10, 12, 14, 16];
+        ruleDD7.minute = 00;
+        let jclsDDthu1 = schTHU1.scheduleJob(ruleDD7, function () {
+
+            const user = bot.users.get("427786502999638016");
+            const amount = 2;
+
+            bot.channels.get("429169582301904906").fetchMessages({
+                limit: amount,
+            }).then((messages) => {
+                if (user) {
+                    const filterBy = user ? user.id : bot.user.id;
+                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
+                }
+                message.channel.bulkDelete(messages).catch(error => console.log(error.stack));
+            });
+    
+            const ethu = new Discord.RichEmbed()
+            .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
+            .setImage("https://imgur.com/uTQEGH1.gif")
+            bot.channels.get("429169582301904906").send(ethu);
+
+        });
+    }
+    function clsDDthu2() {
+
+        let schTHU2 = require('node-schedule');
+        let ruleDD8 = new schedule.RecurrenceRule();
+        ruleDD8.dayOfWeek = [5];
+        ruleDD8.hour = [00, 2, 4];
+        ruleDD8.minute = 00;
+        let jclsDDthu2 = schTHU2.scheduleJob(ruleDD8, function () {
+
+            const user = bot.users.get("427786502999638016");
+            const amount = 2;
+
+            bot.channels.get("429169582301904906").fetchMessages({
+                limit: amount,
+            }).then((messages) => {
+                if (user) {
+                    const filterBy = user ? user.id : bot.user.id;
+                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
+                }
+                message.channel.bulkDelete(messages).catch(error => console.log(error.stack));
+            });
+    
+            const ethu = new Discord.RichEmbed()
+            .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
+            .setImage("https://imgur.com/uTQEGH1.gif")
+            bot.channels.get("429169582301904906").send(ethu);
+
+        });
+    }
+    function clsDDfri1() {
+
+        let schFRI1 = require('node-schedule');
+        let ruleDD9 = new schedule.RecurrenceRule();
+        ruleDD9.dayOfWeek = [5];
+        ruleDD9.hour = [18, 20, 22, 6, 8, 10, 12, 14, 16];
+        ruleDD9.minute = 00;
+        let jclsDDfri1 = schFRI1.scheduleJob(ruleDD9, function () {
+
+            const user = bot.users.get("427786502999638016");
+            const amount = 2;
+
+            bot.channels.get("429169582301904906").fetchMessages({
+                limit: amount,
+            }).then((messages) => {
+                if (user) {
+                    const filterBy = user ? user.id : bot.user.id;
+                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
+                }
+                message.channel.bulkDelete(messages).catch(error => console.log(error.stack));
+            });
+    
+            const efri = new Discord.RichEmbed()
+            .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
+            .setImage("https://imgur.com/owJ822x.gif")
+            bot.channels.get("429169582301904906").send(efri);
+
+        });
+    }
+    function clsDDfri2() {
+
+        let schFRI2 = require('node-schedule');
+        let ruleDD10 = new schedule.RecurrenceRule();
+        ruleDD10.dayOfWeek = [6];
+        ruleDD10.hour = [00, 2, 4];
+        ruleDD10.minute = 00;
+        let jclsDDfri2 = schFRI2.scheduleJob(ruleDD10, function () {
+
+            const user = bot.users.get("427786502999638016");
+            const amount = 2;
+
+            bot.channels.get("429169582301904906").fetchMessages({
+                limit: amount,
+            }).then((messages) => {
+                if (user) {
+                    const filterBy = user ? user.id : bot.user.id;
+                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
+                }
+                message.channel.bulkDelete(messages).catch(error => console.log(error.stack));
+            });
+    
+            const efri = new Discord.RichEmbed()
+            .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
+            .setImage("https://imgur.com/owJ822x.gif")
+            bot.channels.get("429169582301904906").send(efri);
+
+        });
+    }
+    function clsDDsat1() {
+
+        let schSAT1 = require('node-schedule');
+        let ruleDD11 = new schedule.RecurrenceRule();
+        ruleDD11.dayOfWeek = [6];
+        ruleDD11.hour = [18, 20, 22, 6, 8, 10, 12, 14, 16];
+        ruleDD11.minute = 00;
+        let jclsDDsat1 = schSAT1.scheduleJob(ruleDD11, function () {
+
+            const user = bot.users.get("427786502999638016");
+            const amount = 2;
+
+            bot.channels.get("429169582301904906").fetchMessages({
+                limit: amount,
+            }).then((messages) => {
+                if (user) {
+                    const filterBy = user ? user.id : bot.user.id;
+                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
+                }
+                message.channel.bulkDelete(messages).catch(error => console.log(error.stack));
+            });
+    
+            const esat = new Discord.RichEmbed()
+            .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
+            .setImage("https://imgur.com/OXQK5SO.gif")
+            bot.channels.get("429169582301904906").send(esat);
+
+        });
+    }
+    function clsDDsat2() {
+
+        let schSAT2 = require('node-schedule');
+        let ruleDD12 = new schedule.RecurrenceRule();
+        ruleDD12.dayOfWeek = [0];
+        ruleDD12.hour = [00, 2, 4];
+        ruleDD12.minute = 00;
+        let jclsDDsat2 = schSAT2.scheduleJob(ruleDD12, function () {
+
+            const user = bot.users.get("427786502999638016");
+            const amount = 2;
+
+            bot.channels.get("429169582301904906").fetchMessages({
+                limit: amount,
+            }).then((messages) => {
+                if (user) {
+                    const filterBy = user ? user.id : bot.user.id;
+                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
+                }
+                message.channel.bulkDelete(messages).catch(error => console.log(error.stack));
+            });
+    
+            const esat = new Discord.RichEmbed()
+            .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
+            .setImage("https://imgur.com/OXQK5SO.gif")
+            bot.channels.get("429169582301904906").send(esat);
+
+        });
+    }
+    function clsDDsun1() {
+
+        let schSUN1 = require('node-schedule');
+        let ruleDD13 = new schedule.RecurrenceRule();
+        ruleDD13.dayOfWeek = [0];
+        ruleDD13.hour = [18, 20, 22, 6, 8, 10, 12, 14, 16];
+        ruleDD13.minute = 00;
+        let jclsDDsun1 = schSUN1.scheduleJob(ruleDD13, function () {
+
+            const user = bot.users.get("427786502999638016");
+            const amount = 2;
+
+            bot.channels.get("429169582301904906").fetchMessages({
+                limit: amount,
+            }).then((messages) => {
+                if (user) {
+                    const filterBy = user ? user.id : bot.user.id;
+                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
+                }
+                message.channel.bulkDelete(messages).catch(error => console.log(error.stack));
+            });
+    
+            const esun = new Discord.RichEmbed()
+            .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
+            .setImage("https://imgur.com/LDdGDSq.gif")
+            bot.channels.get("429169582301904906").send(esun);
+
+        });
+    }
+    function clsDDsun2() {
+
+        let schSUN2 = require('node-schedule');
+        let ruleDD14 = new schedule.RecurrenceRule();
+        ruleDD14.dayOfWeek = [1];
+        ruleDD14.hour = [00, 2, 4];
+        ruleDD14.minute = 00;
+        let jclsDDsun2 = schSUN2.scheduleJob(ruleDD14, function () {
+
+            const user = bot.users.get("427786502999638016");
+            const amount = 2;
+
+            bot.channels.get("429169582301904906").fetchMessages({
+                limit: amount,
+            }).then((messages) => {
+                if (user) {
+                    const filterBy = user ? user.id : bot.user.id;
+                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
+                }
+                message.channel.bulkDelete(messages).catch(error => console.log(error.stack));
+            });
+    
+            const esun = new Discord.RichEmbed()
+            .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
+            .setImage("https://imgur.com/LDdGDSq.gif")
+            bot.channels.get("429169582301904906").send(esun);
+
+        });
+    }
+//END OF CLSDD
 
 bot.on("message", async message => {
    
@@ -580,7 +1004,7 @@ bot.on('presenceUpdate', (oldMember, newMember) => {
 bot.on('guildMemberRemove', member => {
     let guild = member.guild;
   
-bot.channels.get("425266854014222377").send(member.user + ` has fallen, rippu~`)
+bot.channels.get("425266854014222377").send(member.user + ` 🔪`)
   });  
 
 bot.on('guildMemberAdd', member => {
