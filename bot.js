@@ -253,7 +253,7 @@ function clsCAR() {
         let jclsDDmon1 = schMON1.scheduleJob(ruleDD1, function () {
 
             const user = bot.users.get("427786502999638016");
-            const amount = 2;
+            const amount = 1;
 
             bot.channels.get("429169582301904906").fetchMessages({
                 limit: amount,
@@ -283,7 +283,7 @@ function clsCAR() {
         let jclsDDmon2 = schMON2.scheduleJob(ruleDD2, function () {
 
             const user = bot.users.get("427786502999638016");
-            const amount = 2;
+            const amount = 1;
 
             bot.channels.get("429169582301904906").fetchMessages({
                 limit: amount,
@@ -313,7 +313,7 @@ function clsCAR() {
         let jclsDDtue1 = schTUE1.scheduleJob(ruleDD3, function () {
 
             const user = bot.users.get("427786502999638016");
-            const amount = 2;
+            const amount = 1;
 
             bot.channels.get("429169582301904906").fetchMessages({
                 limit: amount,
@@ -342,7 +342,7 @@ function clsCAR() {
         let jclsDDtue2 = schTUE2.scheduleJob(ruleDD4, function () {
 
             const user = bot.users.get("427786502999638016");
-            const amount = 2;
+            const amount = 1;
 
             bot.channels.get("429169582301904906").fetchMessages({
                 limit: amount,
@@ -371,7 +371,7 @@ function clsCAR() {
         let jclsDDwed1 = schWED1.scheduleJob(ruleDD5, function () {
 
             const user = bot.users.get("427786502999638016");
-            const amount = 2;
+            const amount = 1;
 
             bot.channels.get("429169582301904906").fetchMessages({
                 limit: amount,
@@ -400,7 +400,7 @@ function clsCAR() {
         let jclsDDwed2 = schWED2.scheduleJob(ruleDD6, function () {
 
             const user = bot.users.get("427786502999638016");
-            const amount = 2;
+            const amount = 1;
 
             bot.channels.get("429169582301904906").fetchMessages({
                 limit: amount,
@@ -429,7 +429,7 @@ function clsCAR() {
         let jclsDDthu1 = schTHU1.scheduleJob(ruleDD7, function () {
 
             const user = bot.users.get("427786502999638016");
-            const amount = 2;
+            const amount = 1;
 
             bot.channels.get("429169582301904906").fetchMessages({
                 limit: amount,
@@ -458,7 +458,7 @@ function clsCAR() {
         let jclsDDthu2 = schTHU2.scheduleJob(ruleDD8, function () {
 
             const user = bot.users.get("427786502999638016");
-            const amount = 2;
+            const amount = 1;
 
             bot.channels.get("429169582301904906").fetchMessages({
                 limit: amount,
@@ -487,7 +487,7 @@ function clsCAR() {
         let jclsDDfri1 = schFRI1.scheduleJob(ruleDD9, function () {
 
             const user = bot.users.get("427786502999638016");
-            const amount = 2;
+            const amount = 1;
 
             bot.channels.get("429169582301904906").fetchMessages({
                 limit: amount,
@@ -516,7 +516,7 @@ function clsCAR() {
         let jclsDDfri2 = schFRI2.scheduleJob(ruleDD10, function () {
 
             const user = bot.users.get("427786502999638016");
-            const amount = 2;
+            const amount = 1;
 
             bot.channels.get("429169582301904906").fetchMessages({
                 limit: amount,
@@ -545,7 +545,7 @@ function clsCAR() {
         let jclsDDsat1 = schSAT1.scheduleJob(ruleDD11, function () {
 
             const user = bot.users.get("427786502999638016");
-            const amount = 2;
+            const amount = 1;
 
             bot.channels.get("429169582301904906").fetchMessages({
                 limit: amount,
@@ -574,7 +574,7 @@ function clsCAR() {
         let jclsDDsat2 = schSAT2.scheduleJob(ruleDD12, function () {
 
             const user = bot.users.get("427786502999638016");
-            const amount = 2;
+            const amount = 1;
 
             bot.channels.get("429169582301904906").fetchMessages({
                 limit: amount,
@@ -603,7 +603,7 @@ function clsCAR() {
         let jclsDDsun1 = schSUN1.scheduleJob(ruleDD13, function () {
 
             const user = bot.users.get("427786502999638016");
-            const amount = 2;
+            const amount = 1;
 
             bot.channels.get("429169582301904906").fetchMessages({
                 limit: amount,
@@ -632,7 +632,7 @@ function clsCAR() {
         let jclsDDsun2 = schSUN2.scheduleJob(ruleDD14, function () {
 
             const user = bot.users.get("427786502999638016");
-            const amount = 2;
+            const amount = 1;
 
             bot.channels.get("429169582301904906").fetchMessages({
                 limit: amount,
