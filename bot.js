@@ -252,18 +252,7 @@ function clsCAR() {
         ruleDD1.minute = 00;
         let jclsDDmon1 = schMON1.scheduleJob(ruleDD1, function () {
 
-            const user = bot.users.get("427786502999638016");
-            const amount = 1;
-
-            bot.channels.get("429169582301904906").fetchMessages({
-                limit: amount,
-            }).then((messages) => {
-                if (user) {
-                    const filterBy = user ? user.id : bot.user.id;
-                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
-                }
-                message.channel.bulkDelete(messages).catch(error => console.log(error.stack));
-            });
+            
     
             const emon = new Discord.RichEmbed()
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
@@ -282,18 +271,7 @@ function clsCAR() {
         ruleDD2.minute = 00;
         let jclsDDmon2 = schMON2.scheduleJob(ruleDD2, function () {
 
-            const user = bot.users.get("427786502999638016");
-            const amount = 1;
-
-            bot.channels.get("429169582301904906").fetchMessages({
-                limit: amount,
-            }).then((messages) => {
-                if (user) {
-                    const filterBy = user ? user.id : bot.user.id;
-                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
-                }
-                message.channel.bulkDelete(messages).catch(error => console.log(error.stack));
-            });
+            
     
             const emon = new Discord.RichEmbed()
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
@@ -312,18 +290,7 @@ function clsCAR() {
         ruleDD3.minute = 00;
         let jclsDDtue1 = schTUE1.scheduleJob(ruleDD3, function () {
 
-            const user = bot.users.get("427786502999638016");
-            const amount = 1;
-
-            bot.channels.get("429169582301904906").fetchMessages({
-                limit: amount,
-            }).then((messages) => {
-                if (user) {
-                    const filterBy = user ? user.id : bot.user.id;
-                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
-                }
-                message.channel.bulkDelete(messages).catch(error => console.log(error.stack));
-            });
+            
     
             const etue = new Discord.RichEmbed()
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
@@ -341,18 +308,7 @@ function clsCAR() {
         ruleDD4.minute = 00;
         let jclsDDtue2 = schTUE2.scheduleJob(ruleDD4, function () {
 
-            const user = bot.users.get("427786502999638016");
-            const amount = 1;
-
-            bot.channels.get("429169582301904906").fetchMessages({
-                limit: amount,
-            }).then((messages) => {
-                if (user) {
-                    const filterBy = user ? user.id : bot.user.id;
-                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
-                }
-                message.channel.bulkDelete(messages).catch(error => console.log(error.stack));
-            });
+            
     
             const etue = new Discord.RichEmbed()
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
@@ -370,18 +326,7 @@ function clsCAR() {
         ruleDD5.minute = 00;
         let jclsDDwed1 = schWED1.scheduleJob(ruleDD5, function () {
 
-            const user = bot.users.get("427786502999638016");
-            const amount = 1;
-
-            bot.channels.get("429169582301904906").fetchMessages({
-                limit: amount,
-            }).then((messages) => {
-                if (user) {
-                    const filterBy = user ? user.id : bot.user.id;
-                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
-                }
-                message.channel.bulkDelete(messages).catch(error => console.log(error.stack));
-            });
+           
     
             const ewed = new Discord.RichEmbed()
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
@@ -399,18 +344,7 @@ function clsCAR() {
         ruleDD6.minute = 00;
         let jclsDDwed2 = schWED2.scheduleJob(ruleDD6, function () {
 
-            const user = bot.users.get("427786502999638016");
-            const amount = 1;
-
-            bot.channels.get("429169582301904906").fetchMessages({
-                limit: amount,
-            }).then((messages) => {
-                if (user) {
-                    const filterBy = user ? user.id : bot.user.id;
-                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
-                }
-                message.channel.bulkDelete(messages).catch(error => console.log(error.stack));
-            });
+            
     
             const ewed = new Discord.RichEmbed()
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
@@ -428,18 +362,7 @@ function clsCAR() {
         ruleDD7.minute = 00;
         let jclsDDthu1 = schTHU1.scheduleJob(ruleDD7, function () {
 
-            const user = bot.users.get("427786502999638016");
-            const amount = 1;
-
-            bot.channels.get("429169582301904906").fetchMessages({
-                limit: amount,
-            }).then((messages) => {
-                if (user) {
-                    const filterBy = user ? user.id : bot.user.id;
-                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
-                }
-                message.channel.bulkDelete(messages).catch(error => console.log(error.stack));
-            });
+            
     
             const ethu = new Discord.RichEmbed()
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
@@ -457,18 +380,7 @@ function clsCAR() {
         ruleDD8.minute = 00;
         let jclsDDthu2 = schTHU2.scheduleJob(ruleDD8, function () {
 
-            const user = bot.users.get("427786502999638016");
-            const amount = 1;
-
-            bot.channels.get("429169582301904906").fetchMessages({
-                limit: amount,
-            }).then((messages) => {
-                if (user) {
-                    const filterBy = user ? user.id : bot.user.id;
-                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
-                }
-                message.channel.bulkDelete(messages).catch(error => console.log(error.stack));
-            });
+          
     
             const ethu = new Discord.RichEmbed()
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
@@ -486,18 +398,7 @@ function clsCAR() {
         ruleDD9.minute = 00;
         let jclsDDfri1 = schFRI1.scheduleJob(ruleDD9, function () {
 
-            const user = bot.users.get("427786502999638016");
-            const amount = 1;
-
-            bot.channels.get("429169582301904906").fetchMessages({
-                limit: amount,
-            }).then((messages) => {
-                if (user) {
-                    const filterBy = user ? user.id : bot.user.id;
-                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
-                }
-                message.channel.bulkDelete(messages).catch(error => console.log(error.stack));
-            });
+           
     
             const efri = new Discord.RichEmbed()
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
@@ -515,18 +416,7 @@ function clsCAR() {
         ruleDD10.minute = 00;
         let jclsDDfri2 = schFRI2.scheduleJob(ruleDD10, function () {
 
-            const user = bot.users.get("427786502999638016");
-            const amount = 1;
-
-            bot.channels.get("429169582301904906").fetchMessages({
-                limit: amount,
-            }).then((messages) => {
-                if (user) {
-                    const filterBy = user ? user.id : bot.user.id;
-                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
-                }
-                message.channel.bulkDelete(messages).catch(error => console.log(error.stack));
-            });
+            
     
             const efri = new Discord.RichEmbed()
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
@@ -544,18 +434,7 @@ function clsCAR() {
         ruleDD11.minute = 00;
         let jclsDDsat1 = schSAT1.scheduleJob(ruleDD11, function () {
 
-            const user = bot.users.get("427786502999638016");
-            const amount = 1;
-
-            bot.channels.get("429169582301904906").fetchMessages({
-                limit: amount,
-            }).then((messages) => {
-                if (user) {
-                    const filterBy = user ? user.id : bot.user.id;
-                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
-                }
-                message.channel.bulkDelete(messages).catch(error => console.log(error.stack));
-            });
+            
     
             const esat = new Discord.RichEmbed()
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
@@ -573,18 +452,7 @@ function clsCAR() {
         ruleDD12.minute = 00;
         let jclsDDsat2 = schSAT2.scheduleJob(ruleDD12, function () {
 
-            const user = bot.users.get("427786502999638016");
-            const amount = 1;
-
-            bot.channels.get("429169582301904906").fetchMessages({
-                limit: amount,
-            }).then((messages) => {
-                if (user) {
-                    const filterBy = user ? user.id : bot.user.id;
-                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
-                }
-                message.channel.bulkDelete(messages).catch(error => console.log(error.stack));
-            });
+            
     
             const esat = new Discord.RichEmbed()
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
@@ -602,18 +470,7 @@ function clsCAR() {
         ruleDD13.minute = 00;
         let jclsDDsun1 = schSUN1.scheduleJob(ruleDD13, function () {
 
-            const user = bot.users.get("427786502999638016");
-            const amount = 1;
-
-            bot.channels.get("429169582301904906").fetchMessages({
-                limit: amount,
-            }).then((messages) => {
-                if (user) {
-                    const filterBy = user ? user.id : bot.user.id;
-                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
-                }
-                message.channel.bulkDelete(messages).catch(error => console.log(error.stack));
-            });
+            
     
             const esun = new Discord.RichEmbed()
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
@@ -631,18 +488,7 @@ function clsCAR() {
         ruleDD14.minute = 00;
         let jclsDDsun2 = schSUN2.scheduleJob(ruleDD14, function () {
 
-            const user = bot.users.get("427786502999638016");
-            const amount = 1;
-
-            bot.channels.get("429169582301904906").fetchMessages({
-                limit: amount,
-            }).then((messages) => {
-                if (user) {
-                    const filterBy = user ? user.id : bot.user.id;
-                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
-                }
-                message.channel.bulkDelete(messages).catch(error => console.log(error.stack));
-            });
+           
     
             const esun = new Discord.RichEmbed()
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
