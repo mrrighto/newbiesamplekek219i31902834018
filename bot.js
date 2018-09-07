@@ -524,6 +524,23 @@ bot.on("message", async message => {
     let cmd = messageArray[0];
     let args = messageArray.slice(1);
 
+	if (message.content.startsWith("safedel") && message.channel.name == "lfg-log") {
+
+        const user = bot.users.get("427786502999638016");
+        const amount = 30;
+
+            bot.channels.get("429169582301904906").fetchMessages({
+                limit: amount,
+            }).then((messages) => {
+                if (user) {
+                    const filterBy = user ? user.id : bot.user.id;
+                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
+                }
+                message.channel.bulkDelete(messages).catch(error => console.log(error.stack));
+            });
+     bot.channels.get("429169582301904906").send("Spam detected...");
+	bot.channels.get("429169582301904906").send("Now purging...");
+    }
 	
     if (message.content.startsWith("...") && message.channel.name == "lfg1-main" && message.author.id == "427786502999638016") {
 
@@ -539,7 +556,7 @@ bot.on("message", async message => {
                 }
                 message.channel.bulkDelete(messages).catch(error => console.log(error.stack));
             });
-    
+
     }
     
      if (message.content == `%join` && message.channel.name == "lfg-log"){
