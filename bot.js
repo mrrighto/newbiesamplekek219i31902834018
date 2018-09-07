@@ -12,7 +12,7 @@ var schedule = require('node-schedule');
 
 bot.on("ready", async () => {
     console.log(`${bot.user.username} is online!`);
-	bot.channels.get("425266854014222377").send("reset " + bot.users.get("376344592049766401"));
+	//bot.channels.get("425266854014222377").send("reset " + bot.users.get("376344592049766401"));
     bot.user.setActivity("Closers Dimension Conflict", { type: "PLAYING" });
     bot.user.setUsername("Siomai Vending Machine");
     
