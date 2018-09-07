@@ -253,7 +253,19 @@ function clsCAR() {
         ruleDD1.minute = 00;
         let jclsDDmon1 = schMON1.scheduleJob(ruleDD1, function () {
 
-        bot.channels.get("429169582301904906").send("...");
+       const user = bot.users.get("427786502999638016");
+        const amount = 3;
+
+            bot.channels.get("429169582301904906").fetchMessages({
+                limit: amount,
+            }).then((messages) => {
+                if (user) {
+                    const filterBy = user ? user.id : bot.user.id;
+                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
+                }
+                bot.channels.get("429169582301904906").bulkDelete(messages).catch(error => console.log(error.stack));
+            });
+
         
         setTimeout(() => {
             const emon = new Discord.RichEmbed()
@@ -274,7 +286,19 @@ function clsCAR() {
         ruleDD2.minute = 00;
         let jclsDDmon2 = schMON2.scheduleJob(ruleDD2, function () {
 
-            bot.channels.get("429169582301904906").send("...");
+           const user = bot.users.get("427786502999638016");
+        const amount = 3;
+
+            bot.channels.get("429169582301904906").fetchMessages({
+                limit: amount,
+            }).then((messages) => {
+                if (user) {
+                    const filterBy = user ? user.id : bot.user.id;
+                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
+                }
+                bot.channels.get("429169582301904906").bulkDelete(messages).catch(error => console.log(error.stack));
+            });
+
         
         setTimeout(() => {
     
@@ -295,7 +319,19 @@ function clsCAR() {
         ruleDD3.minute = 00;
         let jclsDDtue1 = schTUE1.scheduleJob(ruleDD3, function () {
 
-            bot.channels.get("429169582301904906").send("...");
+            const user = bot.users.get("427786502999638016");
+        const amount = 3;
+
+            bot.channels.get("429169582301904906").fetchMessages({
+                limit: amount,
+            }).then((messages) => {
+                if (user) {
+                    const filterBy = user ? user.id : bot.user.id;
+                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
+                }
+                bot.channels.get("429169582301904906").bulkDelete(messages).catch(error => console.log(error.stack));
+            });
+
         
         setTimeout(() => {
     
@@ -315,7 +351,19 @@ function clsCAR() {
         ruleDD4.minute = 00;
         let jclsDDtue2 = schTUE2.scheduleJob(ruleDD4, function () {
 
-             bot.channels.get("429169582301904906").send("...");
+             const user = bot.users.get("427786502999638016");
+        const amount = 3;
+
+            bot.channels.get("429169582301904906").fetchMessages({
+                limit: amount,
+            }).then((messages) => {
+                if (user) {
+                    const filterBy = user ? user.id : bot.user.id;
+                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
+                }
+                bot.channels.get("429169582301904906").bulkDelete(messages).catch(error => console.log(error.stack));
+            });
+
         
         setTimeout(() => {
     
@@ -335,7 +383,19 @@ function clsCAR() {
         ruleDD5.minute = 00;
         let jclsDDwed1 = schWED1.scheduleJob(ruleDD5, function () {
 
-            bot.channels.get("429169582301904906").send("...");
+           const user = bot.users.get("427786502999638016");
+        const amount = 3;
+
+            bot.channels.get("429169582301904906").fetchMessages({
+                limit: amount,
+            }).then((messages) => {
+                if (user) {
+                    const filterBy = user ? user.id : bot.user.id;
+                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
+                }
+                bot.channels.get("429169582301904906").bulkDelete(messages).catch(error => console.log(error.stack));
+            });
+
         
         setTimeout(() => {
     
@@ -355,7 +415,19 @@ function clsCAR() {
         ruleDD6.minute = 00;
         let jclsDDwed2 = schWED2.scheduleJob(ruleDD6, function () {
 
-            bot.channels.get("429169582301904906").send("...");
+            const user = bot.users.get("427786502999638016");
+        const amount = 3;
+
+            bot.channels.get("429169582301904906").fetchMessages({
+                limit: amount,
+            }).then((messages) => {
+                if (user) {
+                    const filterBy = user ? user.id : bot.user.id;
+                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
+                }
+                bot.channels.get("429169582301904906").bulkDelete(messages).catch(error => console.log(error.stack));
+            });
+
         
         setTimeout(() => {
     
@@ -375,7 +447,19 @@ function clsCAR() {
         ruleDD7.minute = 00;
         let jclsDDthu1 = schTHU1.scheduleJob(ruleDD7, function () {
 
-            bot.channels.get("429169582301904906").send("...");
+           const user = bot.users.get("427786502999638016");
+        const amount = 3;
+
+            bot.channels.get("429169582301904906").fetchMessages({
+                limit: amount,
+            }).then((messages) => {
+                if (user) {
+                    const filterBy = user ? user.id : bot.user.id;
+                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
+                }
+                bot.channels.get("429169582301904906").bulkDelete(messages).catch(error => console.log(error.stack));
+            });
+
         
         setTimeout(() => {
     
@@ -395,7 +479,19 @@ function clsCAR() {
         ruleDD8.minute = 00;
         let jclsDDthu2 = schTHU2.scheduleJob(ruleDD8, function () {
 
-          bot.channels.get("429169582301904906").send("...");
+         const user = bot.users.get("427786502999638016");
+        const amount = 3;
+
+            bot.channels.get("429169582301904906").fetchMessages({
+                limit: amount,
+            }).then((messages) => {
+                if (user) {
+                    const filterBy = user ? user.id : bot.user.id;
+                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
+                }
+                bot.channels.get("429169582301904906").bulkDelete(messages).catch(error => console.log(error.stack));
+            });
+
         
         setTimeout(() => {
     
@@ -415,7 +511,19 @@ function clsCAR() {
         ruleDD9.minute = 00;
         let jclsDDfri1 = schFRI1.scheduleJob(ruleDD9, function () {
 
-           bot.channels.get("429169582301904906").send("...");
+           const user = bot.users.get("427786502999638016");
+        const amount = 3;
+
+            bot.channels.get("429169582301904906").fetchMessages({
+                limit: amount,
+            }).then((messages) => {
+                if (user) {
+                    const filterBy = user ? user.id : bot.user.id;
+                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
+                }
+                bot.channels.get("429169582301904906").bulkDelete(messages).catch(error => console.log(error.stack));
+            });
+
         
         setTimeout(() => {
     
@@ -435,7 +543,19 @@ function clsCAR() {
         ruleDD10.minute = 00;
         let jclsDDfri2 = schFRI2.scheduleJob(ruleDD10, function () {
 
-            bot.channels.get("429169582301904906").send("...");
+            const user = bot.users.get("427786502999638016");
+        const amount = 3;
+
+            bot.channels.get("429169582301904906").fetchMessages({
+                limit: amount,
+            }).then((messages) => {
+                if (user) {
+                    const filterBy = user ? user.id : bot.user.id;
+                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
+                }
+                bot.channels.get("429169582301904906").bulkDelete(messages).catch(error => console.log(error.stack));
+            });
+
         
         setTimeout(() => {
     
@@ -455,7 +575,19 @@ function clsCAR() {
         ruleDD11.minute = 00;
         let jclsDDsat1 = schSAT1.scheduleJob(ruleDD11, function () {
 
-            bot.channels.get("429169582301904906").send("...");
+            const user = bot.users.get("427786502999638016");
+        const amount = 3;
+
+            bot.channels.get("429169582301904906").fetchMessages({
+                limit: amount,
+            }).then((messages) => {
+                if (user) {
+                    const filterBy = user ? user.id : bot.user.id;
+                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
+                }
+                bot.channels.get("429169582301904906").bulkDelete(messages).catch(error => console.log(error.stack));
+            });
+
         
         setTimeout(() => {
     
@@ -475,7 +607,19 @@ function clsCAR() {
         ruleDD12.minute = 00;
         let jclsDDsat2 = schSAT2.scheduleJob(ruleDD12, function () {
 
-            bot.channels.get("429169582301904906").send("...");
+            const user = bot.users.get("427786502999638016");
+        const amount = 3;
+
+            bot.channels.get("429169582301904906").fetchMessages({
+                limit: amount,
+            }).then((messages) => {
+                if (user) {
+                    const filterBy = user ? user.id : bot.user.id;
+                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
+                }
+                bot.channels.get("429169582301904906").bulkDelete(messages).catch(error => console.log(error.stack));
+            });
+
         
         setTimeout(() => {
     
@@ -495,7 +639,19 @@ function clsCAR() {
         ruleDD13.minute = 00;
         let jclsDDsun1 = schSUN1.scheduleJob(ruleDD13, function () {
 
-            bot.channels.get("429169582301904906").send("...");
+           const user = bot.users.get("427786502999638016");
+        const amount = 3;
+
+            bot.channels.get("429169582301904906").fetchMessages({
+                limit: amount,
+            }).then((messages) => {
+                if (user) {
+                    const filterBy = user ? user.id : bot.user.id;
+                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
+                }
+                bot.channels.get("429169582301904906").bulkDelete(messages).catch(error => console.log(error.stack));
+            });
+
         
         setTimeout(() => {
     
@@ -515,7 +671,19 @@ function clsCAR() {
         ruleDD14.minute = 00;
         let jclsDDsun2 = schSUN2.scheduleJob(ruleDD14, function () {
 
-            bot.channels.get("429169582301904906").send("...");
+            const user = bot.users.get("427786502999638016");
+        const amount = 3;
+
+            bot.channels.get("429169582301904906").fetchMessages({
+                limit: amount,
+            }).then((messages) => {
+                if (user) {
+                    const filterBy = user ? user.id : bot.user.id;
+                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
+                }
+                bot.channels.get("429169582301904906").bulkDelete(messages).catch(error => console.log(error.stack));
+            });
+
         
         setTimeout(() => {
     
@@ -560,19 +728,6 @@ if (message.content.startsWith("mainmsg") && message.channel.name == "lfg-log") 
     }
 	
     if (message.content.startsWith("...") && message.channel.name == "lfg1-main" && message.author.id == "427786502999638016") {
-
-       	const user = bot.users.get("427786502999638016");
-        const amount = 3;
-
-            bot.channels.get("429169582301904906").fetchMessages({
-                limit: amount,
-            }).then((messages) => {
-                if (user) {
-                    const filterBy = user ? user.id : bot.user.id;
-                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
-                }
-                bot.channels.get("429169582301904906").bulkDelete(messages).catch(error => console.log(error.stack));
-            });
 
     }
     
