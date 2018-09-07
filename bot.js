@@ -20,20 +20,7 @@ bot.on("ready", async () => {
     //clsDD1();
     //clsPHR();
     clsCAR();
-    clsDDmon1();
-    clsDDmon2();
-    clsDDtue1();
-    clsDDtue2();
-    clsDDwed1();
-    clsDDwed2();
-    clsDDthu1();
-    clsDDthu2();
-    clsDDfri1();
-    clsDDfri2();  
-    clsDDsat1();
-    clsDDsat2();
-    clsDDsun1();
-    clsDDsun2();
+    
 });
 
 
