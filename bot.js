@@ -527,7 +527,7 @@ bot.on("message", async message => {
 	if (message.content.startsWith("safedel") && message.channel.name == "lfg-log") {
 
         const user = bot.users.get("427786502999638016");
-        const amount = 30;
+        const amount = 3;
 
             bot.channels.get("429169582301904906").fetchMessages({
                 limit: amount,
