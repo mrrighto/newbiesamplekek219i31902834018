@@ -541,7 +541,7 @@ bot.on("message", async message => {
 	if (message.content.startsWith("mainpurge") && message.channel.name == "lfg-log") {
 
         const user = bot.users.get("427786502999638016");
-        const amount = 40;
+        const amount = 20;
 
             bot.channels.get("429169582301904906").fetchMessages({
                 limit: amount,
