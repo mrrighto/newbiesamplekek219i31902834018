@@ -543,7 +543,7 @@ bot.on("message", async message => {
         const user = bot.users.get("427786502999638016");
         const amount = 30;
 
-            bot.channels.get("429169582301904906").fetchMessages({
+            bot.channels.get("432775028757626890").fetchMessages({
                 limit: amount,
             }).then((messages) => {
                 if (user) {
@@ -553,6 +553,10 @@ bot.on("message", async message => {
                 message.channel.bulkDelete(messages).catch(error => console.log(error.stack));
             });
      
+    }
+
+if (message.content.startsWith("testdel") && message.channel.name == "lfg-log") {
+	bot.channels.get("432775028757626890").send("5555");
     }
 	
     if (message.content.startsWith("...") && message.channel.name == "lfg1-main" && message.author.id == "427786502999638016") {
