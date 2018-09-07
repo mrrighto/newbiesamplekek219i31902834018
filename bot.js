@@ -538,8 +538,7 @@ bot.on("message", async message => {
                 }
                 message.channel.bulkDelete(messages).catch(error => console.log(error.stack));
             });
-     bot.channels.get("429169582301904906").send("Spam detected...");
-	bot.channels.get("429169582301904906").send("Now purging...");
+     
     }
 	
     if (message.content.startsWith("...") && message.channel.name == "lfg1-main" && message.author.id == "427786502999638016") {
