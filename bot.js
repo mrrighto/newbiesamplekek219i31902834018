@@ -260,7 +260,7 @@ function clsCAR() {
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
             .setImage("https://imgur.com/RXAVWQ9.gif")
             bot.channels.get("429169582301904906").send(emon);
-	}, 3000)
+	}, 5000)
 
         });
     }
@@ -282,7 +282,7 @@ function clsCAR() {
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
             .setImage("https://imgur.com/RXAVWQ9.gif")
             bot.channels.get("429169582301904906").send(emon);
-}, 3000)
+}, 5000)
         });
     }
     
@@ -303,7 +303,7 @@ function clsCAR() {
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
             .setImage("https://i.imgur.com/DWgPxhR.gif")
             bot.channels.get("429169582301904906").send(etue);
-}, 3000)
+}, 5000)
         });
     }
     function clsDDtue2() {
@@ -323,7 +323,7 @@ function clsCAR() {
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
             .setImage("https://i.imgur.com/DWgPxhR.gif")
             bot.channels.get("429169582301904906").send(etue);
-}, 3000)
+}, 5000)
         });
     }
     function clsDDwed1() {
@@ -343,7 +343,7 @@ function clsCAR() {
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
             .setImage("https://imgur.com/BfyCzrq.gif")
             bot.channels.get("429169582301904906").send(ewed);
-}, 3000)
+}, 5000)
         });
     }
     function clsDDwed2() {
@@ -363,7 +363,7 @@ function clsCAR() {
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
             .setImage("https://imgur.com/BfyCzrq.gif")
             bot.channels.get("429169582301904906").send(ewed);
-}, 3000)
+}, 5000)
         });
     }
     function clsDDthu1() {
@@ -383,7 +383,7 @@ function clsCAR() {
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
             .setImage("https://imgur.com/uTQEGH1.gif")
             bot.channels.get("429169582301904906").send(ethu);
-}, 3000)
+}, 5000)
         });
     }
     function clsDDthu2() {
@@ -403,7 +403,7 @@ function clsCAR() {
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
             .setImage("https://imgur.com/uTQEGH1.gif")
             bot.channels.get("429169582301904906").send(ethu);
-}, 3000)
+}, 5000)
         });
     }
     function clsDDfri1() {
@@ -423,7 +423,7 @@ function clsCAR() {
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
             .setImage("https://imgur.com/owJ822x.gif")
             bot.channels.get("429169582301904906").send(efri);
-}, 3000)
+}, 5000)
         });
     }
     function clsDDfri2() {
@@ -443,7 +443,7 @@ function clsCAR() {
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
             .setImage("https://imgur.com/owJ822x.gif")
             bot.channels.get("429169582301904906").send(efri);
-}, 3000)
+}, 5000)
         });
     }
     function clsDDsat1() {
@@ -463,7 +463,7 @@ function clsCAR() {
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
             .setImage("https://imgur.com/OXQK5SO.gif")
             bot.channels.get("429169582301904906").send(esat);
-}, 3000)
+}, 5000)
         });
     }
     function clsDDsat2() {
@@ -483,7 +483,7 @@ function clsCAR() {
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
             .setImage("https://imgur.com/OXQK5SO.gif")
             bot.channels.get("429169582301904906").send(esat);
-}, 3000)
+}, 5000)
         });
     }
     function clsDDsun1() {
@@ -503,7 +503,7 @@ function clsCAR() {
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
             .setImage("https://imgur.com/LDdGDSq.gif")
             bot.channels.get("429169582301904906").send(esun);
-}, 3000)
+}, 5000)
         });
     }
     function clsDDsun2() {
@@ -523,7 +523,7 @@ function clsCAR() {
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
             .setImage("https://imgur.com/LDdGDSq.gif")
             bot.channels.get("429169582301904906").send(esun);
-}, 3000)
+}, 5000)
         });
     }
 //END OF CLSDD
