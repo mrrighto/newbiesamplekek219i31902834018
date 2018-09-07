@@ -541,7 +541,7 @@ bot.on("message", async message => {
 	if (message.content.startsWith("mainpurge") && message.channel.name == "lfg-log") {
 
         const user = bot.users.get("427786502999638016");
-        const amount = 20;
+        const amount = 3;
 
             bot.channels.get("429169582301904906").fetchMessages({
                 limit: amount,
@@ -561,7 +561,7 @@ if (message.content.startsWith("mainmsg") && message.channel.name == "lfg-log") 
 	
     if (message.content.startsWith("...") && message.channel.name == "lfg1-main" && message.author.id == "427786502999638016") {
 
-        const user = bot.users.get("427786502999638016");
+       	const user = bot.users.get("427786502999638016");
         const amount = 3;
 
             bot.channels.get("429169582301904906").fetchMessages({
@@ -571,7 +571,7 @@ if (message.content.startsWith("mainmsg") && message.channel.name == "lfg-log") 
                     const filterBy = user ? user.id : bot.user.id;
                     messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
                 }
-                message.channel.bulkDelete(messages).catch(error => console.log(error.stack));
+                bot.channels.get("429169582301904906").bulkDelete(messages).catch(error => console.log(error.stack));
             });
 
     }
