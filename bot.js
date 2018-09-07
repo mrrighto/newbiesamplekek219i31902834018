@@ -20,6 +20,20 @@ bot.on("ready", async () => {
     //clsDD1();
     //clsPHR();
     clsCAR();
+    clsDDmon1();
+    clsDDmon2();
+    clsDDtue1();
+    clsDDtue2();
+    clsDDwed1();
+    clsDDwed2();
+    clsDDthu1();
+    clsDDthu2();
+    clsDDfri1();
+    clsDDfri2();  
+    clsDDsat1();
+    clsDDsat2();
+    clsDDsun1();
+    clsDDsun2();
     
 });
 
@@ -241,7 +255,7 @@ function clsCAR() {
 
         bot.channels.get("429169582301904906").send("...");
         
-        setInterval(() => {
+        setTimeout(() => {
             const emon = new Discord.RichEmbed()
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
             .setImage("https://imgur.com/RXAVWQ9.gif")
@@ -262,7 +276,7 @@ function clsCAR() {
 
             bot.channels.get("429169582301904906").send("...");
         
-        setInterval(() => {
+        setTimeout(() => {
     
             const emon = new Discord.RichEmbed()
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
@@ -283,7 +297,7 @@ function clsCAR() {
 
             bot.channels.get("429169582301904906").send("...");
         
-        setInterval(() => {
+        setTimeout(() => {
     
             const etue = new Discord.RichEmbed()
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
@@ -303,7 +317,7 @@ function clsCAR() {
 
              bot.channels.get("429169582301904906").send("...");
         
-        setInterval(() => {
+        setTimeout(() => {
     
             const etue = new Discord.RichEmbed()
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
@@ -323,7 +337,7 @@ function clsCAR() {
 
             bot.channels.get("429169582301904906").send("...");
         
-        setInterval(() => {
+        setTimeout(() => {
     
             const ewed = new Discord.RichEmbed()
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
@@ -343,7 +357,7 @@ function clsCAR() {
 
             bot.channels.get("429169582301904906").send("...");
         
-        setInterval(() => {
+        setTimeout(() => {
     
             const ewed = new Discord.RichEmbed()
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
@@ -363,7 +377,7 @@ function clsCAR() {
 
             bot.channels.get("429169582301904906").send("...");
         
-        setInterval(() => {
+        setTimeout(() => {
     
             const ethu = new Discord.RichEmbed()
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
@@ -383,7 +397,7 @@ function clsCAR() {
 
           bot.channels.get("429169582301904906").send("...");
         
-        setInterval(() => {
+        setTimeout(() => {
     
             const ethu = new Discord.RichEmbed()
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
@@ -403,7 +417,7 @@ function clsCAR() {
 
            bot.channels.get("429169582301904906").send("...");
         
-        setInterval(() => {
+        setTimeout(() => {
     
             const efri = new Discord.RichEmbed()
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
@@ -423,7 +437,7 @@ function clsCAR() {
 
             bot.channels.get("429169582301904906").send("...");
         
-        setInterval(() => {
+        setTimeout(() => {
     
             const efri = new Discord.RichEmbed()
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
@@ -443,7 +457,7 @@ function clsCAR() {
 
             bot.channels.get("429169582301904906").send("...");
         
-        setInterval(() => {
+        setTimeout(() => {
     
             const esat = new Discord.RichEmbed()
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
@@ -463,7 +477,7 @@ function clsCAR() {
 
             bot.channels.get("429169582301904906").send("...");
         
-        setInterval(() => {
+        setTimeout(() => {
     
             const esat = new Discord.RichEmbed()
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
@@ -483,7 +497,7 @@ function clsCAR() {
 
             bot.channels.get("429169582301904906").send("...");
         
-        setInterval(() => {
+        setTimeout(() => {
     
             const esun = new Discord.RichEmbed()
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
@@ -503,7 +517,7 @@ function clsCAR() {
 
             bot.channels.get("429169582301904906").send("...");
         
-        setInterval(() => {
+        setTimeout(() => {
     
             const esun = new Discord.RichEmbed()
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
