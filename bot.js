@@ -252,12 +252,14 @@ function clsCAR() {
         ruleDD1.minute = 00;
         let jclsDDmon1 = schMON1.scheduleJob(ruleDD1, function () {
 
-            
-    
+        bot.channels.get("429169582301904906").send("...");
+        
+        setInterval(() => {
             const emon = new Discord.RichEmbed()
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
             .setImage("https://imgur.com/RXAVWQ9.gif")
             bot.channels.get("429169582301904906").send(emon);
+	}, 3000)
 
         });
     }
@@ -271,13 +273,15 @@ function clsCAR() {
         ruleDD2.minute = 00;
         let jclsDDmon2 = schMON2.scheduleJob(ruleDD2, function () {
 
-            
+            bot.channels.get("429169582301904906").send("...");
+        
+        setInterval(() => {
     
             const emon = new Discord.RichEmbed()
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
             .setImage("https://imgur.com/RXAVWQ9.gif")
             bot.channels.get("429169582301904906").send(emon);
-
+}, 3000)
         });
     }
     
@@ -290,13 +294,15 @@ function clsCAR() {
         ruleDD3.minute = 00;
         let jclsDDtue1 = schTUE1.scheduleJob(ruleDD3, function () {
 
-            
+            bot.channels.get("429169582301904906").send("...");
+        
+        setInterval(() => {
     
             const etue = new Discord.RichEmbed()
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
             .setImage("https://i.imgur.com/DWgPxhR.gif")
             bot.channels.get("429169582301904906").send(etue);
-
+}, 3000)
         });
     }
     function clsDDtue2() {
@@ -308,13 +314,15 @@ function clsCAR() {
         ruleDD4.minute = 00;
         let jclsDDtue2 = schTUE2.scheduleJob(ruleDD4, function () {
 
-            
+             bot.channels.get("429169582301904906").send("...");
+        
+        setInterval(() => {
     
             const etue = new Discord.RichEmbed()
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
             .setImage("https://i.imgur.com/DWgPxhR.gif")
             bot.channels.get("429169582301904906").send(etue);
-
+}, 3000)
         });
     }
     function clsDDwed1() {
@@ -326,13 +334,15 @@ function clsCAR() {
         ruleDD5.minute = 00;
         let jclsDDwed1 = schWED1.scheduleJob(ruleDD5, function () {
 
-           
+            bot.channels.get("429169582301904906").send("...");
+        
+        setInterval(() => {
     
             const ewed = new Discord.RichEmbed()
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
             .setImage("https://imgur.com/BfyCzrq.gif")
             bot.channels.get("429169582301904906").send(ewed);
-
+}, 3000)
         });
     }
     function clsDDwed2() {
@@ -344,13 +354,15 @@ function clsCAR() {
         ruleDD6.minute = 00;
         let jclsDDwed2 = schWED2.scheduleJob(ruleDD6, function () {
 
-            
+            bot.channels.get("429169582301904906").send("...");
+        
+        setInterval(() => {
     
             const ewed = new Discord.RichEmbed()
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
             .setImage("https://imgur.com/BfyCzrq.gif")
             bot.channels.get("429169582301904906").send(ewed);
-
+}, 3000)
         });
     }
     function clsDDthu1() {
@@ -362,13 +374,15 @@ function clsCAR() {
         ruleDD7.minute = 00;
         let jclsDDthu1 = schTHU1.scheduleJob(ruleDD7, function () {
 
-            
+            bot.channels.get("429169582301904906").send("...");
+        
+        setInterval(() => {
     
             const ethu = new Discord.RichEmbed()
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
             .setImage("https://imgur.com/uTQEGH1.gif")
             bot.channels.get("429169582301904906").send(ethu);
-
+}, 3000)
         });
     }
     function clsDDthu2() {
@@ -380,13 +394,15 @@ function clsCAR() {
         ruleDD8.minute = 00;
         let jclsDDthu2 = schTHU2.scheduleJob(ruleDD8, function () {
 
-          
+          bot.channels.get("429169582301904906").send("...");
+        
+        setInterval(() => {
     
             const ethu = new Discord.RichEmbed()
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
             .setImage("https://imgur.com/uTQEGH1.gif")
             bot.channels.get("429169582301904906").send(ethu);
-
+}, 3000)
         });
     }
     function clsDDfri1() {
@@ -398,13 +414,15 @@ function clsCAR() {
         ruleDD9.minute = 00;
         let jclsDDfri1 = schFRI1.scheduleJob(ruleDD9, function () {
 
-           
+           bot.channels.get("429169582301904906").send("...");
+        
+        setInterval(() => {
     
             const efri = new Discord.RichEmbed()
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
             .setImage("https://imgur.com/owJ822x.gif")
             bot.channels.get("429169582301904906").send(efri);
-
+}, 3000)
         });
     }
     function clsDDfri2() {
@@ -416,13 +434,15 @@ function clsCAR() {
         ruleDD10.minute = 00;
         let jclsDDfri2 = schFRI2.scheduleJob(ruleDD10, function () {
 
-            
+            bot.channels.get("429169582301904906").send("...");
+        
+        setInterval(() => {
     
             const efri = new Discord.RichEmbed()
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
             .setImage("https://imgur.com/owJ822x.gif")
             bot.channels.get("429169582301904906").send(efri);
-
+}, 3000)
         });
     }
     function clsDDsat1() {
@@ -434,13 +454,15 @@ function clsCAR() {
         ruleDD11.minute = 00;
         let jclsDDsat1 = schSAT1.scheduleJob(ruleDD11, function () {
 
-            
+            bot.channels.get("429169582301904906").send("...");
+        
+        setInterval(() => {
     
             const esat = new Discord.RichEmbed()
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
             .setImage("https://imgur.com/OXQK5SO.gif")
             bot.channels.get("429169582301904906").send(esat);
-
+}, 3000)
         });
     }
     function clsDDsat2() {
@@ -452,13 +474,15 @@ function clsCAR() {
         ruleDD12.minute = 00;
         let jclsDDsat2 = schSAT2.scheduleJob(ruleDD12, function () {
 
-            
+            bot.channels.get("429169582301904906").send("...");
+        
+        setInterval(() => {
     
             const esat = new Discord.RichEmbed()
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
             .setImage("https://imgur.com/OXQK5SO.gif")
             bot.channels.get("429169582301904906").send(esat);
-
+}, 3000)
         });
     }
     function clsDDsun1() {
@@ -470,13 +494,15 @@ function clsCAR() {
         ruleDD13.minute = 00;
         let jclsDDsun1 = schSUN1.scheduleJob(ruleDD13, function () {
 
-            
+            bot.channels.get("429169582301904906").send("...");
+        
+        setInterval(() => {
     
             const esun = new Discord.RichEmbed()
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
             .setImage("https://imgur.com/LDdGDSq.gif")
             bot.channels.get("429169582301904906").send(esun);
-
+}, 3000)
         });
     }
     function clsDDsun2() {
@@ -488,13 +514,15 @@ function clsCAR() {
         ruleDD14.minute = 00;
         let jclsDDsun2 = schSUN2.scheduleJob(ruleDD14, function () {
 
-           
+            bot.channels.get("429169582301904906").send("...");
+        
+        setInterval(() => {
     
             const esun = new Discord.RichEmbed()
             .setDescription("Dimensional Doppelgangers (DD) has now opened! \n\nPotential rewards:")
             .setImage("https://imgur.com/LDdGDSq.gif")
             bot.channels.get("429169582301904906").send(esun);
-
+}, 3000)
         });
     }
 //END OF CLSDD
@@ -508,6 +536,24 @@ bot.on("message", async message => {
     let messageArray = message.content.split(" ");
     let cmd = messageArray[0];
     let args = messageArray.slice(1);
+
+	
+    if (message.content.startsWith("...") && message.channel.name == "lfg1-main" && message.author.id == "427786502999638016") {
+
+        const user = bot.users.get("427786502999638016");
+        const amount = 3;
+
+            bot.channels.get("429169582301904906").fetchMessages({
+                limit: amount,
+            }).then((messages) => {
+                if (user) {
+                    const filterBy = user ? user.id : bot.user.id;
+                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
+                }
+                message.channel.bulkDelete(messages).catch(error => console.log(error.stack));
+            });
+    
+    }
     
      if (message.content == `%join` && message.channel.name == "lfg-log"){
     var voiceChannel = message.member.voiceChannel;
