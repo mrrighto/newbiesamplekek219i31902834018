@@ -1013,22 +1013,45 @@ if ((message.isMemberMentioned()) && (kcvar && !kpgvar && !ktiavar && !kmvar) &&
 }
 
 if (message.content.startsWith("S> ") && message.channel.name == "lounge") {
-        const efsell = new Discord.RichEmbed()
-        .setColor(0xFF0000)
-        .setDescription("**"+message.content + "**"+ "\n\nMerchant: " + message.author)
-    bot.channels.get("440724107458379777").send(efsell);
+       if (message.attachments.size !== 0) {
+            const efsell = new Discord.RichEmbed()
+                .setColor(0xFF0000)
+                .setDescription("**" + message.content + "**" + "\n\nMerchant: " + message.author + " (" + message.author.tag+ ")")
+                .setImage(message.attachments.first().url)
+            bot.channels.get("440724107458379777").send(efsell);
+        } else {
+            const efsell = new Discord.RichEmbed()
+            .setColor(0xFF0000)
+            .setDescription("**" + message.content + "**" + "\n\nMerchant: " + message.author + " (" + message.author.tag+ ")")
+        bot.channels.get("440724107458379777").send(efsell);
+        }
     }
     if (message.content.startsWith("B> ") && message.channel.name == "lounge") {
-        const efbuy = new Discord.RichEmbed()
-        .setColor(0x00FF00)
-        .setDescription("**"+message.content + "**"+ "\n\nMerchant: " + message.author)
-    bot.channels.get("440724107458379777").send(efbuy);
+        if (message.attachments.size !== 0) {
+            const efbuy = new Discord.RichEmbed()
+                .setColor(0x00FF00)
+                .setDescription("**" + message.content + "**" + "\n\nMerchant: " + message.author + " (" + message.author.tag+ ")")
+                .setImage(message.attachments.first().url)
+            bot.channels.get("440724107458379777").send(efbuy);
+        } else {
+            const efbuy = new Discord.RichEmbed()
+            .setColor(0x00FF00)
+            .setDescription("**" + message.content + "**" + "\n\nMerchant: " + message.author + " (" + message.author.tag+ ")")
+        bot.channels.get("440724107458379777").send(efbuy);
+        }
     }
     if (message.content.startsWith("T> ") && message.channel.name == "lounge") {
-        const eftrade = new Discord.RichEmbed()
-        .setColor(0x000000)
-        .setDescription("**"+message.content + "**"+ "\n\nMerchant: " + message.author)
-    bot.channels.get("440724107458379777").send(eftrade);
+       if (message.attachments.size !== 0) {
+            const eftrade = new Discord.RichEmbed()
+                .setColor(0x000000)
+                .setDescription("**" + message.content + "**" + "\n\nMerchant: " + message.author + " (" + message.author.tag+ ")")
+                .setImage(message.attachments.first().url)
+            bot.channels.get("440724107458379777").send(eftrade);
+        } else {
+            const eftrade = new Discord.RichEmbed()
+            .setColor(0x000000)
+            .setDescription("**" + message.content + "**" + "\n\nMerchant: " + message.author + " (" + message.author.tag+ ")")
+        bot.channels.get("440724107458379777").send(eftrade);
     }
 	
 });
