@@ -1052,6 +1052,7 @@ if (message.content.startsWith("S> ") && message.channel.name == "lounge") {
             .setColor(0x000000)
             .setDescription("**" + message.content + "**" + "\n\nMerchant: " + message.author + " (" + message.author.tag+ ")")
         bot.channels.get("440724107458379777").send(eftrade);
+    	}
     }
 	
 });
