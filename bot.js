@@ -34,6 +34,14 @@ bot.on("ready", async () => {
     clsDDsat2();
     clsDDsun1();
     clsDDsun2();
+
+    mont();
+    tuet();
+    wedt();
+    thut();
+    frit();
+    satt();
+    sunt();
     
 });
 
@@ -274,12 +282,7 @@ function clsCAR() {
             bot.channels.get("429169582301904906").send(emon);
 	}, 5000)
 
-	setInterval(() => {
-          bot.user.setActivity("Closers Dimension Conflict", { type: "PLAYING" });
-		setTimeout(() => {
-          		bot.user.setActivity("Halphas/Yod (MON)", { type: "PLAYING" });
-		}, 5000)
-	}, 12000)
+	
 
         });
     }
@@ -315,12 +318,7 @@ function clsCAR() {
             bot.channels.get("429169582301904906").send(emon);
 }, 5000)
 
-	setInterval(() => {
-          bot.user.setActivity("Closers Dimension Conflict", { type: "PLAYING" });
-		setTimeout(() => {
-          		bot.user.setActivity("Halphas/Yod (MON)", { type: "PLAYING" });
-		}, 5000)
-	}, 12000)	
+	
 
         });
     }
@@ -356,12 +354,7 @@ function clsCAR() {
             bot.channels.get("429169582301904906").send(etue);
 }, 5000)
 
-	setInterval(() => {
-          bot.user.setActivity("Closers Dimension Conflict", { type: "PLAYING" });
-		setTimeout(() => {
-          		bot.user.setActivity("Tindalos/Nitocris (TUE)", { type: "PLAYING" });
-		}, 5000)
-	}, 12000)	
+	
 
         });
     }
@@ -396,12 +389,7 @@ function clsCAR() {
             bot.channels.get("429169582301904906").send(etue);
 }, 5000)
 
-	setInterval(() => {
-          bot.user.setActivity("Closers Dimension Conflict", { type: "PLAYING" });
-		setTimeout(() => {
-          		bot.user.setActivity("Tindalos/Nitocris (TUE)", { type: "PLAYING" });
-		}, 5000)
-	}, 12000)	
+	
 
         });
     }
@@ -436,12 +424,7 @@ function clsCAR() {
             bot.channels.get("429169582301904906").send(ewed);
 }, 5000)
 
-	setInterval(() => {
-          bot.user.setActivity("Closers Dimension Conflict", { type: "PLAYING" });
-		setTimeout(() => {
-          		bot.user.setActivity("Tindalos/Halphas (WED)", { type: "PLAYING" });
-		}, 5000)
-	}, 12000)	
+	
 
         });
     }
@@ -476,12 +459,7 @@ function clsCAR() {
             bot.channels.get("429169582301904906").send(ewed);
 }, 5000)
 
-	setInterval(() => {
-          bot.user.setActivity("Closers Dimension Conflict", { type: "PLAYING" });
-		setTimeout(() => {
-          		bot.user.setActivity("Tindalos/Halphas (WED)", { type: "PLAYING" });
-		}, 5000)
-	}, 12000)	
+	
 
         });
     }
@@ -516,12 +494,7 @@ function clsCAR() {
             bot.channels.get("429169582301904906").send(ethu);
 }, 5000)
 
-	setInterval(() => {
-          bot.user.setActivity("Closers Dimension Conflict", { type: "PLAYING" });
-		setTimeout(() => {
-          		bot.user.setActivity("Halphas/Nitocris (THU)", { type: "PLAYING" });
-		}, 5000)
-	}, 12000)	
+	
 
         });
     }
@@ -556,12 +529,7 @@ function clsCAR() {
             bot.channels.get("429169582301904906").send(ethu);
 }, 5000)
 
-	setInterval(() => {
-          bot.user.setActivity("Closers Dimension Conflict", { type: "PLAYING" });
-		setTimeout(() => {
-          		bot.user.setActivity("Halphas/Nitocris (THU)", { type: "PLAYING" });
-		}, 5000)
-	}, 12000)	
+	
 
         });
     }
@@ -596,12 +564,7 @@ function clsCAR() {
             bot.channels.get("429169582301904906").send(efri);
 }, 5000)
 
-	setInterval(() => {
-          bot.user.setActivity("Closers Dimension Conflict", { type: "PLAYING" });
-		setTimeout(() => {
-          		bot.user.setActivity("Tindalos/Yod (FRI)", { type: "PLAYING" });
-		}, 5000)
-	}, 12000)	
+	
 
         });
     }
@@ -636,12 +599,7 @@ function clsCAR() {
             bot.channels.get("429169582301904906").send(efri);
 }, 5000)
 
-	setInterval(() => {
-          bot.user.setActivity("Closers Dimension Conflict", { type: "PLAYING" });
-		setTimeout(() => {
-          		bot.user.setActivity("Tindalos/Yod (FRI)", { type: "PLAYING" });
-		}, 5000)
-	}, 12000)	
+	
 
         });
     }
@@ -676,12 +634,7 @@ function clsCAR() {
             bot.channels.get("429169582301904906").send(esat);
 }, 5000)
 
-	setInterval(() => {
-          bot.user.setActivity("Closers Dimension Conflict", { type: "PLAYING" });
-		setTimeout(() => {
-          		bot.user.setActivity("Tindalos/Halphas/Nitocris (SAT)", { type: "PLAYING" });
-		}, 5000)
-	}, 12000)	
+	
 
         });
     }
@@ -716,12 +669,7 @@ function clsCAR() {
             bot.channels.get("429169582301904906").send(esat);
 }, 5000)
 
-	setInterval(() => {
-          bot.user.setActivity("Closers Dimension Conflict", { type: "PLAYING" });
-		setTimeout(() => {
-          		bot.user.setActivity("Tindalos/Halphas/Nitocris (SAT)", { type: "PLAYING" });
-		}, 5000)
-	}, 12000)	
+	
 
         });
     }
@@ -756,12 +704,7 @@ function clsCAR() {
             bot.channels.get("429169582301904906").send(esun);
 }, 5000)
 
-	setInterval(() => {
-          bot.user.setActivity("Closers Dimension Conflict", { type: "PLAYING" });
-		setTimeout(() => {
-          		bot.user.setActivity("Tindalos/Halphas/Yod (SUN)", { type: "PLAYING" });
-		}, 5000)
-	}, 12000)	
+	
 
         });
     }
@@ -796,16 +739,111 @@ function clsCAR() {
             bot.channels.get("429169582301904906").send(esun);
 }, 5000)
 
-	setInterval(() => {
-          bot.user.setActivity("Closers Dimension Conflict", { type: "PLAYING" });
-		setTimeout(() => {
-          		bot.user.setActivity("Tindalos/Halphas/Yod (SUN)", { type: "PLAYING" });
-		}, 5000)
-	}, 12000)	
+	
 
         });
     }
 //END OF CLSDD
+
+//START OF PURI
+function mont(){
+    
+    var mon = require('node-schedule');
+
+    var jmon = schedule.scheduleJob('0 * * * * 1', function () {
+        bot.user.setActivity("Closers Dimension Conflict", { type: "PLAYING" });
+        setTimeout(() => {
+            bot.user.setActivity("Halphas/Yod (MON)", { type: "PLAYING" });
+        }, 30000)
+       
+    });
+
+}
+
+function tuet(){
+    
+    var tue = require('node-schedule');
+
+    var jtue = schedule.scheduleJob('0 * * * * 2', function () {
+        bot.user.setActivity("Closers Dimension Conflict", { type: "PLAYING" });
+        setTimeout(() => {
+            bot.user.setActivity("Tindalos/Nitocris (TUE)", { type: "PLAYING" });
+        }, 30000)
+       
+    });
+
+}
+
+function wedt(){
+    
+    var wed = require('node-schedule');
+
+    var jwed = schedule.scheduleJob('0 * * * * 3', function () {
+        bot.user.setActivity("Closers Dimension Conflict", { type: "PLAYING" });
+        setTimeout(() => {
+            bot.user.setActivity("Tindalos/Halphas (WED)", { type: "PLAYING" });
+        }, 30000)
+        
+    });
+
+}
+
+function thut(){
+    
+    var thu = require('node-schedule');
+
+    var jthu = schedule.scheduleJob('0 * * * * 4', function () {
+        bot.user.setActivity("Closers Dimension Conflict", { type: "PLAYING" });
+        setTimeout(() => {
+            bot.user.setActivity("Halphas/Nitocris (THU)", { type: "PLAYING" });
+        }, 30000)
+        
+    });
+
+}
+
+function frit(){
+    
+    var fri = require('node-schedule');
+
+    var jfri = schedule.scheduleJob('0 * * * * 5', function () {
+        bot.user.setActivity("Closers Dimension Conflict", { type: "PLAYING" });
+        setTimeout(() => {
+            bot.user.setActivity("Tindalos/Yod (FRI)", { type: "PLAYING" });
+        }, 30000)
+        
+    });
+
+}
+
+function satt(){
+    
+    var sat = require('node-schedule');
+
+    var jsat = schedule.scheduleJob('0 * * * * 6', function () {
+        bot.user.setActivity("Closers Dimension Conflict", { type: "PLAYING" });
+        setTimeout(() => {
+            bot.user.setActivity("Tindalos/Halphas/Nitocris (SAT)", { type: "PLAYING" });
+        }, 30000)
+        
+    });
+
+}
+
+function sunt(){
+    
+    var sun = require('node-schedule');
+
+    var jsun = schedule.scheduleJob('0 * * * * 7', function () {
+        bot.user.setActivity("Closers Dimension Conflict", { type: "PLAYING" });
+        setTimeout(() => {
+            bot.user.setActivity("Tindalos/Halphas/Yod (SUN)", { type: "PLAYING" });
+        }, 30000)
+        
+    });
+
+}
+//END OF PURI
 
 bot.on("message", async message => {
    
