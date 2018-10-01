@@ -14,7 +14,7 @@ bot.on("ready", async () => {
     console.log(`${bot.user.username} is online!`);
 	//bot.channels.get("425266854014222377").send("reset " + bot.users.get("376344592049766401"));
     bot.user.setActivity("Closers Dimension Conflict", { type: "PLAYING" });
-    bot.user.setUsername("Siomai Vending Machine");
+    bot.user.setUsername("#announcements");
     
     EMEDailycode();
     //clsDD1();
@@ -754,7 +754,10 @@ function mont(){
         bot.user.setActivity("Closers Dimension Conflict", { type: "PLAYING" });
         setTimeout(() => {
             bot.user.setActivity("Halphas/Yod (MON)", { type: "PLAYING" });
-        }, 30000)
+	       setTimeout(() => {
+                  bot.user.setActivity("「 Crew channel: 29 」", { type: "PLAYING" });
+               }, 20000)
+        }, 20000)
        
     });
 
@@ -768,7 +771,10 @@ function tuet(){
         bot.user.setActivity("Closers Dimension Conflict", { type: "PLAYING" });
         setTimeout(() => {
             bot.user.setActivity("Tindalos/Nitocris (TUE)", { type: "PLAYING" });
-        }, 30000)
+	       setTimeout(() => {
+                  bot.user.setActivity("「 Crew channel: 29 」", { type: "PLAYING" });
+               }, 20000)
+        }, 20000)
        
     });
 
@@ -782,7 +788,10 @@ function wedt(){
         bot.user.setActivity("Closers Dimension Conflict", { type: "PLAYING" });
         setTimeout(() => {
             bot.user.setActivity("Tindalos/Halphas (WED)", { type: "PLAYING" });
-        }, 30000)
+	       setTimeout(() => {
+                  bot.user.setActivity("「 Crew channel: 29 」", { type: "PLAYING" });
+               }, 20000)
+        }, 20000)
         
     });
 
@@ -796,7 +805,10 @@ function thut(){
         bot.user.setActivity("Closers Dimension Conflict", { type: "PLAYING" });
         setTimeout(() => {
             bot.user.setActivity("Halphas/Nitocris (THU)", { type: "PLAYING" });
-        }, 30000)
+	       setTimeout(() => {
+                  bot.user.setActivity("「 Crew channel: 29 」", { type: "PLAYING" });
+               }, 20000)
+        }, 20000)
         
     });
 
@@ -810,7 +822,10 @@ function frit(){
         bot.user.setActivity("Closers Dimension Conflict", { type: "PLAYING" });
         setTimeout(() => {
             bot.user.setActivity("Tindalos/Yod (FRI)", { type: "PLAYING" });
-        }, 30000)
+	       setTimeout(() => {
+                  bot.user.setActivity("「 Crew channel: 29 」", { type: "PLAYING" });
+               }, 20000)
+        }, 20000)
         
     });
 
@@ -824,7 +839,10 @@ function satt(){
         bot.user.setActivity("Closers Dimension Conflict", { type: "PLAYING" });
         setTimeout(() => {
             bot.user.setActivity("Tindalos/Halphas/Nitocris (SAT)", { type: "PLAYING" });
-        }, 30000)
+	       setTimeout(() => {
+                  bot.user.setActivity("「 Crew channel: 29 」", { type: "PLAYING" });
+               }, 20000)
+        }, 20000)
         
     });
 
@@ -838,7 +856,10 @@ function sunt(){
         bot.user.setActivity("Closers Dimension Conflict", { type: "PLAYING" });
         setTimeout(() => {
             bot.user.setActivity("Tindalos/Halphas/Yod (SUN)", { type: "PLAYING" });
-        }, 30000)
+	       setTimeout(() => {
+                  bot.user.setActivity("「 Crew channel: 29 」", { type: "PLAYING" });
+               }, 20000)
+        }, 20000)
         
     });
 
