@@ -1306,10 +1306,10 @@ bot.on("messageReactionAdd", (reaction, user) => {
         target1.addRole('483572227002990601').catch(console.error);
     }else if (reaction.message.channel.name == "welcome" && reaction.emoji.name == "LunaSelfie") {
         target1.addRole('483572168693907457').catch(console.error);
-    }else if (reaction.message.channel.name == "crew-info" && reaction.emoji.identifier == "%E2%9C%85" && reaction.message.content.startsWith("-KR account creation guide can be found in")) {
+    }else if (reaction.message.channel.name == "crew-info" && reaction.emoji.identifier == "%E2%9C%85" && reaction.message.content.startsWith("Interested in joining our circle in KR? Kindly press the green check if so")) {
         if (!target1.roles.has("448835168258752515")){
 	target1.addRole('448835168258752515').catch(console.error);
-	bot.channels.get("381392359507623939").send(target1.user + " go ping `@admin • KR` with your ign/username then dont forget to apply ingame, our circle's name is **NobilityKR** btw, cu ingame o/");
+	bot.channels.get("381392359507623939").send(target1.user + " go ping `@Admin • KR` with your ign/username then dont forget to apply ingame, our circle's name is **NobilityKR** btw, cu ingame o/");
 	}
     }else if (reaction.message.channel.name == "welcome" && reaction.emoji.identifier == "%E2%9C%85" && reaction.message.content == "**2.** Press check if you reached Lv80 on any of your alt(s).") {
         target1.addRole('392505427155222528').catch(console.error);
