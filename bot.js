@@ -751,7 +751,7 @@ function mont(){
     var mon = require('node-schedule');
 
     var jmon = schedule.scheduleJob('0 * * * * 1', function () {
-        bot.user.setActivity("Closers Dimension Conflict", { type: "PLAYING" });
+        bot.user.setActivity("Halphas/Yod (MON)", { type: "PLAYING" });
         setTimeout(() => {
             bot.user.setActivity("Halphas/Yod (MON)", { type: "PLAYING" });
 	       setTimeout(() => {
@@ -768,7 +768,7 @@ function tuet(){
     var tue = require('node-schedule');
 
     var jtue = schedule.scheduleJob('0 * * * * 2', function () {
-        bot.user.setActivity("Closers Dimension Conflict", { type: "PLAYING" });
+        bot.user.setActivity("Tindalos/Nitocris (TUE)", { type: "PLAYING" });
         setTimeout(() => {
             bot.user.setActivity("Tindalos/Nitocris (TUE)", { type: "PLAYING" });
 	       setTimeout(() => {
@@ -785,7 +785,7 @@ function wedt(){
     var wed = require('node-schedule');
 
     var jwed = schedule.scheduleJob('0 * * * * 3', function () {
-        bot.user.setActivity("Closers Dimension Conflict", { type: "PLAYING" });
+        bot.user.setActivity("Tindalos/Halphas (WED)", { type: "PLAYING" });
         setTimeout(() => {
             bot.user.setActivity("Tindalos/Halphas (WED)", { type: "PLAYING" });
 	       setTimeout(() => {
@@ -802,7 +802,7 @@ function thut(){
     var thu = require('node-schedule');
 
     var jthu = schedule.scheduleJob('0 * * * * 4', function () {
-        bot.user.setActivity("Closers Dimension Conflict", { type: "PLAYING" });
+        bot.user.setActivity("Halphas/Nitocris (THU)", { type: "PLAYING" });
         setTimeout(() => {
             bot.user.setActivity("Halphas/Nitocris (THU)", { type: "PLAYING" });
 	       setTimeout(() => {
@@ -819,7 +819,7 @@ function frit(){
     var fri = require('node-schedule');
 
     var jfri = schedule.scheduleJob('0 * * * * 5', function () {
-        bot.user.setActivity("Closers Dimension Conflict", { type: "PLAYING" });
+        bot.user.setActivity("Tindalos/Yod (FRI)", { type: "PLAYING" });
         setTimeout(() => {
             bot.user.setActivity("Tindalos/Yod (FRI)", { type: "PLAYING" });
 	       setTimeout(() => {
@@ -836,7 +836,7 @@ function satt(){
     var sat = require('node-schedule');
 
     var jsat = schedule.scheduleJob('0 * * * * 6', function () {
-        bot.user.setActivity("Closers Dimension Conflict", { type: "PLAYING" });
+        bot.user.setActivity("Tindalos/Halphas/Nitocris (SAT)", { type: "PLAYING" });
         setTimeout(() => {
             bot.user.setActivity("Tindalos/Halphas/Nitocris (SAT)", { type: "PLAYING" });
 	       setTimeout(() => {
@@ -853,7 +853,7 @@ function sunt(){
     var sun = require('node-schedule');
 
     var jsun = schedule.scheduleJob('0 * * * * 7', function () {
-        bot.user.setActivity("Closers Dimension Conflict", { type: "PLAYING" });
+        bot.user.setActivity("Tindalos/Halphas/Yod (SUN)", { type: "PLAYING" });
         setTimeout(() => {
             bot.user.setActivity("Tindalos/Halphas/Yod (SUN)", { type: "PLAYING" });
 	       setTimeout(() => {
@@ -1243,7 +1243,7 @@ bot.on('presenceUpdate', (oldMember, newMember) => {
         newMember.removeRole(playRole).catch(console.error);
     }
 
-    if (newMember.roles.has("397285952810123274") && newMember.user.presence.game && newMember.user.presence.game.name === "Closers Dimension Conflict") {
+    if (newMember.roles.has("397285952810123274") && newMember.user.presence.game && (newMember.user.presence.game.name === "Closers Dimension Conflict" || newMember.user.presence.game.name === "Closers")) {
 	if (newMember.roles.has("423698087371079683")) return;
 	if (!newMember.roles.has("448835168258752515")){
 	bot.channels.get("381392359507623939").send(newMember.user + " welcome back <:seha8:391896068129947650> if you're joining back on our crew, ping `@admin • NA` with your account name/ign and don't forget to re-apply ingame <:yurilike:383533891119742977>");
