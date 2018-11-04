@@ -1235,7 +1235,7 @@ bot.on('presenceUpdate', (oldMember, newMember) => {
     let playRole = guild.roles.find("name", "ALFG-ON");
  
     if (!playRole) return;
-    if (newMember.roles.has("432384823068459018") && newMember.user.presence.game && newMember.user.presence.game.name === "Closers Dimension Conflict") {
+    if (newMember.roles.has("432384823068459018") && newMember.user.presence.game && (newMember.user.presence.game.name === "Closers Dimension Conflict" || newMember.user.presence.game.name === "Closers")) {
        newMember.addRole(playRole).catch(console.error);
        //bot.channels.get("425266854014222377").send(newMember + "added " + playRole.id);
     
