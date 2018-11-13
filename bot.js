@@ -49,7 +49,7 @@ bot.on("ready", async () => {
 function EMEDailycode() {
     let scheduledailyc = require('node-schedule');
     let ruledailyc = new schedule.RecurrenceRule();
-    ruledailyc.hour = 17;
+    ruledailyc.hour = 18;
     ruledailyc.minute = 5;
     let jdailyc = scheduledailyc.scheduleJob(ruledailyc, function () {
         
