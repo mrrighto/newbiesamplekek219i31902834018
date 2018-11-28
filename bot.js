@@ -42,6 +42,18 @@ bot.on("ready", async () => {
     frit();
     satt();
     sunt();
+
+    clsOF1();
+    clsOF2();
+    clsOF3();
+    clsOF4();
+    clsOF5();
+
+    clsOFN1();
+    clsOFN2();
+    clsOFN3();
+    clsOFN4();
+    clsOFN5();	
     
 });
 
@@ -247,7 +259,7 @@ function clsCAR() {
     ruleclsCAR.hour = [5, 21, 13];
     ruleclsCAR.minute = 00;
     let jclsCAR = scheduleclsCAR.scheduleJob(ruleclsCAR, function () {
-        bot.channels.get("416201903664267264").send("**Crew Brawl is now active o/**" + " <@&454867260327329803> " + "\n *To get pinged, type* `>rank Crew3v3` in <#386494149114724353>");
+        bot.channels.get("463891660955320320").send("**Crew Brawl is now active o/**" + " @&516885459482312714 @&516885127419396116");
     });
 }
 
@@ -866,6 +878,160 @@ function sunt(){
 }
 //END OF PURI
 
+// ----------------------- NOTIFS OF 
+function clsOF1() {
+    let schedOF1 = require('node-schedule');
+    let ruleclsOF1 = new schedule.RecurrenceRule();
+    ruleclsOF1.dayOfWeek = [05];
+    ruleclsOF1.hour = [06, 09, 16, 19, 22];
+    ruleclsOF1.minute = 30;
+    let jclsOF1 = schedOF1.scheduleJob(ruleclsOF1, function () {
+            const embedOF1 = new Discord.RichEmbed()
+            .setDescription("**Entry requirement:** Lv83, 1x conta pill \n -Entrance will stay open for an hour \n -Squad search requires item lvl 130+ \n -Testplay: https://www.youtube.com/watch?v=Zj6LiH_EXL4 \n -Rewards: 4x/2x mats for hell trinkets, epsilon mod/receiver, (hell mods)")
+            .setThumbnail("https://i.imgur.com/XLh2Bg1.gif")
+            bot.channels.get("381392359507623939").send("**[Contamination Overflow]** will start in **30 mins** <a:BongoCat:489555565295697920> @&516885459482312714 @&516885459482312714");
+            bot.channels.get("381392359507623939").send(embedOF1);
+    });
+}
+
+function clsOF2() {
+    let schedOF2 = require('node-schedule');
+    let ruleclsOF2 = new schedule.RecurrenceRule();
+    ruleclsOF2.dayOfWeek = [06];
+    ruleclsOF2.hour = [00, 03];
+    ruleclsOF2.minute = 30;
+    let jclsOF2 = schedOF2.scheduleJob(ruleclsOF2, function () {
+            const embedOF2 = new Discord.RichEmbed()
+            .setDescription("**Entry requirement:** Lv83, 1x conta pill \n -Entrance will stay open for an hour \n -Squad search requires item lvl 130+ \n -Testplay: https://www.youtube.com/watch?v=Zj6LiH_EXL4 \n -Rewards: 4x/2x mats for hell trinkets, epsilon mod/receiver, (hell mods)")
+            .setThumbnail("https://i.imgur.com/XLh2Bg1.gif")
+            bot.channels.get("381392359507623939").send("**[Contamination Overflow]** will start in **30 mins** <a:BongoCat:489555565295697920> @&516885459482312714 @&516885459482312714");
+            bot.channels.get("381392359507623939").send(embedOF2);
+    });
+}
+
+function clsOF3() {
+    let schedOF3 = require('node-schedule');
+    let ruleclsOF3 = new schedule.RecurrenceRule();
+    ruleclsOF3.dayOfWeek = [00];
+    ruleclsOF3.hour = [06, 09, 16, 19, 22];
+    ruleclsOF3.minute = 30;
+    let jclsOF3 = schedOF3.scheduleJob(ruleclsOF3, function () {
+            const embedOF3 = new Discord.RichEmbed()
+            .setDescription("**Entry requirement:** Lv83, 1x conta pill \n -Entrance will stay open for an hour \n -Squad search requires item lvl 130+ \n -Testplay: https://www.youtube.com/watch?v=Zj6LiH_EXL4 \n -Rewards: 4x/2x mats for hell trinkets, epsilon mod/receiver, (hell mods)")
+            .setThumbnail("https://i.imgur.com/XLh2Bg1.gif")
+            bot.channels.get("381392359507623939").send("**[Contamination Overflow]** will start in **30 mins** <a:BongoCat:489555565295697920> @&516885459482312714 @&516885459482312714");
+            bot.channels.get("381392359507623939").send(embedOF3);
+    });
+}
+
+function clsOF4() {
+    let schedOF4 = require('node-schedule');
+    let ruleclsOF4 = new schedule.RecurrenceRule();
+    ruleclsOF4.dayOfWeek = [01];
+    ruleclsOF4.hour = [00, 03, 06, 09, 16, 19, 22];
+    ruleclsOF4.minute = 30;
+    let jclsOF4 = schedOF4.scheduleJob(ruleclsOF4, function () {
+            const embedOF4 = new Discord.RichEmbed()
+            .setDescription("**Entry requirement:** Lv83, 1x conta pill \n -Entrance will stay open for an hour \n -Squad search requires item lvl 130+ \n -Testplay: https://www.youtube.com/watch?v=Zj6LiH_EXL4 \n -Rewards: 4x/2x mats for hell trinkets, epsilon mod/receiver, (hell mods)")
+            .setThumbnail("https://i.imgur.com/XLh2Bg1.gif")
+            bot.channels.get("381392359507623939").send("**[Contamination Overflow]** will start in **30 mins** <a:BongoCat:489555565295697920> @&516885459482312714 @&516885459482312714");
+            bot.channels.get("381392359507623939").send(embedOF4);
+    });
+}
+
+function clsOF5() {
+    let schedOF5 = require('node-schedule');
+    let ruleclsOF5 = new schedule.RecurrenceRule();
+    ruleclsOF5.dayOfWeek = [02];
+    ruleclsOF5.hour = [00];
+    ruleclsOF5.minute = 30;
+    let jclsOF5 = schedOF5.scheduleJob(ruleclsOF5, function () {
+            const embedOF5 = new Discord.RichEmbed()
+            .setDescription("**Entry requirement:** Lv83, 1x conta pill \n -Entrance will stay open for an hour \n -Squad search requires item lvl 130+ \n -Testplay: https://www.youtube.com/watch?v=Zj6LiH_EXL4 \n -Rewards: 4x/2x mats for hell trinkets, epsilon mod/receiver, (hell mods)")
+            .setThumbnail("https://i.imgur.com/XLh2Bg1.gif")
+            bot.channels.get("381392359507623939").send("**[Contamination Overflow]** will start in **30 mins** <a:BongoCat:489555565295697920> @&516885459482312714 @&516885459482312714");
+            bot.channels.get("381392359507623939").send(embedOF5);
+    });
+}
+
+
+
+function clsOFN1() {
+    let schedOFN1 = require('node-schedule');
+    let ruleclsOFN1 = new schedule.RecurrenceRule();
+    ruleclsOFN1.dayOfWeek = [05];
+    ruleclsOFN1.hour = [07, 10, 17, 20, 23];
+    let jclsOFN1 = schedOFN1.scheduleJob(ruleclsOFN1, function () {
+        setTimeout(() => {
+            const embedOFN1 = new Discord.RichEmbed()
+            .setDescription("[Contamination Overflow]** detected!**")
+            .setColor(0xFF0000)
+            bot.channels.get("429169582301904906").send(embedOFN1);
+        }, 6000)   
+    });
+}
+
+function clsOFN2() {
+    let schedOFN2 = require('node-schedule');
+    let ruleclsOFN2 = new schedule.RecurrenceRule();
+    ruleclsOFN2.dayOfWeek = [06];
+    ruleclsOFN2.hour = [01, 04];
+    let jclsOFN2 = schedOFN2.scheduleJob(ruleclsOFN2, function () {
+        setTimeout(() => {
+            const embedOFN2 = new Discord.RichEmbed()
+            .setDescription("[Contamination Overflow]** detected!**")
+            .setColor(0xFF0000)
+            bot.channels.get("429169582301904906").send(embedOFN2);
+        }, 6000)    
+    });
+}
+
+function clsOFN3() {
+    let schedOFN3 = require('node-schedule');
+    let ruleclsOFN3 = new schedule.RecurrenceRule();
+    ruleclsOFN3.dayOfWeek = [00];
+    ruleclsOFN3.hour = [07, 10, 17, 20, 23];
+    let jclsOFN3 = schedOFN3.scheduleJob(ruleclsOFN3, function () {
+        setTimeout(() => {
+            const embedOFN3 = new Discord.RichEmbed()
+            .setDescription("[Contamination Overflow]** detected!**")
+            .setColor(0xFF0000)
+            bot.channels.get("429169582301904906").send(embedOFN3);
+        }, 6000)    
+    });
+}
+
+function clsOFN4() {
+    let schedOFN4 = require('node-schedule');
+    let ruleclsOFN4 = new schedule.RecurrenceRule();
+    ruleclsOFN4.dayOfWeek = [01];
+    ruleclsOFN4.hour = [01, 04, 07, 10, 17, 20, 23];
+    let jclsOFN4 = schedOFN4.scheduleJob(ruleclsOFN4, function () {
+        setTimeout(() => {
+            const embedOFN4 = new Discord.RichEmbed()
+            .setDescription("[Contamination Overflow]** detected!**")
+            .setColor(0xFF0000)
+            bot.channels.get("429169582301904906").send(embedOFN4);
+        }, 6000)    
+    });
+}
+
+function clsOFN5() {
+    let schedOFN5 = require('node-schedule');
+    let ruleclsOFN5 = new schedule.RecurrenceRule();
+    ruleclsOFN5.dayOfWeek = [02];
+    ruleclsOFN5.hour = [01];
+    let jclsOFN5 = schedOFN5.scheduleJob(ruleclsOFN5, function () {
+        setTimeout(() => {
+            const embedOFN5 = new Discord.RichEmbed()
+            .setDescription("[Contamination Overflow]** detected!**")
+            .setColor(0xFF0000)
+            bot.channels.get("429169582301904906").send(embedOFN5);
+        }, 6000)
+    });
+}
+// ----------------------- NOTIFS OF 
+
 bot.on("message", async message => {
    
     if (message.author.bot) return;
@@ -1013,132 +1179,131 @@ if (message.content.startsWith("mainmsg") && message.channel.name == "lfg-log") 
 
 
 try {
-    if ((message.isMemberMentioned()) && (message.channel.name == "lfg1-main") && (message.content.length <= 5)) {
-        bot.channels.get("381392359507623939").send(message.author + " heyhoe, nxt time attach **@here** on your LFG msg");
+    if ((message.isMemberMentioned()) && (message.channel.name == "lfg-cls")) {
+     let serverembed = new Discord.RichEmbed()
+         .setDescription(message.author + ": " + message.content)
+    	bot.channels.get("517272250597113877").send(serverembed);
      }
      
 
      
    
+// const kpg1 = ["pg"];
+// const kpg2 = ["dr5"];
+// const kpg3 = ["planar gate"];
+// const kpg4 = ["pg5"];
+
+// const ktia1 = ["tia"];
+// const ktia2 = ["tiamat"];
+// const ktia3 = ["sides"];
+
+// const km1 = ["spec"];
+// const km2 = ["dd"];
+// const km3 = ["andras"];
+// const km4 = ["mopups"];
+// const km5 = ["ele"];
+// const km6 = ["elevator"];
+
+// const kc1 = ["crew"];
+// const kc2 = ["weeklies"];
+
+// const msgContent = message.content.toLowerCase();
+
+// let kpgvar = ((msgContent.includes(kpg1)) || (msgContent.includes(kpg2)) || (msgContent.includes(kpg3)) || (msgContent.includes(kpg4)));
+// let ktiavar = ((msgContent.includes(ktia1)) || (msgContent.includes(ktia2)) || (msgContent.includes(ktia3)));
+// let kmvar = ((msgContent.includes(km1)) || (msgContent.includes(km2)) || (msgContent.includes(km3)) || (msgContent.includes(km4))|| (msgContent.includes(km5))|| (msgContent.includes(km6)));
+// let kcvar = ((msgContent.includes(kc1)) || msgContent.includes(kc2));
+
+// if ((message.isMemberMentioned()) && (kpgvar && !ktiavar && !kmvar && !kcvar) && (message.channel.name == "lfg1-main") && (message.content.length > 5)){
+//     let serverembed = new Discord.RichEmbed()
+//         .setDescription(message.author + " is looking for party/member!")
+//         .setThumbnail("https://i.imgur.com/IBtmbnZ.png")
+//         .setColor("#78866b")
+//         .addField(message.content, message.channel.parent)
+//     bot.channels.get("432775028757626890").send(serverembed);
+//     bot.channels.get("432774887032094726").send(serverembed);
+// }
+
+//  if ((message.isMemberMentioned()) && (!kpgvar && ktiavar && !kmvar & !kcvar) && (message.channel.name == "lfg1-main") && (message.content.length > 5)) {
+//     let serverembed = new Discord.RichEmbed()
+//         .setDescription(message.author + " is looking for party/member!")
+//         .setThumbnail("https://imgur.com/g1VKEJE.png")
+//         .setColor("#78866b")
+//         .addField(message.content, message.channel.parent)
+//     bot.channels.get("432775028757626890").send(serverembed);
+//     bot.channels.get("432774887032094726").send(serverembed);
+// }
+
+// if ((message.isMemberMentioned()) && (!kcvar &&!kpgvar && !ktiavar && kmvar) && (message.channel.name == "lfg1-main") && (message.content.length > 5)) {
+// let serverembed = new Discord.RichEmbed()
+//     .setDescription(message.author + " is looking for party/member!")
+//     .setThumbnail("https://imgur.com/pZyxS9Z.png")
+//     .setColor("#78866b")
+//     .addField(message.content, message.channel.parent)
+// bot.channels.get("432775028757626890").send(serverembed);
+// bot.channels.get("432774887032094726").send(serverembed);
+// }
+
+// if ((message.isMemberMentioned()) && (kcvar && !kpgvar && !ktiavar && !kmvar) && (message.channel.name == "lfg1-main") && (message.content.length > 5)) {
+// let serverembed = new Discord.RichEmbed()
+//     .setDescription(message.author + " is looking for party/member!")
+//     .setThumbnail("https://media.discordapp.net/attachments/425266854014222377/432771380115931146/crewmish.gif")
+//     .setColor("#78866b")
+//     .addField(message.content, message.channel.parent)
+// bot.channels.get("432775028757626890").send(serverembed);
+// bot.channels.get("432774887032094726").send(serverembed);
+// }
+
+// if ((message.isMemberMentioned()) && (kpgvar && ktiavar && !kmvar) && (message.channel.name == "lfg1-main") && (message.content.length > 5)) {
+//     let serverembed = new Discord.RichEmbed()
+//         .setDescription(message.author + " is looking for party/member!")
+//         .setThumbnail("https://imgur.com/tHwkGca.png")
+//         .setColor("#78866b")
+//         .addField(message.content, message.channel.parent)
+//     bot.channels.get("432775028757626890").send(serverembed);
+//     bot.channels.get("432774887032094726").send(serverembed);
+// }
+
+// if ((message.isMemberMentioned()) && (kpgvar && !ktiavar && kmvar) && (message.channel.name == "lfg1-main") && (message.content.length > 5)) {
+//     let serverembed = new Discord.RichEmbed()
+//         .setDescription(message.author + " is looking for party/member!")
+//         .setThumbnail("https://imgur.com/vAA8NkZ.png")
+//         .setColor("#78866b")
+//         .addField(message.content, message.channel.parent)
+//     bot.channels.get("432775028757626890").send(serverembed);
+//     bot.channels.get("432774887032094726").send(serverembed);
+// }
+
+//  if ((message.isMemberMentioned()) && (!kpgvar && ktiavar && kmvar) && (message.channel.name == "lfg1-main") && (message.content.length > 5)) {
+//     let serverembed = new Discord.RichEmbed()
+//         .setDescription(message.author + " is looking for party/member!")
+//         .setThumbnail("https://imgur.com/KhlvG1n.png")
+//         .setColor("#78866b")
+//         .addField(message.content, message.channel.parent)
+//     bot.channels.get("432775028757626890").send(serverembed);
+//     bot.channels.get("432774887032094726").send(serverembed);
+// }
 
 
+// if ((message.isMemberMentioned()) && (kpgvar && ktiavar && kmvar) && (message.channel.name == "lfg1-main") && (message.content.length > 5)) {
+//     let serverembed = new Discord.RichEmbed()
+//         .setDescription(message.author + " is looking for party/member!")
+//         .setThumbnail("https://imgur.com/6JoyA8R.png")
+//         .setColor("#78866b")
+//         .addField(message.content, message.channel.parent)
+//     bot.channels.get("432775028757626890").send(serverembed);
+//     bot.channels.get("432774887032094726").send(serverembed);
+// }
 
-    const kpg1 = ["pg"];
-    const kpg2 = ["dr5"];
-    const kpg3 = ["planar gate"];
-    const kpg4 = ["pg5"];
-   
-    const ktia1 = ["tia"];
-    const ktia2 = ["tiamat"];
-    const ktia3 = ["sides"];
-
-    const km1 = ["spec"];
-    const km2 = ["dd"];
-    const km3 = ["andras"];
-    const km4 = ["mopups"];
-    const km5 = ["ele"];
-    const km6 = ["elevator"];
-
-    const kc1 = ["crew"];
-    const kc2 = ["weeklies"];
-
-    const msgContent = message.content.toLowerCase();
-    
-    let kpgvar = ((msgContent.includes(kpg1)) || (msgContent.includes(kpg2)) || (msgContent.includes(kpg3)) || (msgContent.includes(kpg4)));
-    let ktiavar = ((msgContent.includes(ktia1)) || (msgContent.includes(ktia2)) || (msgContent.includes(ktia3)));
-    let kmvar = ((msgContent.includes(km1)) || (msgContent.includes(km2)) || (msgContent.includes(km3)) || (msgContent.includes(km4))|| (msgContent.includes(km5))|| (msgContent.includes(km6)));
-    let kcvar = ((msgContent.includes(kc1)) || msgContent.includes(kc2));
-
-    if ((message.isMemberMentioned()) && (kpgvar && !ktiavar && !kmvar && !kcvar) && (message.channel.name == "lfg1-main") && (message.content.length > 5)){
-        let serverembed = new Discord.RichEmbed()
-            .setDescription(message.author + " is looking for party/member!")
-            .setThumbnail("https://i.imgur.com/IBtmbnZ.png")
-            .setColor("#78866b")
-            .addField(message.content, message.channel.parent)
-        bot.channels.get("432775028757626890").send(serverembed);
-        bot.channels.get("432774887032094726").send(serverembed);
-    }
-
-     if ((message.isMemberMentioned()) && (!kpgvar && ktiavar && !kmvar & !kcvar) && (message.channel.name == "lfg1-main") && (message.content.length > 5)) {
-        let serverembed = new Discord.RichEmbed()
-            .setDescription(message.author + " is looking for party/member!")
-            .setThumbnail("https://imgur.com/g1VKEJE.png")
-            .setColor("#78866b")
-            .addField(message.content, message.channel.parent)
-        bot.channels.get("432775028757626890").send(serverembed);
-        bot.channels.get("432774887032094726").send(serverembed);
-   }
-
-   if ((message.isMemberMentioned()) && (!kcvar &&!kpgvar && !ktiavar && kmvar) && (message.channel.name == "lfg1-main") && (message.content.length > 5)) {
-    let serverembed = new Discord.RichEmbed()
-        .setDescription(message.author + " is looking for party/member!")
-        .setThumbnail("https://imgur.com/pZyxS9Z.png")
-        .setColor("#78866b")
-        .addField(message.content, message.channel.parent)
-    bot.channels.get("432775028757626890").send(serverembed);
-    bot.channels.get("432774887032094726").send(serverembed);
-}
-
-if ((message.isMemberMentioned()) && (kcvar && !kpgvar && !ktiavar && !kmvar) && (message.channel.name == "lfg1-main") && (message.content.length > 5)) {
-    let serverembed = new Discord.RichEmbed()
-        .setDescription(message.author + " is looking for party/member!")
-        .setThumbnail("https://media.discordapp.net/attachments/425266854014222377/432771380115931146/crewmish.gif")
-        .setColor("#78866b")
-        .addField(message.content, message.channel.parent)
-    bot.channels.get("432775028757626890").send(serverembed);
-    bot.channels.get("432774887032094726").send(serverembed);
-}
-
-    if ((message.isMemberMentioned()) && (kpgvar && ktiavar && !kmvar) && (message.channel.name == "lfg1-main") && (message.content.length > 5)) {
-        let serverembed = new Discord.RichEmbed()
-            .setDescription(message.author + " is looking for party/member!")
-            .setThumbnail("https://imgur.com/tHwkGca.png")
-            .setColor("#78866b")
-            .addField(message.content, message.channel.parent)
-        bot.channels.get("432775028757626890").send(serverembed);
-        bot.channels.get("432774887032094726").send(serverembed);
-    }
-
-    if ((message.isMemberMentioned()) && (kpgvar && !ktiavar && kmvar) && (message.channel.name == "lfg1-main") && (message.content.length > 5)) {
-        let serverembed = new Discord.RichEmbed()
-            .setDescription(message.author + " is looking for party/member!")
-            .setThumbnail("https://imgur.com/vAA8NkZ.png")
-            .setColor("#78866b")
-            .addField(message.content, message.channel.parent)
-        bot.channels.get("432775028757626890").send(serverembed);
-        bot.channels.get("432774887032094726").send(serverembed);
-    }
-    
-     if ((message.isMemberMentioned()) && (!kpgvar && ktiavar && kmvar) && (message.channel.name == "lfg1-main") && (message.content.length > 5)) {
-        let serverembed = new Discord.RichEmbed()
-            .setDescription(message.author + " is looking for party/member!")
-            .setThumbnail("https://imgur.com/KhlvG1n.png")
-            .setColor("#78866b")
-            .addField(message.content, message.channel.parent)
-        bot.channels.get("432775028757626890").send(serverembed);
-        bot.channels.get("432774887032094726").send(serverembed);
-    }
-   
-   
-    if ((message.isMemberMentioned()) && (kpgvar && ktiavar && kmvar) && (message.channel.name == "lfg1-main") && (message.content.length > 5)) {
-        let serverembed = new Discord.RichEmbed()
-            .setDescription(message.author + " is looking for party/member!")
-            .setThumbnail("https://imgur.com/6JoyA8R.png")
-            .setColor("#78866b")
-            .addField(message.content, message.channel.parent)
-        bot.channels.get("432775028757626890").send(serverembed);
-        bot.channels.get("432774887032094726").send(serverembed);
-    }
-   
-    if ((message.isMemberMentioned()) && (!kpgvar && !ktiavar && !kmvar && !kcvar) && (message.channel.name == "lfg1-main") && (message.content.length > 5)) {
-        let serverembed = new Discord.RichEmbed()
-            .setDescription(message.author + " is looking for party/member!")
-            //.setThumbnail("https://imgur.com/KhlvG1n.png")
-            .setColor("#78866b")
-            .addField(message.content, message.channel.parent)
-        bot.channels.get("432775028757626890").send(serverembed);
-        bot.channels.get("432774887032094726").send(serverembed);
-    }
+// if ((message.isMemberMentioned()) && (!kpgvar && !ktiavar && !kmvar && !kcvar) && (message.channel.name == "lfg1-main") && (message.content.length > 5)) {
+//     let serverembed = new Discord.RichEmbed()
+//         .setDescription(message.author + " is looking for party/member!")
+//         //.setThumbnail("https://imgur.com/KhlvG1n.png")
+//         .setColor("#78866b")
+//         .addField(message.content, message.channel.parent)
+//     bot.channels.get("432775028757626890").send(serverembed);
+//     bot.channels.get("432774887032094726").send(serverembed);
+// }
 
 
 
@@ -1266,7 +1431,7 @@ bot.on('presenceUpdate', (oldMember, newMember) => {
 bot.on('guildMemberRemove', member => {
     let guild = member.guild;
   
-bot.channels.get("425266854014222377").send(member.user + ` 🔪`)
+bot.channels.get("425266854014222377").send(member.user +` (` + member.user.tag + `) 🔪`)
   });  
 
 bot.on('guildMemberAdd', member => {
