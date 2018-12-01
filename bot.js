@@ -259,8 +259,27 @@ function clsCAR() {
     ruleclsCAR.hour = [5, 21, 13];
     ruleclsCAR.minute = 00;
     let jclsCAR = scheduleclsCAR.scheduleJob(ruleclsCAR, function () {
+	    
+           const user = bot.users.get("427786502999638016");
+        const amount = 3;
+
+            bot.channels.get("463891660955320320").fetchMessages({
+                limit: amount,
+            }).then((messages) => {
+                if (user) {
+                    const filterBy = user ? user.id : bot.user.id;
+                    messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
+                }
+                bot.channels.get("463891660955320320").bulkDelete(messages).catch(error => console.log(error.stack));
+            });
+
+        
+        setTimeout(() => {
+    
         bot.channels.get("463891660955320320").send("**Crew Brawl is now active o/**" + " @&516885459482312714 @&516885127419396116");
-    });
+  	 }, 6000)
+	    
+	});
 }
 
 //START OF CLSDD
@@ -967,7 +986,7 @@ function clsOFN1() {
             .setDescription("[Contamination Overflow]** detected!**")
             .setColor(0xFF0000)
             bot.channels.get("429169582301904906").send(embedOFN1);
-        }, 6000)   
+        }, 7000)   
     });
 }
 
@@ -982,7 +1001,7 @@ function clsOFN2() {
             .setDescription("[Contamination Overflow]** detected!**")
             .setColor(0xFF0000)
             bot.channels.get("429169582301904906").send(embedOFN2);
-        }, 6000)    
+        }, 7000)    
     });
 }
 
@@ -997,7 +1016,7 @@ function clsOFN3() {
             .setDescription("[Contamination Overflow]** detected!**")
             .setColor(0xFF0000)
             bot.channels.get("429169582301904906").send(embedOFN3);
-        }, 6000)    
+        }, 7000)    
     });
 }
 
@@ -1012,7 +1031,7 @@ function clsOFN4() {
             .setDescription("[Contamination Overflow]** detected!**")
             .setColor(0xFF0000)
             bot.channels.get("429169582301904906").send(embedOFN4);
-        }, 6000)    
+        }, 7000)    
     });
 }
 
@@ -1027,7 +1046,7 @@ function clsOFN5() {
             .setDescription("[Contamination Overflow]** detected!**")
             .setColor(0xFF0000)
             bot.channels.get("429169582301904906").send(embedOFN5);
-        }, 6000)
+        }, 7000)
     });
 }
 // ----------------------- NOTIFS OF 
@@ -1179,7 +1198,7 @@ if (message.content.startsWith("mainmsg") && message.channel.name == "lfg-log") 
 
 
 try {
-    if ((message.isMemberMentioned()) && (message.channel.name == "lfg-cls")) {
+    if ((message.isMemberMentioned()) && (message.channel.name == "lfg-closers")) {
      let serverembed = new Discord.RichEmbed()
          .setDescription(message.author + ": " + message.content)
     	bot.channels.get("517272250597113877").send(serverembed);
@@ -1397,15 +1416,23 @@ if (message.content.startsWith("S> ") && message.channel.name == "lounge") {
 bot.on('presenceUpdate', (oldMember, newMember) => {
     
     let guild = newMember.guild;
-    let playRole = guild.roles.find("name", "ALFG-ON");
+    let playRole = guild.roles.find("name", "cls-ingame");
  
     if (!playRole) return;
     if (newMember.roles.has("432384823068459018") && newMember.user.presence.game && (newMember.user.presence.game.name === "Closers Dimension Conflict" || newMember.user.presence.game.name === "Closers")) {
        newMember.addRole(playRole).catch(console.error);
        //bot.channels.get("425266854014222377").send(newMember + "added " + playRole.id);
     
-    } else if (!newMember.user.presence.game && newMember.roles.has(playRole.id)) {
+    } else if (!newMember.user.presence.game && newMember.roles.has(playRole.id) && newMember.roles.has("432384823068459018")) {
         newMember.removeRole(playRole).catch(console.error);
+    }
+	
+    if (newMember.roles.has("432877618954764289") && (!newMember.user.presence.status("offline") || !newMember.user.presence.status("dnd"))) {
+        if (!newMember.roles.has("432877618954764289")) return;
+        newMember.addRole('432384941855080448').catch(console.error);
+
+    } else if ((newMember.user.presence.status("offline") || newMember.user.presence.status("dnd")) && newMember.roles.has("432384941855080448") && newMember.roles.has("432877618954764289")) {
+        newMember.removeRole('432384941855080448').catch(console.error);
     }
 
     if (newMember.roles.has("397285952810123274") && newMember.user.presence.game && (newMember.user.presence.game.name === "Closers Dimension Conflict" || newMember.user.presence.game.name === "Closers")) {
@@ -1416,6 +1443,35 @@ bot.on('presenceUpdate', (oldMember, newMember) => {
 	}
 	}
 
+    if (newMember.roles.has("516894630672072715") && (!newMember.user.presence.status("offline") || !newMember.user.presence.status("dnd"))) {
+        if (!newMember.roles.has("516894630672072715")) return;
+        newMember.addRole('516885459482312714').catch(console.error);
+
+    } else if ((newMember.user.presence.status("offline") || newMember.user.presence.status("dnd")) && newMember.roles.has("516885459482312714")) {
+        newMember.removeRole('516885459482312714').catch(console.error);
+    }
+
+    if (newMember.roles.has("516894946805153792") && (!newMember.user.presence.status("offline") || !newMember.user.presence.status("dnd"))) {
+        if (!newMember.roles.has("516894946805153792")) return;
+        newMember.addRole('516885459482312714').catch(console.error);
+
+    } else if ((newMember.user.presence.status("offline") || newMember.user.presence.status("dnd")) && newMember.roles.has('516885459482312714')) {
+        newMember.removeRole('516885459482312714').catch(console.error);
+    }
+
+    
+    if (newMember.user.presence && newMember.user.presence.game && newMember.user.presence.game.streaming) {
+        if (!newMember.user.presence.game.streaming) return;
+        bot.channels.get("516882861111115776").send(newMember.user + " is now streaming!" + "\n" + "**Stream link:** " + newMember.user.presence.game.url);
+        newMember.addRole('516909590034645007').catch(console.error);
+    } 
+
+    
+    if (newMember.user.presence && newMember.user.presence.game && !newMember.user.presence.game.streaming && newMember.roles.has('516909590034645007')) {
+        if (!newMember.roles.has('516909590034645007')) return;
+        newMember.removeRole('516909590034645007').catch(console.error);
+    } 
+	
 	//if ((!newMember.id== "183276178105171968") || (!newMember.id== "376344592049766401") || (!newMember.id== "145895874520678400")) return;
 	//if (newMember.id== "183276178105171968" && newMember.user.presence && newMember.user.presence.game && newMember.user.presence.game.streaming)  {
         //bot.users.get("201295790650556416").send(newMember.user+" is now streaming!" + "\n"+ "**Stream link:** "+ newMember.user.presence.game.url+ "\n"+ "**Streamer's discord tag:** "+newMember.user.username+"#"+newMember.user.tag);
@@ -1435,7 +1491,7 @@ bot.channels.get("425266854014222377").send(member.user +` (` + member.user.tag 
   });  
 
 bot.on('guildMemberAdd', member => {
-    bot.channels.get("432774887032094726").send(member.user + ` Sorry for the ping! But, if you're looking for a party, you can ping those desparate peeps here.`)
+    //bot.channels.get("432774887032094726").send(member.user + ` Sorry for the ping! But, if you're looking for a party, you can ping those desparate peeps here.`)
     bot.channels.get("467923880611282965").send(member.user + ` **Welcome!** <:tinausual:383533892336091136> \nPlease go to <#439353017960235018> to get started! *also, you might want to read our* <#438285913919979521> \n*Please enjoy your stay!* <:seulbinut:411458765414596608>`)
 });
 
