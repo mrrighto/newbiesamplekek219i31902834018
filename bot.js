@@ -1755,106 +1755,106 @@ bot.on("messageReactionRemove", (reaction, user) => {
         target2.removeRole('432877618954764289').catch(console.error);
 
     }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "seha8") {
-        target1.removeRole('392187302086049794').catch(console.error);
+        target2.removeRole('392187302086049794').catch(console.error);
     }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "sylvicry") {
-        target1.removeRole('392188703315066890').catch(console.error);
+        target2.removeRole('392188703315066890').catch(console.error);
     }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "mistel6") {
-        target1.removeRole('392188791990910986').catch(console.error);
+        target2.removeRole('392188791990910986').catch(console.error);
     }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "YuriGood") {
-        target1.removeRole('392189208829100032').catch(console.error);
+        target2.removeRole('392189208829100032').catch(console.error);
     }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "jmeme") {
-        target1.removeRole('392189130672570370').catch(console.error);
+        target2.removeRole('392189130672570370').catch(console.error);
 
     }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "NataMe") {
-        target1.removeRole('392190522313277440').catch(console.error);
+        target2.removeRole('392190522313277440').catch(console.error);
     }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "leviainanutshell") {
-        target1.removeRole('392190874445938700').catch(console.error);
+        target2.removeRole('392190874445938700').catch(console.error);
     }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "HarpyLove") {
-        target1.removeRole('392191180097585174').catch(console.error);
+        target2.removeRole('392191180097585174').catch(console.error);
     }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "tinausual") {
-        target1.removeRole('392191391620661248').catch(console.error);
+        target2.removeRole('392191391620661248').catch(console.error);
     }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "violet") {
-        target1.removeRole('392191632918839318').catch(console.error);
+        target2.removeRole('392191632918839318').catch(console.error);
 
     }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "wolfghahaha") {
-        target1.removeRole('392191931880570880').catch(console.error);
+        target2.removeRole('392191931880570880').catch(console.error);
     }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "LunaSelfie") {
-        target1.removeRole('398771113204645888').catch(console.error);
+        target2.removeRole('398771113204645888').catch(console.error);
     }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "SomaHappy") {
-        target1.removeRole('407197682759892992').catch(console.error);
+        target2.removeRole('407197682759892992').catch(console.error);
     }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "baithinkfuge") {
-        target1.removeRole('466473120400670720').catch(console.error);
+        target2.removeRole('466473120400670720').catch(console.error);
     }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "GWqlabsSoon") {
-        target1.removeRole('522445723669626880').catch(console.error);
+        target2.removeRole('522445723669626880').catch(console.error);
 
     }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.identifier == "%F0%9F%87%B8%F0%9F%87%AC") {
-        target1.removeRole('406828031521325056').catch(console.error);
+        target2.removeRole('406828031521325056').catch(console.error);
     }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.identifier == "%F0%9F%87%B5%F0%9F%87%AD") {
-        target1.removeRole('406827938265432096').catch(console.error);
+        target2.removeRole('406827938265432096').catch(console.error);
     }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.identifier == "%F0%9F%87%B2%F0%9F%87%BE") {
-        target1.removeRole('406828076916539393').catch(console.error);
+        target2.removeRole('406828076916539393').catch(console.error);
     }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.identifier == "%F0%9F%87%B9%F0%9F%87%AD") {
-        target1.removeRole('425185397933473793').catch(console.error);
+        target2.removeRole('425185397933473793').catch(console.error);
     }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.identifier == "%F0%9F%87%AE%F0%9F%87%A9") {
-        target1.removeRole('466955289136988160').catch(console.error);
+        target2.removeRole('466955289136988160').catch(console.error);
 
     }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.identifier == "%F0%9F%87%BA%F0%9F%87%B8") {
-        target1.removeRole('417572446535811092').catch(console.error);
+        target2.removeRole('417572446535811092').catch(console.error);
     }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.identifier == "%F0%9F%87%A6%F0%9F%87%BA") {
-        target1.removeRole('417572446535811092').catch(console.error);
+        target2.removeRole('417572446535811092').catch(console.error);
     }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "GWnanamiWOKE") {
-        target1.removeRole('410056687291072513').catch(console.error);
+        target2.removeRole('410056687291072513').catch(console.error);
     }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "GWnanamiWakeMeUpInside") {
-        target1.removeRole('410056748867780617').catch(console.error);
+        target2.removeRole('410056748867780617').catch(console.error);
     }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "KappaBongo") {
-        target1.removeRole('410056800528760832').catch(console.error);
+        target2.removeRole('410056800528760832').catch(console.error);
 
     }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "2Bhappy") {
-        target1.removeRole('410056976014508043').catch(console.error);
+        target2.removeRole('410056976014508043').catch(console.error);
     }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "GWnanamiNotLikePapika") {
-        target1.removeRole('410079322305462273').catch(console.error);
+        target2.removeRole('410079322305462273').catch(console.error);
     }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "SeemsKappa") {
-        target1.removeRole('410081025151205376').catch(console.error);
+        target2.removeRole('410081025151205376').catch(console.error);
 
 
     }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "1%E2%83%A3" && reaction.message.content.startsWith("1. **[ Notifications ] -** __Looking for a party or member in Closers?__  :abrillianceCHECK: ")) {
-        target1.removeRole('432877618954764289').catch(console.error);
+        target2.removeRole('432877618954764289').catch(console.error);
     }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "2%E2%83%A3" && reaction.message.content.startsWith("1. **[ Notifications ] -** __Looking for a party or member in Closers?__  :abrillianceCHECK: ")) {
-        target1.removeRole('432384823068459018').catch(console.error);
+        target2.removeRole('432384823068459018').catch(console.error);
     }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "3%E2%83%A3" && reaction.message.content.startsWith("1. **[ Notifications ] -** __Looking for a party or member in Closers?__  :abrillianceCHECK: ")) {
-        target1.removeRole('522365368249876480').catch(console.error);
+        target2.removeRole('522365368249876480').catch(console.error);
     }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "4%E2%83%A3" && reaction.message.content.startsWith("1. **[ Notifications ] -** __Looking for a party or member in Closers?__  :abrillianceCHECK: ")) {
-        target1.removeRole('521323904095223808').catch(console.error);
+        target2.removeRole('521323904095223808').catch(console.error);
     }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.name == "ping~2" && reaction.message.content.startsWith("1. **[ Notifications ] -** __Looking for a party or member in Closers?__  :abrillianceCHECK: ")) {
-        target1.removeRole('432384941855080448').catch(console.error);
+        target2.removeRole('432384941855080448').catch(console.error);
 
     }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "1%E2%83%A3" && reaction.message.content.startsWith("2. **[ Notifications ] -** __Upcoming timings for Hell Overflow in Closers__ :abrillianceCHECK:")) {
-        target1.removeRole('516894630672072715').catch(console.error);
+        target2.removeRole('516894630672072715').catch(console.error);
     }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.name == "ping~2" && reaction.message.content.startsWith("2. **[ Notifications ] -** __Upcoming timings for Hell Overflow in Closers__ :abrillianceCHECK:")) {
-        target1.removeRole('516910275039985664').catch(console.error);
+        target2.removeRole('516910275039985664').catch(console.error);
 
     }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "1%E2%83%A3" && reaction.message.content.startsWith("3. **[ Notifications ] -** __Crew brawl timings (only Nobility crew members are allowed to use this service)__ :abrillianceCHECK:")) {
-        target1.removeRole('516894946805153792').catch(console.error);
+        target2.removeRole('516894946805153792').catch(console.error);
     }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.name == "ping~2" && reaction.message.content.startsWith("3. **[ Notifications ] -** __Crew brawl timings (only Nobility crew members are allowed to use this service)__ :abrillianceCHECK:")) {
-        target1.removeRole('516895029805973505').catch(console.error);
+        target2.removeRole('516895029805973505').catch(console.error);
 
     }else if (reaction.message.channel.name == "closers-survey🔒" && reaction.emoji.identifier == "1%E2%83%A3" && reaction.message.content.startsWith("**3.** **Press 1** if you are interested to run any **Events**.")) {
-        target1.removeRole('521322025030254594').catch(console.error);
+        target2.removeRole('521322025030254594').catch(console.error);
     }else if (reaction.message.channel.name == "closers-survey🔒" && reaction.emoji.identifier == "2%E2%83%A3" && reaction.message.content.startsWith("**3.** **Press 1** if you are interested to run any **Events**.")) {
-        target1.removeRole('521322066243485711').catch(console.error);
+        target2.removeRole('521322066243485711').catch(console.error);
     }else if (reaction.message.channel.name == "closers-survey🔒" && reaction.emoji.identifier == "3%E2%83%A3" && reaction.message.content.startsWith("**3.** **Press 1** if you are interested to run any **Events**.")) {
-        target1.removeRole('521321797636063232').catch(console.error);
+        target2.removeRole('521321797636063232').catch(console.error);
 
     }else if (reaction.message.channel.name == "closers-survey🔒" && reaction.emoji.identifier == "4%E2%83%A3" && reaction.message.content.startsWith("**3.** **Press 1** if you are interested to run any **Events**.")) {
-        target1.removeRole('521321963055218688').catch(console.error);
+        target2.removeRole('521321963055218688').catch(console.error);
     }else if (reaction.message.channel.name == "closers-survey🔒" && reaction.emoji.identifier == "5%E2%83%A3" && reaction.message.content.startsWith("**3.** **Press 1** if you are interested to run any **Events**.")) {
-        target1.removeRole('521321860974116875').catch(console.error);
+        target2.removeRole('521321860974116875').catch(console.error);
     }else if (reaction.message.channel.name == "closers-survey🔒" && reaction.emoji.identifier == "6%E2%83%A3" && reaction.message.content.startsWith("**3.** **Press 1** if you are interested to run any **Events**.")) {
-        target1.removeRole('521321927000719371').catch(console.error);
+        target2.removeRole('521321927000719371').catch(console.error);
     }else if (reaction.message.channel.name == "closers-survey🔒" && reaction.emoji.identifier == "7%E2%83%A3" && reaction.message.content.startsWith("**3.** **Press 1** if you are interested to run any **Events**.")) {
-        target1.removeRole('521321652122812416').catch(console.error);
+        target2.removeRole('521321652122812416').catch(console.error);
     }else if (reaction.message.channel.name == "closers-survey🔒" && reaction.emoji.identifier == "8%E2%83%A3" && reaction.message.content.startsWith("**3.** **Press 1** if you are interested to run any **Events**.")) {
-        target1.removeRole('521321343988269066').catch(console.error);
+        target2.removeRole('521321343988269066').catch(console.error);
 
     }
 
