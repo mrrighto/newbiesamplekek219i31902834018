@@ -1577,7 +1577,11 @@ bot.on('guildMemberAdd', member => {
 	.setDescription("• Go to <#439353017960235018> if you played CLOSERS \n • Or go to <#386494149114724353> and type `>rank Visitor`")
 bot.channels.get("467923880611282965").send(member.user + ` **Welcome!** \nPlease proceed to one of the following below:`)
 bot.channels.get("467923880611282965").send(newmemmesg1);
-bot.channels.get("467923880611282965").send("Also please do read our <#521179220584693760> and enjoy your stay!")
+
+   setTimeout(() => {
+    
+        bot.channels.get("467923880611282965").send("Also please do read our <#521179220584693760> and enjoy your stay!")
+  	 }, 2000)
 });
 
 
@@ -1724,23 +1728,23 @@ bot.on("messageReactionAdd", (reaction, user) => {
 
     }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "1%E2%83%A3" && reaction.message.content.startsWith("1. **[ Notifications ] -**")) {
         target1.addRole('432877618954764289').catch(console.error);
-    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "2%E2%83%A3" && reaction.message.content.startsWith("1. **[ Notifications ] -** __Looking for a party or member in Closers?__  :abrillianceCHECK: ")) {
+    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "2%E2%83%A3" && reaction.message.content.startsWith("1. **[ Notifications ] -**")) {
         target1.addRole('432384823068459018').catch(console.error);
-    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "3%E2%83%A3" && reaction.message.content.startsWith("1. **[ Notifications ] -** __Looking for a party or member in Closers?__  :abrillianceCHECK: ")) {
+    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "3%E2%83%A3" && reaction.message.content.startsWith("1. **[ Notifications ] -**")) {
         target1.addRole('522365368249876480').catch(console.error);
-    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "4%E2%83%A3" && reaction.message.content.startsWith("1. **[ Notifications ] -** __Looking for a party or member in Closers?__  :abrillianceCHECK: ")) {
+    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "4%E2%83%A3" && reaction.message.content.startsWith("1. **[ Notifications ] -**")) {
         target1.addRole('521323904095223808').catch(console.error);
-    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.name == "ping~2" && reaction.message.content.startsWith("1. **[ Notifications ] -** __Looking for a party or member in Closers?__  :abrillianceCHECK: ")) {
+    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.name == "ping~2" && reaction.message.content.startsWith("1. **[ Notifications ] -**")) {
         target1.addRole('432384941855080448').catch(console.error);
 
-    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "1%E2%83%A3" && reaction.message.content.startsWith("2. **[ Notifications ] -** __Upcoming timings for Hell Overflow in Closers__ :abrillianceCHECK:")) {
+    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "1%E2%83%A3" && reaction.message.content.startsWith("2. **[ Notifications ] -**")) {
         target1.addRole('516894630672072715').catch(console.error);
-    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.name == "ping~2" && reaction.message.content.startsWith("2. **[ Notifications ] -** __Upcoming timings for Hell Overflow in Closers__ :abrillianceCHECK:")) {
+    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.name == "ping~2" && reaction.message.content.startsWith("2. **[ Notifications ] -**")) {
         target1.addRole('516910275039985664').catch(console.error);
 
-    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "1%E2%83%A3" && reaction.message.content.startsWith("3. **[ Notifications ] -** __Crew brawl timings (only Nobility crew members are allowed to use this service)__ :abrillianceCHECK:")) {
+    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "1%E2%83%A3" && reaction.message.content.startsWith("3. **[ Notifications ] -**")) {
         target1.addRole('516894946805153792').catch(console.error);
-    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.name == "ping~2" && reaction.message.content.startsWith("3. **[ Notifications ] -** __Crew brawl timings (only Nobility crew members are allowed to use this service)__ :abrillianceCHECK:")) {
+    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.name == "ping~2" && reaction.message.content.startsWith("3. **[ Notifications ] -**")) {
         target1.addRole('516895029805973505').catch(console.error);
     }
 
@@ -1817,25 +1821,25 @@ bot.on("messageReactionRemove", (reaction, user) => {
         target2.removeRole('410081025151205376').catch(console.error);
 
 
-    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "1%E2%83%A3" && reaction.message.content.startsWith("1. **[ Notifications ] -** __Looking for a party or member in Closers?__  :abrillianceCHECK: ")) {
+    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "1%E2%83%A3" && reaction.message.content.startsWith("1. **[ Notifications ] -**")) {
         target2.removeRole('432877618954764289').catch(console.error);
-    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "2%E2%83%A3" && reaction.message.content.startsWith("1. **[ Notifications ] -** __Looking for a party or member in Closers?__  :abrillianceCHECK: ")) {
+    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "2%E2%83%A3" && reaction.message.content.startsWith("1. **[ Notifications ] -**")) {
         target2.removeRole('432384823068459018').catch(console.error);
-    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "3%E2%83%A3" && reaction.message.content.startsWith("1. **[ Notifications ] -** __Looking for a party or member in Closers?__  :abrillianceCHECK: ")) {
+    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "3%E2%83%A3" && reaction.message.content.startsWith("1. **[ Notifications ] -**")) {
         target2.removeRole('522365368249876480').catch(console.error);
-    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "4%E2%83%A3" && reaction.message.content.startsWith("1. **[ Notifications ] -** __Looking for a party or member in Closers?__  :abrillianceCHECK: ")) {
+    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "4%E2%83%A3" && reaction.message.content.startsWith("1. **[ Notifications ] -**")) {
         target2.removeRole('521323904095223808').catch(console.error);
-    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.name == "ping~2" && reaction.message.content.startsWith("1. **[ Notifications ] -** __Looking for a party or member in Closers?__  :abrillianceCHECK: ")) {
+    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.name == "ping~2" && reaction.message.content.startsWith("1. **[ Notifications ] -**")) {
         target2.removeRole('432384941855080448').catch(console.error);
 
-    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "1%E2%83%A3" && reaction.message.content.startsWith("2. **[ Notifications ] -** __Upcoming timings for Hell Overflow in Closers__ :abrillianceCHECK:")) {
+    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "1%E2%83%A3" && reaction.message.content.startsWith("2. **[ Notifications ] -**")) {
         target2.removeRole('516894630672072715').catch(console.error);
-    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.name == "ping~2" && reaction.message.content.startsWith("2. **[ Notifications ] -** __Upcoming timings for Hell Overflow in Closers__ :abrillianceCHECK:")) {
+    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.name == "ping~2" && reaction.message.content.startsWith("2. **[ Notifications ] -**")) {
         target2.removeRole('516910275039985664').catch(console.error);
 
-    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "1%E2%83%A3" && reaction.message.content.startsWith("3. **[ Notifications ] -** __Crew brawl timings (only Nobility crew members are allowed to use this service)__ :abrillianceCHECK:")) {
+    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "1%E2%83%A3" && reaction.message.content.startsWith("3. **[ Notifications ] -**")) {
         target2.removeRole('516894946805153792').catch(console.error);
-    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.name == "ping~2" && reaction.message.content.startsWith("3. **[ Notifications ] -** __Crew brawl timings (only Nobility crew members are allowed to use this service)__ :abrillianceCHECK:")) {
+    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.name == "ping~2" && reaction.message.content.startsWith("3. **[ Notifications ] -**")) {
         target2.removeRole('516895029805973505').catch(console.error);
 
     }else if (reaction.message.channel.name == "closers-survey🔒" && reaction.emoji.identifier == "1%E2%83%A3" && reaction.message.content.startsWith("**3.** **Press 1** if you are interested to run any **Events**.")) {
