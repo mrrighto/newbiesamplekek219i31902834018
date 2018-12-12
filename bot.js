@@ -276,7 +276,7 @@ function clsCAR() {
         
         setTimeout(() => {
     
-        bot.channels.get("463891660955320320").send("**Crew Brawl is now active o/**" + " @&516885459482312714 @&516885127419396116");
+        bot.channels.get("463891660955320320").send("**Crew Brawl is now active o/** <@&516895029805973505>");
   	 }, 6000)
 	    
 	});
@@ -906,9 +906,9 @@ function clsOF1() {
     ruleclsOF1.minute = 30;
     let jclsOF1 = schedOF1.scheduleJob(ruleclsOF1, function () {
             const embedOF1 = new Discord.RichEmbed()
-            .setDescription("**Entry requirement:** Lv83, 1x conta pill \n -Entrance will stay open for an hour \n -Squad search requires item lvl 130+ \n -Testplay: https://www.youtube.com/watch?v=Zj6LiH_EXL4 \n -Rewards: 4x/2x mats for hell trinkets, epsilon mod/receiver, (hell mods)")
+            .setDescription("**Entry requirement:** Lv83, 1x Capsule Contamination Purifier \n -Entrance will stay open for an hour \n -Squad search requires item lvl 130+ \n -Testplay: https://www.youtube.com/watch?v=Zj6LiH_EXL4 \n -Rewards: 4x/2x mats for hell trinkets, epsilon mod/receiver, (hell mods)")
             .setThumbnail("https://i.imgur.com/XLh2Bg1.gif")
-            bot.channels.get("381392359507623939").send("**[Contamination Overflow]** will start in **30 mins** <a:BongoCat:489555565295697920> @&516885459482312714 @&516885459482312714");
+            bot.channels.get("381392359507623939").send("**[Contamination Overflow]** will start in **30 mins** <@&516910275039985664>");
             bot.channels.get("381392359507623939").send(embedOF1);
     });
 }
@@ -921,9 +921,9 @@ function clsOF2() {
     ruleclsOF2.minute = 30;
     let jclsOF2 = schedOF2.scheduleJob(ruleclsOF2, function () {
             const embedOF2 = new Discord.RichEmbed()
-            .setDescription("**Entry requirement:** Lv83, 1x conta pill \n -Entrance will stay open for an hour \n -Squad search requires item lvl 130+ \n -Testplay: https://www.youtube.com/watch?v=Zj6LiH_EXL4 \n -Rewards: 4x/2x mats for hell trinkets, epsilon mod/receiver, (hell mods)")
+            .setDescription("**Entry requirement:** Lv83, 1x Capsule Contamination Purifier \n -Entrance will stay open for an hour \n -Squad search requires item lvl 130+ \n -Testplay: https://www.youtube.com/watch?v=Zj6LiH_EXL4 \n -Rewards: 4x/2x mats for hell trinkets, epsilon mod/receiver, (hell mods)")
             .setThumbnail("https://i.imgur.com/XLh2Bg1.gif")
-            bot.channels.get("381392359507623939").send("**[Contamination Overflow]** will start in **30 mins** <a:BongoCat:489555565295697920> @&516885459482312714 @&516885459482312714");
+            bot.channels.get("381392359507623939").send("**[Contamination Overflow]** will start in **30 mins** <@&516910275039985664>");
             bot.channels.get("381392359507623939").send(embedOF2);
     });
 }
@@ -936,9 +936,9 @@ function clsOF3() {
     ruleclsOF3.minute = 30;
     let jclsOF3 = schedOF3.scheduleJob(ruleclsOF3, function () {
             const embedOF3 = new Discord.RichEmbed()
-            .setDescription("**Entry requirement:** Lv83, 1x conta pill \n -Entrance will stay open for an hour \n -Squad search requires item lvl 130+ \n -Testplay: https://www.youtube.com/watch?v=Zj6LiH_EXL4 \n -Rewards: 4x/2x mats for hell trinkets, epsilon mod/receiver, (hell mods)")
+            .setDescription("**Entry requirement:** Lv83, 1x Capsule Contamination Purifier \n -Entrance will stay open for an hour \n -Squad search requires item lvl 130+ \n -Testplay: https://www.youtube.com/watch?v=Zj6LiH_EXL4 \n -Rewards: 4x/2x mats for hell trinkets, epsilon mod/receiver, (hell mods)")
             .setThumbnail("https://i.imgur.com/XLh2Bg1.gif")
-            bot.channels.get("381392359507623939").send("**[Contamination Overflow]** will start in **30 mins** <a:BongoCat:489555565295697920> @&516885459482312714 @&516885459482312714");
+            bot.channels.get("381392359507623939").send("**[Contamination Overflow]** will start in **30 mins** <@&516910275039985664>");
             bot.channels.get("381392359507623939").send(embedOF3);
     });
 }
@@ -951,9 +951,9 @@ function clsOF4() {
     ruleclsOF4.minute = 30;
     let jclsOF4 = schedOF4.scheduleJob(ruleclsOF4, function () {
             const embedOF4 = new Discord.RichEmbed()
-            .setDescription("**Entry requirement:** Lv83, 1x conta pill \n -Entrance will stay open for an hour \n -Squad search requires item lvl 130+ \n -Testplay: https://www.youtube.com/watch?v=Zj6LiH_EXL4 \n -Rewards: 4x/2x mats for hell trinkets, epsilon mod/receiver, (hell mods)")
+            .setDescription("**Entry requirement:** Lv83, 1x Capsule Contamination Purifier \n -Entrance will stay open for an hour \n -Squad search requires item lvl 130+ \n -Testplay: https://www.youtube.com/watch?v=Zj6LiH_EXL4 \n -Rewards: 4x/2x mats for hell trinkets, epsilon mod/receiver, (hell mods)")
             .setThumbnail("https://i.imgur.com/XLh2Bg1.gif")
-            bot.channels.get("381392359507623939").send("**[Contamination Overflow]** will start in **30 mins** <a:BongoCat:489555565295697920> @&516885459482312714 @&516885459482312714");
+            bot.channels.get("381392359507623939").send("**[Contamination Overflow]** will start in **30 mins** <@&516910275039985664>");
             bot.channels.get("381392359507623939").send(embedOF4);
     });
 }
@@ -962,13 +962,13 @@ function clsOF5() {
     let schedOF5 = require('node-schedule');
     let ruleclsOF5 = new schedule.RecurrenceRule();
     ruleclsOF5.dayOfWeek = [02];
-    ruleclsOF5.hour = [00];
+    ruleclsOF5.hour = [00, 03];
     ruleclsOF5.minute = 30;
     let jclsOF5 = schedOF5.scheduleJob(ruleclsOF5, function () {
             const embedOF5 = new Discord.RichEmbed()
-            .setDescription("**Entry requirement:** Lv83, 1x conta pill \n -Entrance will stay open for an hour \n -Squad search requires item lvl 130+ \n -Testplay: https://www.youtube.com/watch?v=Zj6LiH_EXL4 \n -Rewards: 4x/2x mats for hell trinkets, epsilon mod/receiver, (hell mods)")
+            .setDescription("**Entry requirement:** Lv83, 1x Capsule Contamination Purifier \n -Entrance will stay open for an hour \n -Squad search requires item lvl 130+ \n -Testplay: https://www.youtube.com/watch?v=Zj6LiH_EXL4 \n -Rewards: 4x/2x mats for hell trinkets, epsilon mod/receiver, (hell mods)")
             .setThumbnail("https://i.imgur.com/XLh2Bg1.gif")
-            bot.channels.get("381392359507623939").send("**[Contamination Overflow]** will start in **30 mins** <a:BongoCat:489555565295697920> @&516885459482312714 @&516885459482312714");
+            bot.channels.get("381392359507623939").send("**[Contamination Overflow]** will start in **30 mins** <@&516910275039985664>");
             bot.channels.get("381392359507623939").send(embedOF5);
     });
 }
@@ -1039,7 +1039,7 @@ function clsOFN5() {
     let schedOFN5 = require('node-schedule');
     let ruleclsOFN5 = new schedule.RecurrenceRule();
     ruleclsOFN5.dayOfWeek = [02];
-    ruleclsOFN5.hour = [01];
+    ruleclsOFN5.hour = [01, 04];
     let jclsOFN5 = schedOFN5.scheduleJob(ruleclsOFN5, function () {
         setTimeout(() => {
             const embedOFN5 = new Discord.RichEmbed()
@@ -1198,10 +1198,78 @@ if (message.content.startsWith("mainmsg") && message.channel.name == "lfg-log") 
 
 
 try {
-    if ((message.isMemberMentioned()) && (message.channel.name == "lfg-closers-na")) {
+	
+    const msgContent21 = message.content.toLowerCase();
+
+    let newcontahell1 = msgContent21.includes("of") || msgContent21.includes("overflood")|| msgContent21.includes("overflow")|| msgContent21.includes("overflowed")|| msgContent21.includes("replica")|| msgContent21.includes("hell")|| msgContent21.includes("rep");
+    let newpuri2 = msgContent21.includes("tinda") || msgContent21.includes("halpas")|| msgContent21.includes("halphas")|| msgContent21.includes("bird")|| msgContent21.includes("tindalos")|| msgContent21.includes("yod")|| msgContent21.includes("nito")|| msgContent21.includes("nitocris")|| msgContent21.includes("puri sides")|| msgContent21.includes("contrib")|| msgContent21.includes("contribution")|| msgContent21.includes("contri")|| msgContent21.includes("puri main")|| msgContent21.includes("puri boss");
+    let newtia2 = msgContent21.includes("tia") || msgContent21.includes("tiamat")|| msgContent21.includes("timat")|| msgContent21.includes("tiass")|| msgContent21.includes("tia ass")|| msgContent21.includes("tias")|| msgContent21.includes("contrib")|| msgContent21.includes("contribution")|| msgContent21.includes("contri");
+    let newgrem3 = msgContent21.includes("grem") || msgContent21.includes("gremory")|| msgContent21.includes("inter")|| msgContent21.includes("adv")|| msgContent21.includes("intermediate")|| msgContent21.includes("advance")|| msgContent21.includes("contrib")|| msgContent21.includes("contribution")|| msgContent21.includes("contri");
+    let newirinadav4 = msgContent21.includes("irina") || msgContent21.includes("david")|| msgContent21.includes("davido")|| msgContent21.includes("contrib")|| msgContent21.includes("contribution")|| msgContent21.includes("contri");
+    let newpg755 = msgContent21.includes("meph") || msgContent21.includes("vitus")|| msgContent21.includes("pg73")|| msgContent21.includes("pg75")|| msgContent21.includes("contrib")|| msgContent21.includes("contribution")|| msgContent21.includes("contri");
+    let newevents6 = msgContent21.includes("event") ||msgContent21.includes("cube");
+    let newdeedee7 = msgContent21.includes("dd") || msgContent21.includes("deedee") || msgContent21.includes("doppel");
+
+    if (message.mentions.roles.has("432384941855080448") && message.channel.name == "lfg-closers-na") {
+        const stringsLFG = [];
+        
+        if (newcontahell1){
+            stringsLFG.push("<@&521321343988269066>");
+        } 
+        if (newpuri2){
+            stringsLFG.push("<@&521321652122812416>");
+        } 
+        if (newtia2){
+            stringsLFG.push("<@&521321797636063232>");
+        } 
+        if (newgrem3){
+            stringsLFG.push("<@&521321860974116875>");
+        } 
+        if (newirinadav4){
+            stringsLFG.push("<@&521321927000719371>");
+        } 
+        if (newpg755){
+            stringsLFG.push("<@&521321963055218688>");
+        } 
+        if (newevents6){
+            stringsLFG.push("<@&521322025030254594>");
+        } 
+        if (newdeedee7){
+            stringsLFG.push("<@&521322066243485711>");
+        } 
+        
+        
+        const newstrings = stringsLFG.join(' ');
+
+        if (stringsLFG == "undefined")  return;
+        // bot.channels.get("521360326424527139").send(message.author+" is looking for party/member! <:tinaping:433236771309092865>" + newstrings);
+        // const embedspec = new Discord.RichEmbed()
+        // .setDescription()
+        // bot.channels.get("521360326424527139").send(embedOF1);
+        bot.channels.get("521360326424527139").send(message.author+" is looking for party/member! <:tinaping:433236771309092865>" + newstrings);
+        bot.channels.get("521360326424527139").send({embed: {
+            color: 3447003,
+            author: {
+              name: message.author.username,
+              icon_url: message.author.avatarURL
+            },
+            //title: "This is an embed",
+          //  url: "http://google.com",
+            description: message.content,
+            fields: [{
+                name: "Note:",
+                value: "[**Click here**](" + `https://canary.discordapp.com/channels/${message.guild.id}/${message.channel.id}/${message.id}`  + ") to jump to the original message."
+              }
+            ]
+          }
+        });
+    }
+
+
+    if (message.mentions.roles.has("432384941855080448") && message.channel.name == "lfg-closers-na") {
      let serverembed = new Discord.RichEmbed()
          .setDescription(message.author + ": " + message.content)
-    	bot.channels.get("517272250597113877").send(serverembed);
+    	bot.channels.get("520969150898896912").send(serverembed);
      }
      
 
@@ -1330,7 +1398,7 @@ try {
     
 }
 
-   if (message.content.startsWith("%warn") && message.channel.name == "nobility-north-cemetery") {
+   if (message.content.startsWith("%warn") && message.channel.name == "squires-tavern") {
 
     let bUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
     if (!bUser) return message.channel.send("**Can't find user!** \nTo input correctly the <@username#tag>, try to copy the user's original name along the tag number \n*Note: This command wont work on mobile* \nhttps://i.imgur.com/Vsb2c7g.png");
@@ -1421,18 +1489,9 @@ bot.on('presenceUpdate', (oldMember, newMember) => {
     if (!playRole) return;
     if (newMember.roles.has("432384823068459018") && newMember.user.presence.game && (newMember.user.presence.game.name === "Closers Dimension Conflict" || newMember.user.presence.game.name === "Closers")) {
        newMember.addRole(playRole).catch(console.error);
-       //bot.channels.get("425266854014222377").send(newMember + "added " + playRole.id);
     
     } else if (!newMember.user.presence.game && newMember.roles.has(playRole.id) && newMember.roles.has("432384823068459018")) {
         newMember.removeRole(playRole).catch(console.error);
-    }
-	
-    if (newMember.roles.has("432877618954764289") && (!newMember.user.presence.status("offline") || !newMember.user.presence.status("dnd"))) {
-        if (!newMember.roles.has("432877618954764289")) return;
-        newMember.addRole('432384941855080448').catch(console.error);
-
-    } else if ((newMember.user.presence.status("offline") || newMember.user.presence.status("dnd")) && newMember.roles.has("432384941855080448") && newMember.roles.has("432877618954764289")) {
-        newMember.removeRole('432384941855080448').catch(console.error);
     }
 
     if (newMember.roles.has("397285952810123274") && newMember.user.presence.game && (newMember.user.presence.game.name === "Closers Dimension Conflict" || newMember.user.presence.game.name === "Closers")) {
@@ -1441,22 +1500,38 @@ bot.on('presenceUpdate', (oldMember, newMember) => {
 	bot.channels.get("381392359507623939").send(newMember.user + " welcome back <:seha8:391896068129947650> if you're joining back on our crew, ping `@admin • NA` with your account name/ign and don't forget to re-apply ingame <:yurilike:383533891119742977>");
 	newMember.addRole('423698087371079683').catch(console.error);
 	}
-	}
+    }
+
+    if (newMember.roles.has("522365368249876480") && (!newMember.user.presence.status("offline") || !newMember.user.presence.status("dnd"))) {
+        if (!newMember.roles.has("522365368249876480")) return;
+        newMember.addRole('521323904095223808').catch(console.error);
+
+    } else if ((newMember.user.presence.status("offline") || newMember.user.presence.status("dnd")) && newMember.roles.has("521323904095223808") && newMember.roles.has("522365368249876480")) {
+        newMember.removeRole('521323904095223808').catch(console.error);
+    }
+
+    if (newMember.roles.has("432877618954764289") && (!newMember.user.presence.status("offline") || !newMember.user.presence.status("dnd"))) {
+        if (!newMember.roles.has("432877618954764289")) return;
+        newMember.addRole('432384941855080448').catch(console.error);
+
+    } else if ((newMember.user.presence.status("offline") || newMember.user.presence.status("dnd")) && newMember.roles.has("432384941855080448") && newMember.roles.has("432877618954764289")) {
+        newMember.removeRole('432384941855080448').catch(console.error);
+    }
 
     if (newMember.roles.has("516894630672072715") && (!newMember.user.presence.status("offline") || !newMember.user.presence.status("dnd"))) {
         if (!newMember.roles.has("516894630672072715")) return;
-        newMember.addRole('516885459482312714').catch(console.error);
+        newMember.addRole('516910275039985664').catch(console.error);
 
-    } else if ((newMember.user.presence.status("offline") || newMember.user.presence.status("dnd")) && newMember.roles.has("516885459482312714")) {
-        newMember.removeRole('516885459482312714').catch(console.error);
+    } else if ((newMember.user.presence.status("offline") || newMember.user.presence.status("dnd")) && newMember.roles.has("516910275039985664") && newMember.roles.has("516894630672072715")) {
+        newMember.removeRole('516910275039985664').catch(console.error);
     }
 
     if (newMember.roles.has("516894946805153792") && (!newMember.user.presence.status("offline") || !newMember.user.presence.status("dnd"))) {
         if (!newMember.roles.has("516894946805153792")) return;
-        newMember.addRole('516885459482312714').catch(console.error);
+        newMember.addRole('516895029805973505').catch(console.error);
 
-    } else if ((newMember.user.presence.status("offline") || newMember.user.presence.status("dnd")) && newMember.roles.has('516885459482312714')) {
-        newMember.removeRole('516885459482312714').catch(console.error);
+    } else if ((newMember.user.presence.status("offline") || newMember.user.presence.status("dnd")) && newMember.roles.has('516895029805973505') && newMember.roles.has("516894946805153792")) {
+        newMember.removeRole('516895029805973505').catch(console.error);
     }
 
     
@@ -1471,17 +1546,23 @@ bot.on('presenceUpdate', (oldMember, newMember) => {
         if (!newMember.roles.has('516909590034645007')) return;
         newMember.removeRole('516909590034645007').catch(console.error);
     } 
-	
-	//if ((!newMember.id== "183276178105171968") || (!newMember.id== "376344592049766401") || (!newMember.id== "145895874520678400")) return;
-	//if (newMember.id== "183276178105171968" && newMember.user.presence && newMember.user.presence.game && newMember.user.presence.game.streaming)  {
-        //bot.users.get("201295790650556416").send(newMember.user+" is now streaming!" + "\n"+ "**Stream link:** "+ newMember.user.presence.game.url+ "\n"+ "**Streamer's discord tag:** "+newMember.user.username+"#"+newMember.user.tag);
-    	//} 
-	//if (newMember.id== "145895874520678400" && newMember.user.presence && newMember.user.presence.game && newMember.user.presence.game.streaming)  {
-        //bot.users.get("201295790650556416").send(newMember.user+" is now streaming!" + "\n"+ "**Stream link:** "+ newMember.user.presence.game.url+ "\n"+ "**Streamer's discord tag:** "+newMember.user.username+"#"+newMember.user.tag);
-    	//} 
-	//if (newMember.id== "376344592049766401" && newMember.user.presence.game){
-	//bot.users.get("317279337566961665").send(newMember.user.username+" is now playing " + newMember.user.presence.game.name);	
-	//} 
+
+
+    //
+
+
+
+    // if ((!newMember.id== "427786502999638016") || (!newMember.id== "376344592049766401") || (!newMember.id== "145895874520678400")) return;
+    // if (newMember.id== "427786502999638016" && newMember.user.presence && newMember.user.presence.game && newMember.user.presence.game.streaming)  {
+    //     bot.users.get("376344592049766401").send(newMember.user+" is now streaming!" + "\n"+ "**Stream link:** "+ newMember.user.presence.game.url+ "\n"+ "**Streamer's discord tag:** "+newMember.user.username+"#"+newMember.user.tag);
+    // 	} 
+    // if (newMember.id== "376344592049766401" && newMember.user.presence.game){
+    // bot.users.get("317279337566961665").send(newMember.user.username+" is now playing " + newMember.user.presence.game.name);	
+    // } 
+    // if (newMember.id== "145895874520678400" && newMember.user.presence.game){
+    // bot.users.get("199798127287336960").send(newMember.user.username+" is now playing " + newMember.user.presence.game.name);	
+    // }
+
   });
 
 bot.on('guildMemberRemove', member => {
@@ -1492,7 +1573,11 @@ bot.channels.get("425266854014222377").send(member.user +` (` + member.user.tag 
 
 bot.on('guildMemberAdd', member => {
     //bot.channels.get("432774887032094726").send(member.user + ` Sorry for the ping! But, if you're looking for a party, you can ping those desparate peeps here.`)
-    bot.channels.get("467923880611282965").send(member.user + ` **Welcome!** <:tinausual:383533892336091136> \nPlease go to <#439353017960235018> to get started! *also, you might want to read our* <#438285913919979521> \n*Please enjoy your stay!* <:seulbinut:411458765414596608>`)
+    const newmemmesg1 = new Discord.RichEmbed()
+	.setDescription("• Go to <#439353017960235018> if you played CLOSERS \n • Or go to <#386494149114724353> and type `>rank Visitor`")
+bot.channels.get("467923880611282965").send(member.user + ` **Welcome!** \nPlease proceed to one of the following below:`)
+bot.channels.get("467923880611282965").send(newmemmesg1);
+bot.channels.get("467923880611282965").send("Also please do read our <#521179220584693760> and enjoy your stay!")
 });
 
 
@@ -1532,14 +1617,27 @@ bot.on("messageReactionAdd", (reaction, user) => {
 	target1.addRole('448835168258752515').catch(console.error);
 	bot.channels.get("381392359507623939").send(target1.user + " go ping `@Admin • KR` with your ign/username then dont forget to apply ingame, our circle's name is **NobilityKR** btw, cu ingame o/");
 	}
+
     }else if (reaction.message.channel.name == "closers-survey🔒" && reaction.emoji.identifier == "%E2%9C%85" && reaction.message.content == "**2.** Press check if you reached Lv80 on any of your alt(s).") {
         target1.addRole('392505427155222528').catch(console.error);
-    }else if (reaction.message.channel.name == "closers-survey🔒" && reaction.emoji.identifier == "1%E2%83%A3" && reaction.message.content.startsWith("**3.** **Press 1** if you are actively farming in Planar Gate.")) {
-        target1.addRole('394384407940825101').catch(console.error);
-    }else if (reaction.message.channel.name == "closers-survey🔒" && reaction.emoji.identifier == "2%E2%83%A3" && reaction.message.content.startsWith("**3.** **Press 1** if you are actively farming in Planar Gate.")) {
-        target1.addRole('410302699867734018').catch(console.error);
-    }else if (reaction.message.channel.name == "closers-survey🔒" && reaction.emoji.identifier == "3%E2%83%A3" && reaction.message.content.startsWith("**3.** **Press 1** if you are actively farming in Planar Gate.")) {
-        target1.addRole('458475316537458710').catch(console.error);
+    }else if (reaction.message.channel.name == "closers-survey🔒" && reaction.emoji.identifier == "1%E2%83%A3" && reaction.message.content.startsWith("**3.** **Press 1** if you are interested to run any **Events**.")) {
+        target1.addRole('521322025030254594').catch(console.error);
+    }else if (reaction.message.channel.name == "closers-survey🔒" && reaction.emoji.identifier == "2%E2%83%A3" && reaction.message.content.startsWith("**3.** **Press 1** if you are interested to run any **Events**.")) {
+        target1.addRole('521322066243485711').catch(console.error);
+    }else if (reaction.message.channel.name == "closers-survey🔒" && reaction.emoji.identifier == "3%E2%83%A3" && reaction.message.content.startsWith("**3.** **Press 1** if you are interested to run any **Events**.")) {
+        target1.addRole('521321797636063232').catch(console.error);
+
+    }else if (reaction.message.channel.name == "closers-survey🔒" && reaction.emoji.identifier == "4%E2%83%A3" && reaction.message.content.startsWith("**3.** **Press 1** if you are interested to run any **Events**.")) {
+        target1.addRole('521321963055218688').catch(console.error);
+    }else if (reaction.message.channel.name == "closers-survey🔒" && reaction.emoji.identifier == "5%E2%83%A3" && reaction.message.content.startsWith("**3.** **Press 1** if you are interested to run any **Events**.")) {
+        target1.addRole('521321860974116875').catch(console.error);
+    }else if (reaction.message.channel.name == "closers-survey🔒" && reaction.emoji.identifier == "6%E2%83%A3" && reaction.message.content.startsWith("**3.** **Press 1** if you are interested to run any **Events**.")) {
+        target1.addRole('521321927000719371').catch(console.error);
+    }else if (reaction.message.channel.name == "closers-survey🔒" && reaction.emoji.identifier == "7%E2%83%A3" && reaction.message.content.startsWith("**3.** **Press 1** if you are interested to run any **Events**.")) {
+        target1.addRole('521321652122812416').catch(console.error);
+    }else if (reaction.message.channel.name == "closers-survey🔒" && reaction.emoji.identifier == "8%E2%83%A3" && reaction.message.content.startsWith("**3.** **Press 1** if you are interested to run any **Events**.")) {
+        target1.addRole('521321343988269066').catch(console.error);
+
     }else if (reaction.message.channel.name == "closers-survey🔒" && reaction.emoji.identifier == "%E2%9C%85" && reaction.message.content == "**4.** Press check if you are actively farming in Dimensional Ops Center (Tiamat).") {
         //target1.addRole('410302699867734018').catch(console.error);
     }else if (reaction.message.channel.name == "closers-survey🔒" && reaction.emoji.identifier == "%F0%9F%85%B0" && reaction.message.content.startsWith("**4.** Choose:")) {
@@ -1556,8 +1654,94 @@ bot.on("messageReactionAdd", (reaction, user) => {
         target1.addRole('432384823068459018').catch(console.error);
     }else if (reaction.message.channel.name == "closers-survey🔒" && reaction.emoji.identifier == "%F0%9F%85%B1" && reaction.message.content.startsWith("**5.** **Choose wisely here:**")) {
         target1.addRole('432877618954764289').catch(console.error);
-      }else if (reaction.message.channel.name == "closers-survey🔒" && reaction.emoji.identifier == "%E2%9C%85" && reaction.message.content.startsWith("**6.** **Merchant tag**")) {
+    }else if (reaction.message.channel.name == "closers-survey🔒" && reaction.emoji.identifier == "%E2%9C%85" && reaction.message.content.startsWith("**6.** **Merchant tag**")) {
         target1.addRole('458508768175456268').catch(console.error);
+
+
+
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "seha8") {
+        target1.addRole('392187302086049794').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "sylvicry") {
+        target1.addRole('392188703315066890').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "mistel6") {
+        target1.addRole('392188791990910986').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "YuriGood") {
+        target1.addRole('392189208829100032').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "jmeme") {
+        target1.addRole('392189130672570370').catch(console.error);
+
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "NataMe") {
+        target1.addRole('392190522313277440').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "leviainanutshell") {
+        target1.addRole('392190874445938700').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "HarpyLove") {
+        target1.addRole('392191180097585174').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "tinausual") {
+        target1.addRole('392191391620661248').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "violet") {
+        target1.addRole('392191632918839318').catch(console.error);
+
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "wolfghahaha") {
+        target1.addRole('392191931880570880').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "LunaSelfie") {
+        target1.addRole('398771113204645888').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "SomaHappy") {
+        target1.addRole('407197682759892992').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "baithinkfuge") {
+        target1.addRole('466473120400670720').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "GWqlabsSoon") {
+        target1.addRole('522445723669626880').catch(console.error);
+
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.identifier == "%F0%9F%87%B8%F0%9F%87%AC") {
+        target1.addRole('406828031521325056').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.identifier == "%F0%9F%87%B5%F0%9F%87%AD") {
+        target1.addRole('406827938265432096').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.identifier == "%F0%9F%87%B2%F0%9F%87%BE") {
+        target1.addRole('406828076916539393').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.identifier == "%F0%9F%87%B9%F0%9F%87%AD") {
+        target1.addRole('425185397933473793').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.identifier == "%F0%9F%87%AE%F0%9F%87%A9") {
+        target1.addRole('466955289136988160').catch(console.error);
+
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.identifier == "%F0%9F%87%BA%F0%9F%87%B8") {
+        target1.addRole('417572446535811092').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.identifier == "%F0%9F%87%A6%F0%9F%87%BA") {
+        target1.addRole('417572446535811092').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "GWnanamiWOKE") {
+        target1.addRole('410056687291072513').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "GWnanamiWakeMeUpInside") {
+        target1.addRole('410056748867780617').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "KappaBongo") {
+        target1.addRole('410056800528760832').catch(console.error);
+
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "2Bhappy") {
+        target1.addRole('410056976014508043').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "GWnanamiNotLikePapika") {
+        target1.addRole('410079322305462273').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "SeemsKappa") {
+        target1.addRole('410081025151205376').catch(console.error);
+
+
+    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "1%E2%83%A3" && reaction.message.content.startsWith("1. **[ Notifications ] -** __Looking for a party or member in Closers?__  :abrillianceCHECK: ")) {
+        target1.addRole('432877618954764289').catch(console.error);
+    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "2%E2%83%A3" && reaction.message.content.startsWith("1. **[ Notifications ] -** __Looking for a party or member in Closers?__  :abrillianceCHECK: ")) {
+        target1.addRole('432384823068459018').catch(console.error);
+    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "3%E2%83%A3" && reaction.message.content.startsWith("1. **[ Notifications ] -** __Looking for a party or member in Closers?__  :abrillianceCHECK: ")) {
+        target1.addRole('522365368249876480').catch(console.error);
+    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "4%E2%83%A3" && reaction.message.content.startsWith("1. **[ Notifications ] -** __Looking for a party or member in Closers?__  :abrillianceCHECK: ")) {
+        target1.addRole('521323904095223808').catch(console.error);
+    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.name == "ping~2" && reaction.message.content.startsWith("1. **[ Notifications ] -** __Looking for a party or member in Closers?__  :abrillianceCHECK: ")) {
+        target1.addRole('432384941855080448').catch(console.error);
+
+    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "1%E2%83%A3" && reaction.message.content.startsWith("2. **[ Notifications ] -** __Upcoming timings for Hell Overflow in Closers__ :abrillianceCHECK:")) {
+        target1.addRole('516894630672072715').catch(console.error);
+    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.name == "ping~2" && reaction.message.content.startsWith("2. **[ Notifications ] -** __Upcoming timings for Hell Overflow in Closers__ :abrillianceCHECK:")) {
+        target1.addRole('516910275039985664').catch(console.error);
+
+    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "1%E2%83%A3" && reaction.message.content.startsWith("3. **[ Notifications ] -** __Crew brawl timings (only Nobility crew members are allowed to use this service)__ :abrillianceCHECK:")) {
+        target1.addRole('516894946805153792').catch(console.error);
+    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.name == "ping~2" && reaction.message.content.startsWith("3. **[ Notifications ] -** __Crew brawl timings (only Nobility crew members are allowed to use this service)__ :abrillianceCHECK:")) {
+        target1.addRole('516895029805973505').catch(console.error);
     }
 
 });
@@ -1569,6 +1753,109 @@ bot.on("messageReactionRemove", (reaction, user) => {
         target2.removeRole('432384823068459018').catch(console.error);
     }else if (reaction.message.channel.name == "closers-survey🔒" && reaction.emoji.identifier == "%F0%9F%85%B1" && reaction.message.content.startsWith("**5.** **Choose wisely here:**")) {
         target2.removeRole('432877618954764289').catch(console.error);
+
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "seha8") {
+        target1.removeRole('392187302086049794').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "sylvicry") {
+        target1.removeRole('392188703315066890').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "mistel6") {
+        target1.removeRole('392188791990910986').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "YuriGood") {
+        target1.removeRole('392189208829100032').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "jmeme") {
+        target1.removeRole('392189130672570370').catch(console.error);
+
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "NataMe") {
+        target1.removeRole('392190522313277440').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "leviainanutshell") {
+        target1.removeRole('392190874445938700').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "HarpyLove") {
+        target1.removeRole('392191180097585174').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "tinausual") {
+        target1.removeRole('392191391620661248').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "violet") {
+        target1.removeRole('392191632918839318').catch(console.error);
+
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "wolfghahaha") {
+        target1.removeRole('392191931880570880').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "LunaSelfie") {
+        target1.removeRole('398771113204645888').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "SomaHappy") {
+        target1.removeRole('407197682759892992').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "baithinkfuge") {
+        target1.removeRole('466473120400670720').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "GWqlabsSoon") {
+        target1.removeRole('522445723669626880').catch(console.error);
+
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.identifier == "%F0%9F%87%B8%F0%9F%87%AC") {
+        target1.removeRole('406828031521325056').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.identifier == "%F0%9F%87%B5%F0%9F%87%AD") {
+        target1.removeRole('406827938265432096').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.identifier == "%F0%9F%87%B2%F0%9F%87%BE") {
+        target1.removeRole('406828076916539393').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.identifier == "%F0%9F%87%B9%F0%9F%87%AD") {
+        target1.removeRole('425185397933473793').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.identifier == "%F0%9F%87%AE%F0%9F%87%A9") {
+        target1.removeRole('466955289136988160').catch(console.error);
+
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.identifier == "%F0%9F%87%BA%F0%9F%87%B8") {
+        target1.removeRole('417572446535811092').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.identifier == "%F0%9F%87%A6%F0%9F%87%BA") {
+        target1.removeRole('417572446535811092').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "GWnanamiWOKE") {
+        target1.removeRole('410056687291072513').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "GWnanamiWakeMeUpInside") {
+        target1.removeRole('410056748867780617').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "KappaBongo") {
+        target1.removeRole('410056800528760832').catch(console.error);
+
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "2Bhappy") {
+        target1.removeRole('410056976014508043').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "GWnanamiNotLikePapika") {
+        target1.removeRole('410079322305462273').catch(console.error);
+    }else if (reaction.message.channel.name == "server-info-rules🔒" && reaction.emoji.name == "SeemsKappa") {
+        target1.removeRole('410081025151205376').catch(console.error);
+
+
+    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "1%E2%83%A3" && reaction.message.content.startsWith("1. **[ Notifications ] -** __Looking for a party or member in Closers?__  :abrillianceCHECK: ")) {
+        target1.removeRole('432877618954764289').catch(console.error);
+    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "2%E2%83%A3" && reaction.message.content.startsWith("1. **[ Notifications ] -** __Looking for a party or member in Closers?__  :abrillianceCHECK: ")) {
+        target1.removeRole('432384823068459018').catch(console.error);
+    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "3%E2%83%A3" && reaction.message.content.startsWith("1. **[ Notifications ] -** __Looking for a party or member in Closers?__  :abrillianceCHECK: ")) {
+        target1.removeRole('522365368249876480').catch(console.error);
+    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "4%E2%83%A3" && reaction.message.content.startsWith("1. **[ Notifications ] -** __Looking for a party or member in Closers?__  :abrillianceCHECK: ")) {
+        target1.removeRole('521323904095223808').catch(console.error);
+    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.name == "ping~2" && reaction.message.content.startsWith("1. **[ Notifications ] -** __Looking for a party or member in Closers?__  :abrillianceCHECK: ")) {
+        target1.removeRole('432384941855080448').catch(console.error);
+
+    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "1%E2%83%A3" && reaction.message.content.startsWith("2. **[ Notifications ] -** __Upcoming timings for Hell Overflow in Closers__ :abrillianceCHECK:")) {
+        target1.removeRole('516894630672072715').catch(console.error);
+    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.name == "ping~2" && reaction.message.content.startsWith("2. **[ Notifications ] -** __Upcoming timings for Hell Overflow in Closers__ :abrillianceCHECK:")) {
+        target1.removeRole('516910275039985664').catch(console.error);
+
+    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "1%E2%83%A3" && reaction.message.content.startsWith("3. **[ Notifications ] -** __Crew brawl timings (only Nobility crew members are allowed to use this service)__ :abrillianceCHECK:")) {
+        target1.removeRole('516894946805153792').catch(console.error);
+    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.name == "ping~2" && reaction.message.content.startsWith("3. **[ Notifications ] -** __Crew brawl timings (only Nobility crew members are allowed to use this service)__ :abrillianceCHECK:")) {
+        target1.removeRole('516895029805973505').catch(console.error);
+
+    }else if (reaction.message.channel.name == "closers-survey🔒" && reaction.emoji.identifier == "1%E2%83%A3" && reaction.message.content.startsWith("**3.** **Press 1** if you are interested to run any **Events**.")) {
+        target1.removeRole('521322025030254594').catch(console.error);
+    }else if (reaction.message.channel.name == "closers-survey🔒" && reaction.emoji.identifier == "2%E2%83%A3" && reaction.message.content.startsWith("**3.** **Press 1** if you are interested to run any **Events**.")) {
+        target1.removeRole('521322066243485711').catch(console.error);
+    }else if (reaction.message.channel.name == "closers-survey🔒" && reaction.emoji.identifier == "3%E2%83%A3" && reaction.message.content.startsWith("**3.** **Press 1** if you are interested to run any **Events**.")) {
+        target1.removeRole('521321797636063232').catch(console.error);
+
+    }else if (reaction.message.channel.name == "closers-survey🔒" && reaction.emoji.identifier == "4%E2%83%A3" && reaction.message.content.startsWith("**3.** **Press 1** if you are interested to run any **Events**.")) {
+        target1.removeRole('521321963055218688').catch(console.error);
+    }else if (reaction.message.channel.name == "closers-survey🔒" && reaction.emoji.identifier == "5%E2%83%A3" && reaction.message.content.startsWith("**3.** **Press 1** if you are interested to run any **Events**.")) {
+        target1.removeRole('521321860974116875').catch(console.error);
+    }else if (reaction.message.channel.name == "closers-survey🔒" && reaction.emoji.identifier == "6%E2%83%A3" && reaction.message.content.startsWith("**3.** **Press 1** if you are interested to run any **Events**.")) {
+        target1.removeRole('521321927000719371').catch(console.error);
+    }else if (reaction.message.channel.name == "closers-survey🔒" && reaction.emoji.identifier == "7%E2%83%A3" && reaction.message.content.startsWith("**3.** **Press 1** if you are interested to run any **Events**.")) {
+        target1.removeRole('521321652122812416').catch(console.error);
+    }else if (reaction.message.channel.name == "closers-survey🔒" && reaction.emoji.identifier == "8%E2%83%A3" && reaction.message.content.startsWith("**3.** **Press 1** if you are interested to run any **Events**.")) {
+        target1.removeRole('521321343988269066').catch(console.error);
+
     }
 
 });
