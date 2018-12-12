@@ -1502,8 +1502,8 @@ bot.on('presenceUpdate', (oldMember, newMember) => {
 	}
     }
 
-    if (newMember.roles.has("522365368249876480") && (newMember.user.presence.status === "online" || !newMember.user.presence.status === "idle")) {
-        if (!newMember.roles.has("522365368249876480")) return;
+    if (newMember.roles.has("522365368249876480") && (!newMember.user.presence.status === "offline" || !newMember.user.presence.status === "dnd")) {
+        //if (!newMember.roles.has("522365368249876480")) return;
         newMember.addRole('521323904095223808').catch(console.error);
 
     } else if ((newMember.user.presence.status === "offline" || newMember.user.presence.status === "dnd") && newMember.roles.has("521323904095223808") && newMember.roles.has("522365368249876480")) {
@@ -1511,7 +1511,7 @@ bot.on('presenceUpdate', (oldMember, newMember) => {
     }
 
     if (newMember.roles.has("432877618954764289") && (!newMember.user.presence.status === "offline" || !newMember.user.presence.status === "dnd")) {
-        if (!newMember.roles.has("432877618954764289")) return;
+       // if (!newMember.roles.has("432877618954764289")) return;
         newMember.addRole('432384941855080448').catch(console.error);
 
     } else if ((newMember.user.presence.status === "offline" || newMember.user.presence.status === "dnd") && newMember.roles.has("432384941855080448") && newMember.roles.has("432877618954764289")) {
@@ -1519,7 +1519,7 @@ bot.on('presenceUpdate', (oldMember, newMember) => {
     }
 
     if (newMember.roles.has("516894630672072715") && (!newMember.user.presence.status === "offline" || !newMember.user.presence.status === "dnd")) {
-        if (!newMember.roles.has("516894630672072715")) return;
+       // if (!newMember.roles.has("516894630672072715")) return;
         newMember.addRole('516910275039985664').catch(console.error);
 
     } else if ((newMember.user.presence.status === "offline" || newMember.user.presence.status === "dnd") && newMember.roles.has("516910275039985664") && newMember.roles.has("516894630672072715")) {
@@ -1527,7 +1527,7 @@ bot.on('presenceUpdate', (oldMember, newMember) => {
     }
 
     if (newMember.roles.has("516894946805153792") && (!newMember.user.presence.status === "offline" || !newMember.user.presence.status === "dnd")) {
-        if (!newMember.roles.has("516894946805153792")) return;
+    //    if (!newMember.roles.has("516894946805153792")) return;
         newMember.addRole('516895029805973505').catch(console.error);
 
     } else if ((newMember.user.presence.status === "offline" || newMember.user.presence.status === "dnd") && newMember.roles.has('516895029805973505') && newMember.roles.has("516894946805153792")) {
