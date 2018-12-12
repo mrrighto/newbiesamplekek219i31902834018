@@ -1510,7 +1510,7 @@ bot.on('presenceUpdate', (oldMember, newMember) => {
         newMember.removeRole('521323904095223808').catch(console.error);
     }
 
-    if (newMember.roles.has("432877618954764289") && (!newMember.user.presence.status === "offline" || !newMember.user.presence.status === "dnd")) {
+    if (newMember.roles.has("432877618954764289") && (newMember.user.presence.status === "online" || newMember.user.presence.status === "idle")) {
        // if (!newMember.roles.has("432877618954764289")) return;
         newMember.addRole('432384941855080448').catch(console.error);
 
