@@ -1728,48 +1728,68 @@ bot.on("messageReactionAdd", (reaction, user) => {
 
     }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "1%E2%83%A3" && reaction.message.content.startsWith("1. **[ Notifications ] -**")) {
         if (target1.roles.has("432384823068459018") || (target1.roles.has("522365368249876480") || target1.roles.has("521323904095223808") || target1.roles.has("432384941855080448"))){
- 	target1.send("Can't! You already chosen among the options..");
+ 	target1.send("Can't! You already choosed among the options..");
 	} else {
 	   target1.addRole('432877618954764289').catch(console.error);
 	}
 	
     }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "2%E2%83%A3" && reaction.message.content.startsWith("1. **[ Notifications ] -**")) {
         if (target1.roles.has("432877618954764289") || (target1.roles.has("522365368249876480") || target1.roles.has("521323904095223808") || target1.roles.has("432384941855080448"))){
- 	target1.send("Can't! You already chosen among the options..");
+ 	target1.send("Can't! You already choosed among the options..");
 	} else {
 	  target1.addRole('432384823068459018').catch(console.error);
 	}     
 	 
     }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "3%E2%83%A3" && reaction.message.content.startsWith("1. **[ Notifications ] -**")) {
         if (target1.roles.has("432877618954764289") || (target1.roles.has("432384823068459018") || target1.roles.has("521323904095223808") || target1.roles.has("432384941855080448"))){
- 	target1.send("Can't! You already chosen among the options..");
+ 	target1.send("Can't! You already choosed among the options..");
 	} else {
 	  target1.addRole('522365368249876480').catch(console.error);
 	}   
 	
     }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "4%E2%83%A3" && reaction.message.content.startsWith("1. **[ Notifications ] -**")) {
         if (target1.roles.has("432877618954764289") || (target1.roles.has("432384823068459018") || target1.roles.has("522365368249876480") || target1.roles.has("432384941855080448"))){
- 	target1.send("Can't! You already chosen among the options..");
+ 	target1.send("Can't! You already choosed among the options..");
 	} else {
 	  target1.addRole('521323904095223808').catch(console.error);
 	}       
  
     }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.name == "ping" && reaction.message.content.startsWith("1. **[ Notifications ] -**")) {
         if (target1.roles.has("432877618954764289") || (target1.roles.has("432384823068459018") || target1.roles.has("522365368249876480") || target1.roles.has("521323904095223808"))){
- 	target1.send("Can't! You already chosen among the options..");
+ 	target1.send("Can't! You already choosed among the options..");
 	} else {
 	  target1.addRole('432384941855080448').catch(console.error);
 	}  
 	
     }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "1%E2%83%A3" && reaction.message.content.startsWith("2. **[ Notifications ] -**")) {
-        target1.addRole('516894630672072715').catch(console.error);
+        if (target1.roles.has("516910275039985664")){
+ 	target1.send("Can't! You already choosed among the options..");
+	} else {
+	  target1.addRole('516894630672072715').catch(console.error);
+	}  
+       
     }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.name == "ping" && reaction.message.content.startsWith("2. **[ Notifications ] -**")) {
-        target1.addRole('516910275039985664').catch(console.error);
+        if (target1.roles.has("516894630672072715")){
+ 	target1.send("Can't! You already choosed among the options..");
+	} else {
+	  target1.addRole('516910275039985664').catch(console.error);
+	}  
+       
 
     }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "1%E2%83%A3" && reaction.message.content.startsWith("3. **[ Notifications ] -**")) {
-        target1.addRole('516894946805153792').catch(console.error);
+        if (target1.roles.has("516895029805973505")){
+ 	target1.send("Can't! You already choosed among the options..");
+	} else {
+	  target1.addRole('516894946805153792').catch(console.error);
+	}  
+        
     }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.name == "ping" && reaction.message.content.startsWith("3. **[ Notifications ] -**")) {
-        target1.addRole('516895029805973505').catch(console.error);
+        if (target1.roles.has("516894946805153792")){
+ 	target1.send("Can't! You already choosed among the options..");
+	} else {
+	  target1.addRole('516895029805973505').catch(console.error);
+	} 
+        
     }
 
 });
