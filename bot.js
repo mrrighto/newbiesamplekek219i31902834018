@@ -1722,7 +1722,7 @@ bot.on("messageReactionAdd", (reaction, user) => {
         target1.addRole('410081025151205376').catch(console.error);
 
 
-    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "1%E2%83%A3" && reaction.message.content.startsWith("1. **[ Notifications ] -** __Looking for a party or member in Closers?__  :abrillianceCHECK: ")) {
+    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "1%E2%83%A3" && reaction.message.content.startsWith("1. **[ Notifications ] -**")) {
         target1.addRole('432877618954764289').catch(console.error);
     }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "2%E2%83%A3" && reaction.message.content.startsWith("1. **[ Notifications ] -** __Looking for a party or member in Closers?__  :abrillianceCHECK: ")) {
         target1.addRole('432384823068459018').catch(console.error);
