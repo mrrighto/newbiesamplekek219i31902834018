@@ -1506,7 +1506,7 @@ bot.on('presenceUpdate', (oldMember, newMember) => {
         if (!newMember.roles.has("522365368249876480")) return;
         newMember.addRole('521323904095223808').catch(console.error);
 
-    } else if ((newMember.user.presence.status === "offline") || newMember.user.presence.status === "dnd") && newMember.roles.has("521323904095223808") && newMember.roles.has("522365368249876480")) {
+    } else if ((newMember.user.presence.status === "offline" || newMember.user.presence.status === "dnd") && newMember.roles.has("521323904095223808") && newMember.roles.has("522365368249876480")) {
         newMember.removeRole('521323904095223808').catch(console.error);
     }
 
