@@ -1727,7 +1727,7 @@ bot.on("messageReactionAdd", (reaction, user) => {
 
 
     }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "1%E2%83%A3" && reaction.message.content.startsWith("1. **[ Notifications ] -**")) {
-        if (!target1.roles.has("432877618954764289") || target1.roles.has("432384823068459018") || target1.roles.has("522365368249876480") || target1.roles.has("521323904095223808") || target1.roles.has("432384941855080448")) return;
+        if (!target1.roles.has("432877618954764289") && (target1.roles.has("432384823068459018") || target1.roles.has("522365368249876480") || target1.roles.has("521323904095223808") || target1.roles.has("432384941855080448"))) return;
 	target1.send("You already selected #1, please read the instructions du*b*k");
 	target1.addRole('432877618954764289').catch(console.error);
     }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "2%E2%83%A3" && reaction.message.content.startsWith("1. **[ Notifications ] -**")) {
