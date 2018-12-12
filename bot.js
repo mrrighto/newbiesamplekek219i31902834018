@@ -1734,17 +1734,17 @@ bot.on("messageReactionAdd", (reaction, user) => {
         target1.addRole('522365368249876480').catch(console.error);
     }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "4%E2%83%A3" && reaction.message.content.startsWith("1. **[ Notifications ] -**")) {
         target1.addRole('521323904095223808').catch(console.error);
-    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.name == "ping~2" && reaction.message.content.startsWith("1. **[ Notifications ] -**")) {
+    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.name == "ping" && reaction.message.content.startsWith("1. **[ Notifications ] -**")) {
         target1.addRole('432384941855080448').catch(console.error);
 
     }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "1%E2%83%A3" && reaction.message.content.startsWith("2. **[ Notifications ] -**")) {
         target1.addRole('516894630672072715').catch(console.error);
-    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.name == "ping~2" && reaction.message.content.startsWith("2. **[ Notifications ] -**")) {
+    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.name == "ping" && reaction.message.content.startsWith("2. **[ Notifications ] -**")) {
         target1.addRole('516910275039985664').catch(console.error);
 
     }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "1%E2%83%A3" && reaction.message.content.startsWith("3. **[ Notifications ] -**")) {
         target1.addRole('516894946805153792').catch(console.error);
-    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.name == "ping~2" && reaction.message.content.startsWith("3. **[ Notifications ] -**")) {
+    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.name == "ping" && reaction.message.content.startsWith("3. **[ Notifications ] -**")) {
         target1.addRole('516895029805973505').catch(console.error);
     }
 
@@ -1829,17 +1829,17 @@ bot.on("messageReactionRemove", (reaction, user) => {
         target2.removeRole('522365368249876480').catch(console.error);
     }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "4%E2%83%A3" && reaction.message.content.startsWith("1. **[ Notifications ] -**")) {
         target2.removeRole('521323904095223808').catch(console.error);
-    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.name == "ping~2" && reaction.message.content.startsWith("1. **[ Notifications ] -**")) {
+    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.name == "ping" && reaction.message.content.startsWith("1. **[ Notifications ] -**")) {
         target2.removeRole('432384941855080448').catch(console.error);
 
     }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "1%E2%83%A3" && reaction.message.content.startsWith("2. **[ Notifications ] -**")) {
         target2.removeRole('516894630672072715').catch(console.error);
-    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.name == "ping~2" && reaction.message.content.startsWith("2. **[ Notifications ] -**")) {
+    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.name == "ping" && reaction.message.content.startsWith("2. **[ Notifications ] -**")) {
         target2.removeRole('516910275039985664').catch(console.error);
 
     }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.identifier == "1%E2%83%A3" && reaction.message.content.startsWith("3. **[ Notifications ] -**")) {
         target2.removeRole('516894946805153792').catch(console.error);
-    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.name == "ping~2" && reaction.message.content.startsWith("3. **[ Notifications ] -**")) {
+    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.name == "ping" && reaction.message.content.startsWith("3. **[ Notifications ] -**")) {
         target2.removeRole('516895029805973505').catch(console.error);
 
     }else if (reaction.message.channel.name == "closers-survey🔒" && reaction.emoji.identifier == "1%E2%83%A3" && reaction.message.content.startsWith("**3.** **Press 1** if you are interested to run any **Events**.")) {
