@@ -1541,8 +1541,10 @@ bot.on('presenceUpdate', (oldMember, newMember) => {
 	if (oldMember.user.bot) return;
 	
     const newmemmesg1 = new Discord.RichEmbed()
-	.setDescription(newMember.user + " is now streaming!" + "\n" + "**Stream link:** " + newMember.user.presence.game.url)
+	.setDescription(newMember.user + " is now streaming!")
+	.setThumbnail(newMember.user.avatarURL)
 bot.channels.get("516882861111115776").send(newmemmesg1);
+bot.channels.get("516882861111115776").send("**Stream link:** " + newMember.user.presence.game.url);
 
         newMember.addRole('516909590034645007').catch(console.error);
     } 
