@@ -1477,14 +1477,18 @@ if (message.content.startsWith("S> ") && message.channel.name == "lounge") {
     	}
     }
 
-    if ( (message.mentions.roles.has("521323904095223808") || message.mentions.roles.has("516895029805973505") || message.mentions.roles.has("516910275039985664") || message.mentions.roles.has("521322025030254594") || message.mentions.roles.has("521322066243485711") || message.mentions.roles.has("521321797636063232") || message.mentions.roles.has("521321963055218688") || message.mentions.roles.has("521321860974116875") || message.mentions.roles.has("521321927000719371") || message.mentions.roles.has("521321652122812416") || message.mentions.roles.has("521321343988269066")) &&  !message.author.id == "427786502999638016") {
- let warneduser1 = message.guild.member(message.author);
+    if ( (message.mentions.roles.has("521323904095223808") || message.mentions.roles.has("516895029805973505") || message.mentions.roles.has("516910275039985664") || message.mentions.roles.has("521322025030254594") || message.mentions.roles.has("521322066243485711") || message.mentions.roles.has("521321797636063232") || message.mentions.roles.has("521321963055218688") || message.mentions.roles.has("521321860974116875") || message.mentions.roles.has("521321927000719371") || message.mentions.roles.has("521321652122812416") || message.mentions.roles.has("521321343988269066")) && message.channel.name == "lfg2-sub") {
+	if (!message.author.bot) return;
+ 	let warneduser1 = message.guild.member(message.author);
 	warneduser1.addRole('438627661447823361').catch(console.error);
 	warneduser1.addRole('438628872817475584').catch(console.error);
 	const newmemmesg1 = new Discord.RichEmbed()
-	.setDescription("Please read <#521179220584693760> and understand the rules please...If you're not aware I'm utilizing those role mentions for important notifs to the people so If you mindlessly use those mentions then the services that I offer will be pointless.")
+	.setDescription("Please read <#521179220584693760> and understand the rules please...If you're not aware I'm utilizing those role mentions to give important notifs to the people so If you mindlessly use those mentions then the services that I offer will be pointless.")
 	message.channel.send(message.author + " please refrain from using that role mention, the next time I see you using those I'll have your entire messages wiped out in this server and get you banned. Two warning counts are now added to you, this served as a final warning.");
 	message.channel.send(newmemmesg1);
+    }
+   if ( message.content.startsWith("%warn555")  && message.channel.name == "lfg2-sub") {
+	message.channel.send("<@&521322066243485711>");
     }
 	
 });
