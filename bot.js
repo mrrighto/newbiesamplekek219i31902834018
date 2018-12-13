@@ -1535,8 +1535,8 @@ bot.on('presenceUpdate', (oldMember, newMember) => {
     }
 
     
-    if (newMember.user.presence && newMember.user.presence.game && newMember.user.presence.game.streaming && newMember.user.bot === "false") {
-        if (!newMember.user.presence.game.streaming) return;
+    if (newMember.user.presence && newMember.user.presence.game && newMember.user.presence.game.streaming) {
+        if (!newMember.user.presence.game.streaming && newMember.user.bot) return;
         bot.channels.get("516882861111115776").send(newMember.user + " is now streaming!" + "\n" + "**Stream link:** " + newMember.user.presence.game.url);
         newMember.addRole('516909590034645007').catch(console.error);
     } 
