@@ -107,7 +107,7 @@ function EMEDailycode() {
                 .setTitle(str)
                 .setDescription(strdesc)
                 .setURL("https://store.enmasse.com/closers/items")
-                .setFooter("To claim: Copy the code then redeem it via EME launcher | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
+                .setFooter("Go to https://store.enmasse.com/closers/items and claim it! | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
                 .setAuthor("Free - "+str2)
                 .setImage(freeimg)
                 bot.channels.get("438689460016644097").send(embedfreecode);
@@ -1476,6 +1476,10 @@ if (message.content.startsWith("S> ") && message.channel.name == "lounge") {
         bot.channels.get("440724107458379777").send(eftrade);
     	}
     }
+
+    if (message.content.startsWith("...")) {
+
+    }
 	
 });
 
@@ -1769,7 +1773,7 @@ bot.on("messageReactionAdd", (reaction, user) => {
         const newstringsreact = stringsreact.join(' ');
         if (stringsreact == "undefined")  return;
     	const newmemmesg1 = new Discord.RichEmbed()
-	.setTitle("**Seems like you already choosed:**")
+	.setTitle("**Seems like you already chose:**")
 	.setDescription(newstringsreact)
  	target1.send(newmemmesg1);
 	target1.send("**-Tip: Re-react then take out your reaction to remove the selected option.**");
@@ -1813,7 +1817,7 @@ bot.on("messageReactionAdd", (reaction, user) => {
         const newstringsreact = stringsreact.join(' ');
         if (stringsreact == "undefined")  return;
     	const newmemmesg1 = new Discord.RichEmbed()
-	.setTitle("**Seems like you already choosed:**")
+	.setTitle("**Seems like you already chose:**")
 	.setDescription(newstringsreact)
  	target1.send(newmemmesg1);
 	target1.send("**-Tip: Re-react then take out your reaction to remove the selected option.**");
@@ -1857,7 +1861,7 @@ bot.on("messageReactionAdd", (reaction, user) => {
         const newstringsreact = stringsreact.join(' ');
         if (stringsreact == "undefined")  return;
     	const newmemmesg1 = new Discord.RichEmbed()
-	.setTitle("**Seems like you already choosed:**")
+	.setTitle("**Seems like you already chose:**")
 	.setDescription(newstringsreact)
  	target1.send(newmemmesg1);
 	target1.send("**-Tip: Re-react then take out your reaction to remove the selected option.**");
@@ -1901,7 +1905,7 @@ bot.on("messageReactionAdd", (reaction, user) => {
         const newstringsreact = stringsreact.join(' ');
         if (stringsreact == "undefined")  return;
     	const newmemmesg1 = new Discord.RichEmbed()
-	.setTitle("**Seems like you already choosed:**")
+	.setTitle("**Seems like you already chose:**")
 	.setDescription(newstringsreact)
  	target1.send(newmemmesg1);
 	target1.send("**-Tip: Re-react then take out your reaction to remove the selected option.**");
@@ -1945,7 +1949,7 @@ bot.on("messageReactionAdd", (reaction, user) => {
         const newstringsreact = stringsreact.join(' ');
         if (stringsreact == "undefined")  return;
     	const newmemmesg1 = new Discord.RichEmbed()
-	.setTitle("**Seems like you already choosed:**")
+	.setTitle("**Seems like you already chose:**")
 	.setDescription(newstringsreact)
  	target1.send(newmemmesg1);
 	target1.send("**-Tip: Re-react then take out your reaction to remove the selected option.**");
@@ -1989,7 +1993,7 @@ bot.on("messageReactionAdd", (reaction, user) => {
         const newstringsreact = stringsreact.join(' ');
         if (stringsreact == "undefined")  return;
     	const newmemmesg1 = new Discord.RichEmbed()
-	.setTitle("**Seems like you already choosed:**")
+	.setTitle("**Seems like you already chose:**")
 	.setDescription(newstringsreact)
  	target1.send(newmemmesg1);
 	target1.send("**-Tip: Re-react then take out your reaction to remove the selected option.**");
@@ -2033,7 +2037,7 @@ bot.on("messageReactionAdd", (reaction, user) => {
         const newstringsreact = stringsreact.join(' ');
         if (stringsreact == "undefined")  return;
     	const newmemmesg1 = new Discord.RichEmbed()
-	.setTitle("**Seems like you already choosed:**")
+	.setTitle("**Seems like you already chose:**")
 	.setDescription(newstringsreact)
  	target1.send(newmemmesg1);
 	target1.send("**-Tip: Re-react then take out your reaction to remove the selected option.**");
@@ -2078,7 +2082,7 @@ bot.on("messageReactionAdd", (reaction, user) => {
         const newstringsreact = stringsreact.join(' ');
         if (stringsreact == "undefined")  return;
     	const newmemmesg1 = new Discord.RichEmbed()
-	.setTitle("**Seems like you already choosed:**")
+	.setTitle("**Seems like you already chose:**")
 	.setDescription(newstringsreact)
  	target1.send(newmemmesg1);
 	target1.send("**-Tip: Re-react then take out your reaction to remove the selected option.**");
@@ -2122,7 +2126,7 @@ bot.on("messageReactionAdd", (reaction, user) => {
         const newstringsreact = stringsreact.join(' ');
         if (stringsreact == "undefined")  return;
     	const newmemmesg1 = new Discord.RichEmbed()
-	.setTitle("**Seems like you already choosed:**")
+	.setTitle("**Seems like you already chose:**")
 	.setDescription(newstringsreact)
  	target1.send(newmemmesg1);
 	target1.send("**-Tip: Re-react then take out your reaction to remove the selected option.**");
