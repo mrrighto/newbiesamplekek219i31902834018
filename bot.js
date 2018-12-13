@@ -1766,11 +1766,11 @@ bot.on("messageReactionAdd", (reaction, user) => {
         if (target1.roles.has("516895029805973505") && !target1.roles.has("516894946805153792")){
             stringsreact.push("\n ☑ [Last option] of Crew brawl Notification");
         }
-        const stringsreact = stringsreact.join(' ');
+        const newstringsreact = stringsreact.join(' ');
         if (stringsreact == "undefined")  return;
     	const newmemmesg1 = new Discord.RichEmbed()
 	.setTitle("**Seems like you already choosed:**")
-	.setDescription(stringsreact)
+	.setDescription(newstringsreact)
  	target1.send(newmemmesg1);
 	target1.send("**-Tip: Re-react then take out your reaction to remove the selected option.**");
 		
@@ -1810,11 +1810,11 @@ bot.on("messageReactionAdd", (reaction, user) => {
         if (target1.roles.has("516895029805973505") && !target1.roles.has("516894946805153792")){
             stringsreact.push("\n ☑ [Last option] of Crew brawl Notification");
         }
-        const stringsreact = stringsreact.join(' ');
+        const newstringsreact = stringsreact.join(' ');
         if (stringsreact == "undefined")  return;
     	const newmemmesg1 = new Discord.RichEmbed()
 	.setTitle("**Seems like you already choosed:**")
-	.setDescription(stringsreact)
+	.setDescription(newstringsreact)
  	target1.send(newmemmesg1);
 	target1.send("**-Tip: Re-react then take out your reaction to remove the selected option.**");
 		
@@ -1854,11 +1854,11 @@ bot.on("messageReactionAdd", (reaction, user) => {
         if (target1.roles.has("516895029805973505") && !target1.roles.has("516894946805153792")){
             stringsreact.push("\n ☑ [Last option] of Crew brawl Notification");
         }
-        const stringsreact = stringsreact.join(' ');
+        const newstringsreact = stringsreact.join(' ');
         if (stringsreact == "undefined")  return;
     	const newmemmesg1 = new Discord.RichEmbed()
 	.setTitle("**Seems like you already choosed:**")
-	.setDescription(stringsreact)
+	.setDescription(newstringsreact)
  	target1.send(newmemmesg1);
 	target1.send("**-Tip: Re-react then take out your reaction to remove the selected option.**");
 		
@@ -1898,11 +1898,11 @@ bot.on("messageReactionAdd", (reaction, user) => {
         if (target1.roles.has("516895029805973505") && !target1.roles.has("516894946805153792")){
             stringsreact.push("\n ☑ [Last option] of Crew brawl Notification");
         }
-        const stringsreact = stringsreact.join(' ');
+        const newstringsreact = stringsreact.join(' ');
         if (stringsreact == "undefined")  return;
     	const newmemmesg1 = new Discord.RichEmbed()
 	.setTitle("**Seems like you already choosed:**")
-	.setDescription(stringsreact)
+	.setDescription(newstringsreact)
  	target1.send(newmemmesg1);
 	target1.send("**-Tip: Re-react then take out your reaction to remove the selected option.**");
 		
@@ -1942,11 +1942,11 @@ bot.on("messageReactionAdd", (reaction, user) => {
         if (target1.roles.has("516895029805973505") && !target1.roles.has("516894946805153792")){
             stringsreact.push("\n ☑ [Last option] of Crew brawl Notification");
         }
-        const stringsreact = stringsreact.join(' ');
+        const newstringsreact = stringsreact.join(' ');
         if (stringsreact == "undefined")  return;
     	const newmemmesg1 = new Discord.RichEmbed()
 	.setTitle("**Seems like you already choosed:**")
-	.setDescription(stringsreact)
+	.setDescription(newstringsreact)
  	target1.send(newmemmesg1);
 	target1.send("**-Tip: Re-react then take out your reaction to remove the selected option.**");
 		
@@ -1986,11 +1986,11 @@ bot.on("messageReactionAdd", (reaction, user) => {
         if (target1.roles.has("516895029805973505") && !target1.roles.has("516894946805153792")){
             stringsreact.push("\n ☑ [Last option] of Crew brawl Notification");
         }
-        const stringsreact = stringsreact.join(' ');
+        const newstringsreact = stringsreact.join(' ');
         if (stringsreact == "undefined")  return;
     	const newmemmesg1 = new Discord.RichEmbed()
 	.setTitle("**Seems like you already choosed:**")
-	.setDescription(stringsreact)
+	.setDescription(newstringsreact)
  	target1.send(newmemmesg1);
 	target1.send("**-Tip: Re-react then take out your reaction to remove the selected option.**");
 		
@@ -2030,11 +2030,11 @@ bot.on("messageReactionAdd", (reaction, user) => {
         if (target1.roles.has("516895029805973505") && !target1.roles.has("516894946805153792")){
             stringsreact.push("\n ☑ [Last option] of Crew brawl Notification");
         }
-        const stringsreact = stringsreact.join(' ');
+        const newstringsreact = stringsreact.join(' ');
         if (stringsreact == "undefined")  return;
     	const newmemmesg1 = new Discord.RichEmbed()
 	.setTitle("**Seems like you already choosed:**")
-	.setDescription(stringsreact)
+	.setDescription(newstringsreact)
  	target1.send(newmemmesg1);
 	target1.send("**-Tip: Re-react then take out your reaction to remove the selected option.**");
 		
@@ -2075,11 +2075,11 @@ bot.on("messageReactionAdd", (reaction, user) => {
         if (target1.roles.has("516895029805973505") && !target1.roles.has("516894946805153792")){
             stringsreact.push("\n ☑ [Last option] of Crew brawl Notification");
         }
-        const stringsreact = stringsreact.join(' ');
+        const newstringsreact = stringsreact.join(' ');
         if (stringsreact == "undefined")  return;
     	const newmemmesg1 = new Discord.RichEmbed()
 	.setTitle("**Seems like you already choosed:**")
-	.setDescription(stringsreact)
+	.setDescription(newstringsreact)
  	target1.send(newmemmesg1);
 	target1.send("**-Tip: Re-react then take out your reaction to remove the selected option.**");
 		
@@ -2119,11 +2119,11 @@ bot.on("messageReactionAdd", (reaction, user) => {
         if (target1.roles.has("516895029805973505") && !target1.roles.has("516894946805153792")){
             stringsreact.push("\n ☑ [Last option] of Crew brawl Notification");
         }
-        const stringsreact = stringsreact.join(' ');
+        const newstringsreact = stringsreact.join(' ');
         if (stringsreact == "undefined")  return;
     	const newmemmesg1 = new Discord.RichEmbed()
 	.setTitle("**Seems like you already choosed:**")
-	.setDescription(stringsreact)
+	.setDescription(newstringsreact)
  	target1.send(newmemmesg1);
 	target1.send("**-Tip: Re-react then take out your reaction to remove the selected option.**");
 		
