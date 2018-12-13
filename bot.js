@@ -1478,7 +1478,7 @@ if (message.content.startsWith("S> ") && message.channel.name == "lounge") {
     }
 
     if ( (message.mentions.roles.has("521323904095223808") || message.mentions.roles.has("516895029805973505") || message.mentions.roles.has("516910275039985664") || message.mentions.roles.has("521322025030254594") || message.mentions.roles.has("521322066243485711") || message.mentions.roles.has("521321797636063232") || message.mentions.roles.has("521321963055218688") || message.mentions.roles.has("521321860974116875") || message.mentions.roles.has("521321927000719371") || message.mentions.roles.has("521321652122812416") || message.mentions.roles.has("521321343988269066")) && message.channel.name == "lfg2-sub") {
-	if (!message.author.bot) return;
+	if (message.author.bot) return;
  	let warneduser1 = message.guild.member(message.author);
 	warneduser1.addRole('438627661447823361').catch(console.error);
 	warneduser1.addRole('438628872817475584').catch(console.error);
