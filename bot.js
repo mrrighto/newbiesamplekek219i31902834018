@@ -1549,23 +1549,24 @@ bot.on('presenceUpdate', (oldMember, newMember) => {
     }
 
     
-    if (newMember.user.presence && newMember.user.presence.game && newMember.user.presence.game.streaming) {
-        if (!newMember.user.presence.game.streaming) return;
-	if (newMember.user.bot) return;
-	if (oldMember.user.bot) return;
-	
-    const newmemmesg1 = new Discord.RichEmbed()
-	.setDescription(newMember.user + " is now streaming!")
-	.setThumbnail(newMember.user.avatarURL)
-bot.channels.get("516882861111115776").send(newmemmesg1);
-bot.channels.get("516882861111115776").send("**Stream link:** " + newMember.user.presence.game.url);
+if (newMember.user.presence && newMember.user.presence.game && newMember.user.presence.game.streaming) {
 
-        newMember.addRole('516909590034645007').catch(console.error);
-    } else if (newMember.user.presence.game && !newMember.user.presence.game.streaming && newMember.roles.has('516909590034645007')) {
-        newMember.removeRole('516909590034645007').catch(console.error);
-    } else if (!newMember.user.presence.game && newMember.roles.has('516909590034645007')) {
-        newMember.removeRole('516909590034645007').catch(console.error);
-    } 
+    if (newMember.user.presence.game.streaming && newMember.roles.has('516909590034645007')) return;
+    if (newMember.user.bot) return;
+    if (oldMember.user.bot) return;
+
+    const newmemmesg1 = new Discord.RichEmbed()
+        .setDescription(newMember.user + " is now streaming!")
+        .setThumbnail(newMember.user.avatarURL)
+    bot.channels.get("516882861111115776").send(newmemmesg1);
+    bot.channels.get("516882861111115776").send("**Stream link:** " + newMember.user.presence.game.url);
+
+    newMember.addRole('516909590034645007').catch(console.error);
+} else if (newMember.user.presence.game && !newMember.user.presence.game.streaming && newMember.roles.has('516909590034645007')) {
+    newMember.removeRole('516909590034645007').catch(console.error);
+} else if (!newMember.user.presence.game && newMember.roles.has('516909590034645007')) {
+    newMember.removeRole('516909590034645007').catch(console.error);
+} 
 
     //
 
