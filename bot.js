@@ -980,6 +980,7 @@ function clsOFN1() {
     let ruleclsOFN1 = new schedule.RecurrenceRule();
     ruleclsOFN1.dayOfWeek = [05];
     ruleclsOFN1.hour = [07, 10, 17, 20, 23];
+    ruleclsOFN1.minute = 00;
     let jclsOFN1 = schedOFN1.scheduleJob(ruleclsOFN1, function () {
         setTimeout(() => {
             const embedOFN1 = new Discord.RichEmbed()
@@ -995,6 +996,7 @@ function clsOFN2() {
     let ruleclsOFN2 = new schedule.RecurrenceRule();
     ruleclsOFN2.dayOfWeek = [06];
     ruleclsOFN2.hour = [01, 04];
+    ruleclsOFN2.minute = 00;
     let jclsOFN2 = schedOFN2.scheduleJob(ruleclsOFN2, function () {
         setTimeout(() => {
             const embedOFN2 = new Discord.RichEmbed()
@@ -1010,6 +1012,7 @@ function clsOFN3() {
     let ruleclsOFN3 = new schedule.RecurrenceRule();
     ruleclsOFN3.dayOfWeek = [00];
     ruleclsOFN3.hour = [07, 10, 17, 20, 23];
+    ruleclsOFN3.minute = 00;
     let jclsOFN3 = schedOFN3.scheduleJob(ruleclsOFN3, function () {
         setTimeout(() => {
             const embedOFN3 = new Discord.RichEmbed()
@@ -1025,6 +1028,7 @@ function clsOFN4() {
     let ruleclsOFN4 = new schedule.RecurrenceRule();
     ruleclsOFN4.dayOfWeek = [01];
     ruleclsOFN4.hour = [01, 04, 07, 10, 17, 20, 23];
+    ruleclsOFN4.minute = 00;
     let jclsOFN4 = schedOFN4.scheduleJob(ruleclsOFN4, function () {
         setTimeout(() => {
             const embedOFN4 = new Discord.RichEmbed()
@@ -1040,6 +1044,7 @@ function clsOFN5() {
     let ruleclsOFN5 = new schedule.RecurrenceRule();
     ruleclsOFN5.dayOfWeek = [02];
     ruleclsOFN5.hour = [01, 04];
+    ruleclsOFN5.minute = 00;
     let jclsOFN5 = schedOFN5.scheduleJob(ruleclsOFN5, function () {
         setTimeout(() => {
             const embedOFN5 = new Discord.RichEmbed()
