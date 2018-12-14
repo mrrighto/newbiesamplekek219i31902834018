@@ -1561,16 +1561,9 @@ bot.channels.get("516882861111115776").send(newmemmesg1);
 bot.channels.get("516882861111115776").send("**Stream link:** " + newMember.user.presence.game.url);
 
         newMember.addRole('516909590034645007').catch(console.error);
-    } 
-
-    
-    if (newMember.user.presence && newMember.user.presence.game && !newMember.user.presence.game.streaming && newMember.roles.has('516909590034645007')) {
-        if (!newMember.roles.has('516909590034645007')) return;
+    } else if (newMember.user.presence.game && !newMember.user.presence.game.streaming && newMember.roles.has('516909590034645007')) {
         newMember.removeRole('516909590034645007').catch(console.error);
-    } 
-
-   if (newMember.user.presence && !newMember.user.presence.game && newMember.roles.has('516909590034645007')) {
-        if (!newMember.roles.has('516909590034645007')) return;
+    } else if (!newMember.user.presence.game && newMember.roles.has('516909590034645007')) {
         newMember.removeRole('516909590034645007').catch(console.error);
     } 
 
