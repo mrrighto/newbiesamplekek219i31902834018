@@ -1503,7 +1503,7 @@ if (message.content.startsWith("S> ") && message.channel.name == "lounge") {
 bot.on('presenceUpdate', (oldMember, newMember) => {
     
     let guild = newMember.guild;
-    let playRole = guild.roles.find("name", "cls-ingame");
+    let playRole = guild.roles.find("name", "`cls-ingame");
  
     if (!playRole) return;
     if (newMember.roles.has("432384823068459018") && newMember.user.presence.game && (newMember.user.presence.game.name === "Closers Dimension Conflict" || newMember.user.presence.game.name === "Closers")) {
