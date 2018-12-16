@@ -1492,9 +1492,14 @@ if (message.content.startsWith("S> ") && message.channel.name == "lounge") {
 	message.channel.send(message.author + " please refrain from using that role mention, the next time I see you using those I'll have your entire messages wiped out in this server and get you banned. Two warning counts are now added to you, this served as a final warning.");
 	message.channel.send(newmemmesg1);
     }
-   //if ( message.content.startsWith("%warn555")  && message.channel.name == "lfg2-sub") {
-//	message.channel.send("<@&521322066243485711>");
-  //  }
+
+    if (message.content.startsWith("botreset")  && (message.channel.name == "admin-ch"||message.channel.name == "lfg-log") && (message.guild.member(message.author).roles.has("394119776030687242") || message.guild.member(message.author).roles.has("394119776030687242"))) {
+        message.channel.send(message.author + " Rebooting...");
+        bot.destroy();
+        
+        } else if (message.content.startsWith("botreset")  && (message.channel.name == "admin-ch"||message.channel.name == "lfg-log") && (!message.guild.member(message.author).roles.has("394119776030687242") || !message.guild.member(message.author).roles.has("394119776030687242"))){
+            message.channel.send(message.author +" sorry only Admins are allowed to use this command <:jmeme:383642394916159488>");
+        }
 	
 });
 
