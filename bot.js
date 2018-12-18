@@ -2141,11 +2141,14 @@ bot.on("messageReactionAdd", (reaction, user) => {
 	  target1.send("**I'm sorry only people with **Crew Member or Crew Assistance role** can use the *Crew Brawl Notifications* If you are interested in this kindly contact the admins.");
 		
 	
-	} else if ( (target1.roles.has("516895029805973505") || target1.roles.has("516895029805973505") ) &&  !target1.roles.has("516895029805973505")) {
+	} 
+
+	else if ( (target1.roles.has("516895029805973505") || target1.roles.has("516895029805973505") ) &&  !target1.roles.has("516895029805973505")) {
 	  target1.addRole('516894946805153792').catch(console.error);
 	  
         
-    } else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.name == "ping" && reaction.message.content.startsWith("3. **[ Notifications ] -**")) {
+    } 
+	else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.name == "ping" && reaction.message.content.startsWith("3. **[ Notifications ] -**")) {
         if (target1.roles.has("516894946805153792")){
  		
 	const stringsreact = [];
