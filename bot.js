@@ -275,8 +275,11 @@ function clsCAR() {
 
         
         setTimeout(() => {
-    
-        bot.channels.get("463891660955320320").send("**Crew Brawl is now active o/** <@&516895029805973505>");
+	const strings3v3 = [];
+        const rolemember3v3 = message.guild.roles.get('516895029805973505').members.map(m => m.user);
+        strings3v3.push(rolemember3v3);
+        const newstrings3v3 = strings3v3.join(' ');
+        bot.channels.get("463891660955320320").send("**Crew Brawl is now active 📣 **" + newstrings3v3);
   	 }, 6000)
 	    
 	});
@@ -908,8 +911,12 @@ function clsOF1() {
             const embedOF1 = new Discord.RichEmbed()
             .setDescription("**Entry requirement:** Lv83, 1x Capsule Contamination Purifier \n -Entrance will stay open for an hour \n -Squad search requires item lvl 130+ \n -Testplay: https://www.youtube.com/watch?v=Zj6LiH_EXL4 \n -Rewards: 4x/2x mats for hell trinkets, epsilon mod/receiver, (hell mods)")
             .setThumbnail("https://i.imgur.com/XLh2Bg1.gif")
-            bot.channels.get("381392359507623939").send("**[Contamination Overflow]** will start in **30 mins** <@&516910275039985664>");
-            bot.channels.get("381392359507623939").send(embedOF1);
+            const stringsOFN1 = [];
+        	const rolememberOFN1 = message.guild.roles.get('516910275039985664').members.map(m => m.user);
+        	stringsOFN1.push(rolememberOFN1);
+        	const newstringsOFN1 = stringsOFN1.join(' ');
+              bot.channels.get("381392359507623939").send("**[Contamination Overflow]** will start in **30 mins** 📣 " + newstringsOFN1,embedOF1);
+            //bot.channels.get("381392359507623939").send(embedOF1);
     });
 }
 
@@ -923,8 +930,12 @@ function clsOF2() {
             const embedOF2 = new Discord.RichEmbed()
             .setDescription("**Entry requirement:** Lv83, 1x Capsule Contamination Purifier \n -Entrance will stay open for an hour \n -Squad search requires item lvl 130+ \n -Testplay: https://www.youtube.com/watch?v=Zj6LiH_EXL4 \n -Rewards: 4x/2x mats for hell trinkets, epsilon mod/receiver, (hell mods)")
             .setThumbnail("https://i.imgur.com/XLh2Bg1.gif")
-            bot.channels.get("381392359507623939").send("**[Contamination Overflow]** will start in **30 mins** <@&516910275039985664>");
-            bot.channels.get("381392359507623939").send(embedOF2);
+		const stringsOFN2 = [];
+        	const rolememberOFN2 = message.guild.roles.get('516910275039985664').members.map(m => m.user);
+        	stringsOFN2.push(rolememberOFN2);
+        	const newstringsOFN2 = stringsOFN2.join(' ');
+              bot.channels.get("381392359507623939").send("**[Contamination Overflow]** will start in **30 mins** 📣 " + newstringsOFN2,embedOF2);
+            //bot.channels.get("381392359507623939").send(embedOF2);
     });
 }
 
@@ -938,8 +949,12 @@ function clsOF3() {
             const embedOF3 = new Discord.RichEmbed()
             .setDescription("**Entry requirement:** Lv83, 1x Capsule Contamination Purifier \n -Entrance will stay open for an hour \n -Squad search requires item lvl 130+ \n -Testplay: https://www.youtube.com/watch?v=Zj6LiH_EXL4 \n -Rewards: 4x/2x mats for hell trinkets, epsilon mod/receiver, (hell mods)")
             .setThumbnail("https://i.imgur.com/XLh2Bg1.gif")
-            bot.channels.get("381392359507623939").send("**[Contamination Overflow]** will start in **30 mins** <@&516910275039985664>");
-            bot.channels.get("381392359507623939").send(embedOF3);
+            const stringsOFN3 = [];
+        	const rolememberOFN3 = message.guild.roles.get('516910275039985664').members.map(m => m.user);
+        	stringsOFN3.push(rolememberOFN3);
+        	const newstringsOFN3 = stringsOFN3.join(' ');
+              bot.channels.get("381392359507623939").send("**[Contamination Overflow]** will start in **30 mins** 📣 " + newstringsOFN3,embedOF3);
+            //bot.channels.get("381392359507623939").send(embedOF3);
     });
 }
 
@@ -953,8 +968,12 @@ function clsOF4() {
             const embedOF4 = new Discord.RichEmbed()
             .setDescription("**Entry requirement:** Lv83, 1x Capsule Contamination Purifier \n -Entrance will stay open for an hour \n -Squad search requires item lvl 130+ \n -Testplay: https://www.youtube.com/watch?v=Zj6LiH_EXL4 \n -Rewards: 4x/2x mats for hell trinkets, epsilon mod/receiver, (hell mods)")
             .setThumbnail("https://i.imgur.com/XLh2Bg1.gif")
-            bot.channels.get("381392359507623939").send("**[Contamination Overflow]** will start in **30 mins** <@&516910275039985664>");
-            bot.channels.get("381392359507623939").send(embedOF4);
+            const stringsOFN4 = [];
+        	const rolememberOFN4 = message.guild.roles.get('516910275039985664').members.map(m => m.user);
+        	stringsOFN4.push(rolememberOFN4);
+        	const newstringsOFN4 = stringsOFN4.join(' ');
+              bot.channels.get("381392359507623939").send("**[Contamination Overflow]** will start in **30 mins** 📣 " + newstringsOFN4,embedOF4);
+            //bot.channels.get("381392359507623939").send(embedOF4);
     });
 }
 
@@ -968,8 +987,12 @@ function clsOF5() {
             const embedOF5 = new Discord.RichEmbed()
             .setDescription("**Entry requirement:** Lv83, 1x Capsule Contamination Purifier \n -Entrance will stay open for an hour \n -Squad search requires item lvl 130+ \n -Testplay: https://www.youtube.com/watch?v=Zj6LiH_EXL4 \n -Rewards: 4x/2x mats for hell trinkets, epsilon mod/receiver, (hell mods)")
             .setThumbnail("https://i.imgur.com/XLh2Bg1.gif")
-            bot.channels.get("381392359507623939").send("**[Contamination Overflow]** will start in **30 mins** <@&516910275039985664>");
-            bot.channels.get("381392359507623939").send(embedOF5);
+        	const stringsOFN5 = [];
+        	const rolememberOFN5 = message.guild.roles.get('516910275039985664').members.map(m => m.user);
+        	stringsOFN5.push(rolememberOFN5);
+        	const newstringsOFN5 = stringsOFN5.join(' ');
+              bot.channels.get("381392359507623939").send("**[Contamination Overflow]** will start in **30 mins** 📣 " + newstringsOFN5,embedOF5);
+            //bot.channels.get("381392359507623939").send(embedOF5);
     });
 }
 
@@ -2113,12 +2136,16 @@ bot.on("messageReactionAdd", (reaction, user) => {
 	.setDescription(newstringsreact)
  	target1.send(newmemmesg1);
 	target1.send("**-Tip: Re-react then take out your reaction to remove the selected option.**");
-		
-	} else {
+
+	} else if ( (!target1.roles.has("516895029805973505") || !target1.roles.has("516895029805973505") ) &&  !target1.roles.has("516895029805973505")){
+	  target1.send("**I'm sorry only people with **Crew Member or Crew Assistance role** can use the *Crew Brawl Notifications* If you are interested in this kindly contact the admins.");
+	}	
+	
+	} else if ( (target1.roles.has("516895029805973505") || target1.roles.has("516895029805973505") ) &&  !target1.roles.has("516895029805973505")) {
 	  target1.addRole('516894946805153792').catch(console.error);
-	}  
+	  
         
-    }else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.name == "ping" && reaction.message.content.startsWith("3. **[ Notifications ] -**")) {
+    } else if (reaction.message.channel.name == "bot-services🔒" && reaction.emoji.name == "ping" && reaction.message.content.startsWith("3. **[ Notifications ] -**")) {
         if (target1.roles.has("516894946805153792")){
  		
 	const stringsreact = [];
@@ -2157,10 +2184,14 @@ bot.on("messageReactionAdd", (reaction, user) => {
 	.setDescription(newstringsreact)
  	target1.send(newmemmesg1);
 	target1.send("**-Tip: Re-react then take out your reaction to remove the selected option.**");
+
+	} else if ( (!target1.roles.has("516895029805973505") || !target1.roles.has("516895029805973505") ) &&  !target1.roles.has("516894946805153792")){
+	  target1.send("**I'm sorry only people with **Crew Member or Crew Assistance role** can use the *Crew Brawl Notifications* If you are interested in this kindly contact the admins.");
+	}
 		
-	} else {
+	else if ( (target1.roles.has("516895029805973505") || target1.roles.has("516895029805973505") ) &&  !target1.roles.has("516894946805153792")) {
 	  target1.addRole('516895029805973505').catch(console.error);
-	} 
+	}
         
     }
 
