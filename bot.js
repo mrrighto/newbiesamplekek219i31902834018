@@ -2141,7 +2141,7 @@ bot.on("messageReactionAdd", (reaction, user) => {
  	target1.send(newmemmesg1);
 	target1.send("**-Tip: Re-react then take out your reaction to remove the selected option.**");
 
-	} else if (!target1.roles.has("397285952810123274") || !target1.roles.has("392193289723445248")){
+	} else if (!target1.roles.has("397285952810123274") && !target1.roles.has("392193289723445248")){
 	  target1.send("I'm sorry only people with **Crew Member or Crew Assistance role** can use the *Crew Brawl Notifications*, if you are interested in this kindly contact the admins.");
 	} 
 	else if ( (target1.roles.has("397285952810123274") || target1.roles.has("392193289723445248") ) &&  !target1.roles.has("516895029805973505")) {
@@ -2189,7 +2189,7 @@ bot.on("messageReactionAdd", (reaction, user) => {
  	target1.send(newmemmesg1);
 	target1.send("**-Tip: Re-react then take out your reaction to remove the selected option.**");
 
-	} else if (!target1.roles.has("397285952810123274") || !target1.roles.has("392193289723445248")){
+	} else if (!target1.roles.has("397285952810123274") && !target1.roles.has("392193289723445248")){
 	  target1.send("I'm sorry only people with **Crew Member or Crew Assistance role** can use the *Crew Brawl Notifications* If you are interested in this kindly contact the admins.");
 	}
 		
