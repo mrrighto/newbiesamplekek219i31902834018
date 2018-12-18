@@ -1215,43 +1215,50 @@ try {
     let newevents6 = msgContent21.includes("event") ||msgContent21.includes("cube");
     let newdeedee7 = msgContent21.includes("dd") || msgContent21.includes("deedee") || msgContent21.includes("doppel");
 
-    if (message.mentions.roles.has("432384941855080448") && message.channel.name == "lfg-closers-na") {
+ if (message.channel.name == "lfg-closers-na" && message.mentions.roles.has("432384941855080448")) {
+      
         const stringsLFG = [];
-        
+       
         if (newcontahell1){
-            stringsLFG.push("<@&521321343988269066>");
+            const rolemember1 = message.guild.roles.get('521323904095223808').members.filter(m => m.roles.has("521321343988269066")).map(m=>m.user);
+            stringsLFG.push(rolemember1);
         } 
         if (newpuri2){
-            stringsLFG.push("<@&521321652122812416>");
+            const rolemember2 = message.guild.roles.get('521323904095223808').members.filter(m => m.roles.has("521321652122812416")).map(m=>m.user);
+            stringsLFG.push(rolemember2);
         } 
         if (newtia2){
-            stringsLFG.push("<@&521321797636063232>");
+            const rolemember3 = message.guild.roles.get('521323904095223808').members.filter(m => m.roles.has("521321797636063232")).map(m=>m.user);
+            stringsLFG.push(rolemember3);
         } 
         if (newgrem3){
-            stringsLFG.push("<@&521321860974116875>");
+            const rolemember4 = message.guild.roles.get('521323904095223808').members.filter(m => m.roles.has("521321860974116875")).map(m=>m.user);
+            stringsLFG.push(rolemember4);
         } 
         if (newirinadav4){
-            stringsLFG.push("<@&521321927000719371>");
+            const rolemember5 = message.guild.roles.get('521323904095223808').members.filter(m => m.roles.has("521321927000719371")).map(m=>m.user);
+            stringsLFG.push(rolemember5);
         } 
         if (newpg755){
-            stringsLFG.push("<@&521321963055218688>");
+            const rolemember6 = message.guild.roles.get('521323904095223808').members.filter(m => m.roles.has("521321963055218688")).map(m=>m.user);
+            stringsLFG.push(rolemember6);
         } 
         if (newevents6){
-            stringsLFG.push("<@&521322025030254594>");
+            const rolemember7 = message.guild.roles.get('521323904095223808').members.filter(m => m.roles.has("521322025030254594")).map(m=>m.user);
+            stringsLFG.push(rolemember7);
         } 
         if (newdeedee7){
-            stringsLFG.push("<@&521322066243485711>");
+            const rolemember8 = message.guild.roles.get('521323904095223808').members.filter(m => m.roles.has("521322066243485711")).map(m=>m.user);
+            stringsLFG.push(rolemember8);
         } 
+
         
         
         const newstrings = stringsLFG.join(' ');
 
-        if (stringsLFG == "undefined")  return;
-        // bot.channels.get("521360326424527139").send(message.author+" is looking for party/member! <:tinaping:433236771309092865>" + newstrings);
-        // const embedspec = new Discord.RichEmbed()
-        // .setDescription()
-        // bot.channels.get("521360326424527139").send(embedOF1);
-        bot.channels.get("521360326424527139").send(message.author+" is looking for party/member! <:tinaping:433236771309092865>" + newstrings);
+        if (newstrings != "") {
+            bot.channels.get("521360326424527139").send("**「** "+message.author.username + " is now looking for party/member" +": **"+ message.content +"** **」** 📣"+ newstrings);
+        
         bot.channels.get("521360326424527139").send({embed: {
             color: 3447003,
             author: {
@@ -1268,6 +1275,8 @@ try {
             ]
           }
         });
+    }
+    
     }
 
 
@@ -1493,12 +1502,12 @@ if (message.content.startsWith("S> ") && message.channel.name == "lounge") {
 	message.channel.send(newmemmesg1);
     }
 
-    if (message.content.startsWith("botreset")  && (message.channel.name == "admin-ch"||message.channel.name == "lfg-log") && (message.guild.member(message.author).roles.has("394119776030687242") || message.guild.member(message.author).roles.has("394119776030687242"))) {
+    if (message.content.startsWith("botreset")  && (message.channel.name == "admin-ch"||message.channel.name == "lfg-log") && (message.guild.member(message.author).roles.has("394119776030687242") || message.guild.member(message.author).roles.has("437923100978577408") || message.guild.member(message.author).roles.has("394119776030687242"))) {
         message.channel.send(message.author + " Rebooting...");
         bot.destroy();
         
-        } else if (message.content.startsWith("botreset")  && (message.channel.name == "admin-ch"||message.channel.name == "lfg-log") && (!message.guild.member(message.author).roles.has("394119776030687242") || !message.guild.member(message.author).roles.has("394119776030687242"))){
-            message.channel.send(message.author +" sorry only Admins are allowed to use this command <:jmeme:383642394916159488>");
+        } else if (message.content.startsWith("botreset")  && (message.channel.name == "admin-ch"||message.channel.name == "lfg-log") && (!message.guild.member(message.author).roles.has("394119776030687242") || !message.guild.member(message.author).roles.has("437923100978577408") || !message.guild.member(message.author).roles.has("394119776030687242"))){
+            message.channel.send(message.author +" sorry only admins/hr are allowed to use this command <:jmeme:383642394916159488>");
         }
 	
 });
