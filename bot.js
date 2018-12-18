@@ -1533,6 +1533,10 @@ if (message.content.startsWith("S> ") && message.channel.name == "lounge") {
             message.channel.send(message.author +" sorry only admins/hr are allowed to use this command <:jmeme:383642394916159488>");
         }
 	
+	    if (message.content.startsWith("bla")  && (message.channel.name == "admin-ch"||message.channel.name == "lfg-log") && (message.guild.member(message.author).roles.has("394119776030687242") || message.guild.member(message.author).roles.has("394119776030687242"))) {    
+       bot.channels.get("432775028757626890").send(bot.guilds.get("381392359507623937").memberCount);
+    
+    }
 });
 
 
@@ -2137,10 +2141,10 @@ bot.on("messageReactionAdd", (reaction, user) => {
  	target1.send(newmemmesg1);
 	target1.send("**-Tip: Re-react then take out your reaction to remove the selected option.**");
 
-	} else if ( (!target1.roles.has("516895029805973505") || !target1.roles.has("516895029805973505") ) &&  !target1.roles.has("516895029805973505")){
-	  target1.send("**I'm sorry only people with **Crew Member or Crew Assistance role** can use the *Crew Brawl Notifications* If you are interested in this kindly contact the admins.");
+	} else if ( (!target1.roles.has("397285952810123274") || !target1.roles.has("392193289723445248") ) &&  !target1.roles.has("516895029805973505")){
+	  target1.send("I'm sorry only people with **Crew Member or Crew Assistance role** can use the *Crew Brawl Notifications*, if you are interested in this kindly contact the admins.");
 	} 
-	else if ( (target1.roles.has("516895029805973505") || target1.roles.has("516895029805973505") ) &&  !target1.roles.has("516895029805973505")) {
+	else if ( (target1.roles.has("397285952810123274") || target1.roles.has("392193289723445248") ) &&  !target1.roles.has("516895029805973505")) {
 	  target1.addRole('516894946805153792').catch(console.error);
 	} 
         
@@ -2185,11 +2189,11 @@ bot.on("messageReactionAdd", (reaction, user) => {
  	target1.send(newmemmesg1);
 	target1.send("**-Tip: Re-react then take out your reaction to remove the selected option.**");
 
-	} else if ( (!target1.roles.has("516895029805973505") || !target1.roles.has("516895029805973505") ) &&  !target1.roles.has("516894946805153792")){
-	  target1.send("**I'm sorry only people with **Crew Member or Crew Assistance role** can use the *Crew Brawl Notifications* If you are interested in this kindly contact the admins.");
+	} else if ( (!target1.roles.has("397285952810123274") || !target1.roles.has("392193289723445248") ) &&  !target1.roles.has("516894946805153792")){
+	  target1.send("I'm sorry only people with **Crew Member or Crew Assistance role** can use the *Crew Brawl Notifications* If you are interested in this kindly contact the admins.");
 	}
 		
-	else if ( (target1.roles.has("516895029805973505") || target1.roles.has("516895029805973505") ) &&  !target1.roles.has("516894946805153792")) {
+	else if ( (target1.roles.has("397285952810123274") || target1.roles.has("392193289723445248") ) &&  !target1.roles.has("516894946805153792")) {
 	  target1.addRole('516895029805973505').catch(console.error);
 	}
         
