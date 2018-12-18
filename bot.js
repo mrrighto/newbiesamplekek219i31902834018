@@ -1498,7 +1498,7 @@ if (message.content.startsWith("S> ") && message.channel.name == "lounge") {
 	warneduser1.addRole('438628872817475584').catch(console.error);
 	const newmemmesg1 = new Discord.RichEmbed()
 	.setDescription("Please read <#521179220584693760> and understand the rules please...If you're not aware I'm utilizing those role mentions to give important notifs to the people so If you mindlessly use those mentions then the services that I offer will be pointless.")
-	message.channel.send(message.author + " please refrain from using that role mention, the next time I see you using those I'll have your entire messages wiped out in this server and get you banned. Two warning counts are now added to you, this served as a final warning.");
+	message.channel.send(message.author + " please refrain from using that role mention. Two warning counts are now added to you, this served as a final warning.");
 	message.channel.send(newmemmesg1);
     }
 
