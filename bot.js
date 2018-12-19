@@ -275,7 +275,7 @@ function clsCAR() {
         
         setTimeout(() => {
 	const strings3v3 = [];
-        const rolemember3v3 = message.guild.roles.get('516895029805973505').members.map(m => m.user);
+        const rolemember3v3 = bot.guilds.get("381392359507623937").roles.get('516895029805973505').members.map(m => m.user);
         strings3v3.push(rolemember3v3);
         const newstrings3v3 = strings3v3.join(' ');
         bot.channels.get("463891660955320320").send("**Crew Brawl is now active 📣 **" + newstrings3v3);
