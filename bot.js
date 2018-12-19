@@ -911,7 +911,7 @@ function clsOF1() {
             .setDescription("**Entry requirement:** Lv83, 1x Capsule Contamination Purifier \n -Entrance will stay open for an hour \n -Squad search requires item lvl 130+ \n -Testplay: https://www.youtube.com/watch?v=Zj6LiH_EXL4 \n -Rewards: 4x/2x mats for hell trinkets, epsilon mod/receiver, (hell mods)")
             .setThumbnail("https://i.imgur.com/XLh2Bg1.gif")
             const stringsOFN1 = [];
-        	const rolememberOFN1 = message.guild.roles.get('516910275039985664').members.map(m => m.user);
+        	const rolememberOFN1 = bot.guilds.get("381392359507623937").roles.get('516910275039985664').members.map(m => m.user);
         	stringsOFN1.push(rolememberOFN1);
         	const newstringsOFN1 = stringsOFN1.join(' ');
               bot.channels.get("381392359507623939").send("**[Contamination Overflow]** will start in **30 mins** 📣 " + newstringsOFN1,embedOF1);
@@ -930,7 +930,7 @@ function clsOF2() {
             .setDescription("**Entry requirement:** Lv83, 1x Capsule Contamination Purifier \n -Entrance will stay open for an hour \n -Squad search requires item lvl 130+ \n -Testplay: https://www.youtube.com/watch?v=Zj6LiH_EXL4 \n -Rewards: 4x/2x mats for hell trinkets, epsilon mod/receiver, (hell mods)")
             .setThumbnail("https://i.imgur.com/XLh2Bg1.gif")
 		const stringsOFN2 = [];
-        	const rolememberOFN2 = message.guild.roles.get('516910275039985664').members.map(m => m.user);
+        	const rolememberOFN2 = bot.guilds.get("381392359507623937").roles.get('516910275039985664').members.map(m => m.user);
         	stringsOFN2.push(rolememberOFN2);
         	const newstringsOFN2 = stringsOFN2.join(' ');
               bot.channels.get("381392359507623939").send("**[Contamination Overflow]** will start in **30 mins** 📣 " + newstringsOFN2,embedOF2);
@@ -949,7 +949,7 @@ function clsOF3() {
             .setDescription("**Entry requirement:** Lv83, 1x Capsule Contamination Purifier \n -Entrance will stay open for an hour \n -Squad search requires item lvl 130+ \n -Testplay: https://www.youtube.com/watch?v=Zj6LiH_EXL4 \n -Rewards: 4x/2x mats for hell trinkets, epsilon mod/receiver, (hell mods)")
             .setThumbnail("https://i.imgur.com/XLh2Bg1.gif")
             const stringsOFN3 = [];
-        	const rolememberOFN3 = message.guild.roles.get('516910275039985664').members.map(m => m.user);
+        	const rolememberOFN3 = bot.guilds.get("381392359507623937").roles.get('516910275039985664').members.map(m => m.user);
         	stringsOFN3.push(rolememberOFN3);
         	const newstringsOFN3 = stringsOFN3.join(' ');
               bot.channels.get("381392359507623939").send("**[Contamination Overflow]** will start in **30 mins** 📣 " + newstringsOFN3,embedOF3);
@@ -968,7 +968,7 @@ function clsOF4() {
             .setDescription("**Entry requirement:** Lv83, 1x Capsule Contamination Purifier \n -Entrance will stay open for an hour \n -Squad search requires item lvl 130+ \n -Testplay: https://www.youtube.com/watch?v=Zj6LiH_EXL4 \n -Rewards: 4x/2x mats for hell trinkets, epsilon mod/receiver, (hell mods)")
             .setThumbnail("https://i.imgur.com/XLh2Bg1.gif")
             const stringsOFN4 = [];
-        	const rolememberOFN4 = message.guild.roles.get('516910275039985664').members.map(m => m.user);
+        	const rolememberOFN4 = bot.guilds.get("381392359507623937").roles.get('516910275039985664').members.map(m => m.user);
         	stringsOFN4.push(rolememberOFN4);
         	const newstringsOFN4 = stringsOFN4.join(' ');
               bot.channels.get("381392359507623939").send("**[Contamination Overflow]** will start in **30 mins** 📣 " + newstringsOFN4,embedOF4);
@@ -987,7 +987,7 @@ function clsOF5() {
             .setDescription("**Entry requirement:** Lv83, 1x Capsule Contamination Purifier \n -Entrance will stay open for an hour \n -Squad search requires item lvl 130+ \n -Testplay: https://www.youtube.com/watch?v=Zj6LiH_EXL4 \n -Rewards: 4x/2x mats for hell trinkets, epsilon mod/receiver, (hell mods)")
             .setThumbnail("https://i.imgur.com/XLh2Bg1.gif")
         	const stringsOFN5 = [];
-        	const rolememberOFN5 = message.guild.roles.get('516910275039985664').members.map(m => m.user);
+        	const rolememberOFN5 = bot.guilds.get("381392359507623937").roles.get('516910275039985664').members.map(m => m.user);
         	stringsOFN5.push(rolememberOFN5);
         	const newstringsOFN5 = stringsOFN5.join(' ');
               bot.channels.get("381392359507623939").send("**[Contamination Overflow]** will start in **30 mins** 📣 " + newstringsOFN5,embedOF5);
