@@ -1392,35 +1392,35 @@ try {
         const stringsLFG = [];
        
         if (newcontahell1){
-            const rolemember1 = message.guild.roles.get('521323904095223808').members.filter(m => m.roles.has("521321343988269066")).map(m=>m.user);
+            const rolemember1 = message.guild.roles.get('521323904095223808').roles.get("521321343988269066").members.map(m => m.user);
             stringsLFG.push(rolemember1);
         } 
         if (newpuri2){
-            const rolemember2 = message.guild.roles.get('521323904095223808').members.filter(m => m.roles.has("521321652122812416")).map(m=>m.user);
+            const rolemember2 = message.guild.roles.get('521323904095223808').roles.get("521321652122812416").members.map(m => m.user);
             stringsLFG.push(rolemember2);
         } 
         if (newtia2){
-            const rolemember3 = message.guild.roles.get('521323904095223808').members.filter(m => m.roles.has("521321797636063232")).map(m=>m.user);
+            const rolemember3 = message.guild.roles.get('521323904095223808').roles.get("521321797636063232").members.map(m => m.user);
             stringsLFG.push(rolemember3);
         } 
         if (newgrem3){
-            const rolemember4 = message.guild.roles.get('521323904095223808').members.filter(m => m.roles.has("521321860974116875")).map(m=>m.user);
+            const rolemember4 = message.guild.roles.get('521323904095223808').roles.get("521321860974116875").members.map(m => m.user);
             stringsLFG.push(rolemember4);
         } 
         if (newirinadav4){
-            const rolemember5 = message.guild.roles.get('521323904095223808').members.filter(m => m.roles.has("521321927000719371")).map(m=>m.user);
+            const rolemember5 = message.guild.roles.get('521323904095223808').roles.get("521321927000719371").members.map(m => m.user);
             stringsLFG.push(rolemember5);
         } 
         if (newpg755){
-            const rolemember6 = message.guild.roles.get('521323904095223808').members.filter(m => m.roles.has("521321963055218688")).map(m=>m.user);
+            const rolemember6 = message.guild.roles.get('521323904095223808').roles.get("521321963055218688").members.map(m => m.user);
             stringsLFG.push(rolemember6);
         } 
         if (newevents6){
-            const rolemember7 = message.guild.roles.get('521323904095223808').members.filter(m => m.roles.has("521322025030254594")).map(m=>m.user);
+            const rolemember7 = message.guild.roles.get('521323904095223808').roles.get("521322025030254594").members.map(m => m.user);
             stringsLFG.push(rolemember7);
         } 
         if (newdeedee7){
-            const rolemember8 = message.guild.roles.get('521323904095223808').members.filter(m => m.roles.has("521322066243485711")).map(m=>m.user);
+            const rolemember8 = message.guild.roles.get('521323904095223808').roles.get("521322066243485711").members.map(m => m.user);
             stringsLFG.push(rolemember8);
         } 
 
