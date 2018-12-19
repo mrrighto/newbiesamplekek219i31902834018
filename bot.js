@@ -64,171 +64,321 @@ function EMEDailycode() {
     ruledailyc.minute = 5;
     let jdailyc = scheduledailyc.scheduleJob(ruledailyc, function () {
         
-       try {
-
-            request(url, (error, resp, html) => {
-
-                if (error) {
-                    console.log("Error: " + error);
-                    bot.channels.get("425266854014222377").send("Error: " + error);
-                }
-
-                const $ = cheerio.load(html);
-
-                var freeimg = $('.item img').first().attr('src');
-                var str = $('p', '#free-code').first().text();
-                var strdesc = $('p', '.description').first().text();
-                var str2 = $('h3').first().text();
-                var res = str.slice(0, 19);
-                var numberchildren1 = $('#items').children().length;
-                var numberchildren = numberchildren1 - 1;
-
-                const items = [];
-                const itemsdescrip = [];
-                const itemsrpice = [];
-                var itemsno = items.length;
-                var testhtml = $('h3').each(function (i, elem) {
-                    items[i] = $(this).text();
+           try {
+    
+                request(url, (error, resp, html) => {
+    
+                    if (error) {
+                        console.log("Error: " + error);
+                        bot.channels.get("425266854014222377").send("Error: " + error);
+                    }
+    
+                    const $ = cheerio.load(html);
+    
+                    var freeimg = $('.item img').first().attr('src');
+                    var str = $('p', '#free-code').first().text();
+                    var strdesc = $('p', '.description').first().text();
+                    var str2 = $('h3').first().text();
+                    var res = str.slice(0, 19);
+                    var numberchildren1 = $('#items').children().length;
+                    var numberchildren = numberchildren1 - 1;
+    
+                    const imagesrc1 = [];
+                    const items = [];
+                    const itemsdescrip = [];
+                    const itemsrpice = [];
+                    var itemsno = items.length;
+                    var testhtml = $('h3').each(function (i, elem) {
+                        items[i] = $(this).text();
+                    });
+                    var testhtml1 = $('p', '.description').each(function (i, elem) {
+                        itemsdescrip[i] = $(this).text();
+                    });
+                    var testhtml2 = $('.price').each(function (i, elem) {
+                        itemsrpice[i] = $(this).text();
+                    });
+                    var testhtml3 =  $('.item img').each(function (i, elem) {
+                        imagesrc1[i] = $(this).attr('src');
                 });
-                var testhtml1 = $('p', '.description').each(function (i, elem) {
-                    itemsdescrip[i] = $(this).text();
+                    const textt = items.join(', ');
+    
+                    if (numberchildren >= 0) {
+                        const embedfreecode1 = new Discord.RichEmbed()
+                            .setThumbnail(imagesrc1[0])
+                            .setTitle(items[0])
+                            .setDescription(itemsdescrip[0])
+                            .setFooter(itemsrpice[0], "https://static.enmasse.com/images/Gifting/emp-icon.png")
+                            .setURL("https://store.enmasse.com/closers/items")
+
+                        if (itemsrpice[0].length == "55"){
+                            const embedf1 = new Discord.RichEmbed()
+                            .setTitle(items[0] + " - for free!")
+                            .setDescription(itemsdescrip[0])
+                            .setURL("https://store.enmasse.com/closers/items")
+                            .setFooter("Click on the click above to claim! | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
+                            .setImage(imagesrc1[0])
+                            
+                            bot.channels.get("438689460016644097").send(embedf1);
+                        } else {
+                            bot.channels.get("440724107458379777").send(embedfreecode1);
+                        }
+                        
+                    }
+                    if (numberchildren >= 1) {
+                        const embedfreecode2 = new Discord.RichEmbed()
+                            .setThumbnail(imagesrc1[2])
+                            .setTitle(items[1])
+                            .setDescription(itemsdescrip[1])
+                            .setFooter(itemsrpice[1], "https://static.enmasse.com/images/Gifting/emp-icon.png")
+                            .setURL("https://store.enmasse.com/closers/items")
+
+                            if (itemsrpice[1].length == "55"){
+                                const embedf2 = new Discord.RichEmbed()
+                                .setTitle(items[1] + " - for free!")
+                                .setDescription(itemsdescrip[1])
+                                .setURL("https://store.enmasse.com/closers/items")
+                                .setFooter("Click on the click above to claim! | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
+                                .setImage(imagesrc1[2])
+                                
+                                bot.channels.get("438689460016644097").send(embedf2);
+                            } else {
+                                bot.channels.get("440724107458379777").send(embedfreecode2);
+                            }
+      
+                    }
+                    if (numberchildren >= 2) {
+                        const embedfreecode3 = new Discord.RichEmbed()
+                            .setThumbnail(imagesrc1[4])
+                            .setTitle(items[2])
+                            .setDescription(itemsdescrip[2])
+                            .setFooter(itemsrpice[2], "https://static.enmasse.com/images/Gifting/emp-icon.png")
+                            .setURL("https://store.enmasse.com/closers/items")
+
+                            if (itemsrpice[2].length == "55"){
+                                const embedf3 = new Discord.RichEmbed()
+                                .setTitle(items[2] + " - for free!")
+                                .setDescription(itemsdescrip[2])
+                                .setURL("https://store.enmasse.com/closers/items")
+                                .setFooter("Click on the click above to claim! | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
+                                .setImage(imagesrc1[4])
+                                
+                                bot.channels.get("438689460016644097").send(embedf3);
+                            } else {
+                                bot.channels.get("440724107458379777").send(embedfreecode3);
+                            }
+      
+                    }
+                    if (numberchildren >= 3) {
+                        const embedfreecode4 = new Discord.RichEmbed()
+                             .setThumbnail(imagesrc1[6])
+                            .setTitle(items[3])
+                            .setDescription(itemsdescrip[3])
+                            .setFooter(itemsrpice[3], "https://static.enmasse.com/images/Gifting/emp-icon.png")
+                            .setURL("https://store.enmasse.com/closers/items")
+
+                            if (itemsrpice[3].length == "55"){
+                                const embedf4 = new Discord.RichEmbed()
+                                .setTitle(items[3] + " - for free!")
+                                .setDescription(itemsdescrip[3])
+                                .setURL("https://store.enmasse.com/closers/items")
+                                .setFooter("Click on the click above to claim! | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
+                                .setImage(imagesrc1[6])
+                                
+                                bot.channels.get("438689460016644097").send(embedf4);
+                            } else {
+                                bot.channels.get("440724107458379777").send(embedfreecode4);
+                            }
+                          }
+                    if (numberchildren >= 4) {
+                        const embedfreecode5 = new Discord.RichEmbed()
+                        .setThumbnail(imagesrc1[8])
+                            .setTitle(items[4])
+                            .setDescription(itemsdescrip[4])
+                            .setFooter(itemsrpice[4], "https://static.enmasse.com/images/Gifting/emp-icon.png")
+                            .setURL("https://store.enmasse.com/closers/items")
+
+                            if (itemsrpice[4].length == "55"){
+                                const embedf5 = new Discord.RichEmbed()
+                                .setTitle(items[4] + " - for free!")
+                                .setDescription(itemsdescrip[4])
+                                .setURL("https://store.enmasse.com/closers/items")
+                                .setFooter("Click on the click above to claim! | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
+                                .setImage(imagesrc1[8])
+                                
+                                bot.channels.get("438689460016644097").send(embedf5);
+                            } else {
+                                bot.channels.get("440724107458379777").send(embedfreecode5);
+                            }
+      
+                    }
+                    if (numberchildren >= 5) {
+                        const embedfreecode6 = new Discord.RichEmbed()
+                            .setThumbnail(imagesrc1[10])
+                            .setTitle(items[5])
+                            .setDescription(itemsdescrip[5])
+                           .setFooter(itemsrpice[5], "https://static.enmasse.com/images/Gifting/emp-icon.png")
+                            .setURL("https://store.enmasse.com/closers/items")
+
+                            if (itemsrpice[5].length == "55"){
+                                const embedf6 = new Discord.RichEmbed()
+                                .setTitle(items[5] + " - for free!")
+                                .setDescription(itemsdescrip[5])
+                                .setURL("https://store.enmasse.com/closers/items")
+                                .setFooter("Click on the click above to claim! | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
+                                .setImage(imagesrc1[10])
+                                
+                                bot.channels.get("438689460016644097").send(embedf6);
+                            } else {
+                                bot.channels.get("440724107458379777").send(embedfreecode6);
+                            }
+      
+                    }
+                    if (numberchildren >= 6) {
+                        const embedfreecode7 = new Discord.RichEmbed()
+                            .setThumbnail(imagesrc1[12])
+                            .setTitle(items[6])
+                            .setDescription(itemsdescrip[6])
+                            .setFooter(itemsrpice[6], "https://static.enmasse.com/images/Gifting/emp-icon.png")
+                            .setURL("https://store.enmasse.com/closers/items")
+
+                            if (itemsrpice[6].length == "55"){
+                                const embedf7 = new Discord.RichEmbed()
+                                .setTitle(items[6] + " - for free!")
+                                .setDescription(itemsdescrip[6])
+                                .setURL("https://store.enmasse.com/closers/items")
+                                .setFooter("Click on the click above to claim! | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
+                                .setImage(imagesrc1[12])
+                                
+                                bot.channels.get("438689460016644097").send(embedf7);
+                            } else {
+                                bot.channels.get("440724107458379777").send(embedfreecode7);
+                            }
+      
+                       
+                    }
+                    if (numberchildren >= 7) {
+                        const embedfreecode8 = new Discord.RichEmbed()
+                            .setThumbnail(imagesrc1[14])   
+                            .setTitle(items[7])
+                            .setDescription(itemsdescrip[7])
+                            .setFooter(itemsrpice[7], "https://static.enmasse.com/images/Gifting/emp-icon.png")
+                            .setURL("https://store.enmasse.com/closers/items")
+
+                            if (itemsrpice[7].length == "55"){
+                                const embedf8 = new Discord.RichEmbed()
+                                .setTitle(items[7] + " - for free!")
+                                .setDescription(itemsdescrip[7])
+                                .setURL("https://store.enmasse.com/closers/items")
+                                .setFooter("Click on the click above to claim! | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
+                                .setImage(imagesrc1[14])
+                                
+                                bot.channels.get("438689460016644097").send(embedf8);
+                            } else {
+                                bot.channels.get("440724107458379777").send(embedfreecode8);
+                            }
+      
+                    }
+                    if (numberchildren >= 8) {
+                        const embedfreecode9 = new Discord.RichEmbed()
+                            .setThumbnail(imagesrc1[16])
+                            .setTitle(items[8])
+                            .setDescription(itemsdescrip[8])
+                            .setFooter(itemsrpice[8], "https://static.enmasse.com/images/Gifting/emp-icon.png")
+                            .setURL("https://store.enmasse.com/closers/items")
+
+                            if (itemsrpice[8].length == "55"){
+                                const embedf9 = new Discord.RichEmbed()
+                                .setTitle(items[8] + " - for free!")
+                                .setDescription(itemsdescrip[8])
+                                .setURL("https://store.enmasse.com/closers/items")
+                                .setFooter("Click on the click above to claim! | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
+                                .setImage(imagesrc1[16])
+                                
+                                bot.channels.get("438689460016644097").send(embedf9);
+                            } else {
+                                bot.channels.get("440724107458379777").send(embedfreecode9);
+                            }
+      
+                    }
+                    if (numberchildren >= 9) {
+                        const embedfreecode10 = new Discord.RichEmbed()
+                            .setThumbnail(imagesrc1[18])
+                            .setTitle(items[9])
+                            .setDescription(itemsdescrip[9])
+                            .setFooter(itemsrpice[9], "https://static.enmasse.com/images/Gifting/emp-icon.png")
+                            .setURL("https://store.enmasse.com/closers/items")
+
+                            if (itemsrpice[9].length == "55"){
+                                const embedf10 = new Discord.RichEmbed()
+                                .setTitle(items[9] + " - for free!")
+                                .setDescription(itemsdescrip[9])
+                                .setURL("https://store.enmasse.com/closers/items")
+                                .setFooter("Click on the click above to claim! | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
+                                .setImage(imagesrc1[18])
+                                
+                                bot.channels.get("438689460016644097").send(embedf10);
+                            } else {
+                                bot.channels.get("440724107458379777").send(embedfreecode10);
+                            }
+      
+                    }
+                    if (numberchildren >= 10) {
+                        const embedfreecode11 = new Discord.RichEmbed()
+                            .setThumbnail(imagesrc1[20])    
+                            .setTitle(items[10])
+                            .setDescription(itemsdescrip[10])
+                            .setFooter(itemsrpice[10], "https://static.enmasse.com/images/Gifting/emp-icon.png")
+                            .setURL("https://store.enmasse.com/closers/items")
+
+                            if (itemsrpice[10].length == "55"){
+                                const embedf11 = new Discord.RichEmbed()
+                                .setTitle(items[10] + " - for free!")
+                                .setDescription(itemsdescrip[10])
+                                .setURL("https://store.enmasse.com/closers/items")
+                                .setFooter("Click on the click above to claim! | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
+                                .setImage(imagesrc1[20])
+                                
+                                bot.channels.get("438689460016644097").send(embedf11);
+                            } else {
+                                bot.channels.get("440724107458379777").send(embedfreecode11);
+                            }
+      
+                    }
+                    if (numberchildren >= 11) {
+                        const embedfreecode12 = new Discord.RichEmbed()
+                            .setThumbnail(imagesrc1[22])
+                            .setTitle(items[11])
+                            .setDescription(itemsdescrip[11])
+                            .setFooter(itemsrpice[11], "https://static.enmasse.com/images/Gifting/emp-icon.png")
+                            .setURL("https://store.enmasse.com/closers/items")
+
+                            if (itemsrpice[11].length == "55"){
+                                const embedf12 = new Discord.RichEmbed()
+                                .setTitle(items[11] + " - for free!")
+                                .setDescription(itemsdescrip[11])
+                                .setURL("https://store.enmasse.com/closers/items")
+                                .setFooter("Click on the click above to claim! | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
+                                .setImage(imagesrc1[22])
+                                
+                                bot.channels.get("438689460016644097").send(embedf12);
+                            } else {
+                                bot.channels.get("440724107458379777").send(embedfreecode12);
+                            }
+      
+                    }
+
+
+                       // } else {
+                      //  bot.channels.get("425266854014222377").send(bot.users.get("376344592049766401")+ " new html");
+                      //  bot.channels.get("425266854014222377").send("anywan here who can post the daily free code? from `https://store.enmasse.com/closers/items`  \nkindly post it on <#438689460016644097> <:tina11:392924198290587669>");
+                  //  }
+    
+    
                 });
-                var testhtml2 = $('.price').each(function (i, elem) {
-                    itemsrpice[i] = $(this).text();
-                });
-                const textt = items.join(', ');
-               
-		//var freefinder = $('div').eq(26).text();
-
-                //if (freefinder == "FREE" || null){
-
-                const embedfreecode = new Discord.RichEmbed()
-                .setTitle(str)
-                .setDescription(strdesc)
-                .setURL("https://store.enmasse.com/closers/items")
-                .setFooter("Go to https://store.enmasse.com/closers/items and claim it! | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
-                .setAuthor("Free - "+str2)
-                .setImage(freeimg)
-                bot.channels.get("438689460016644097").send(embedfreecode);
-
-                if (numberchildren >= 1) {
-                    const embedfreecode1 = new Discord.RichEmbed()
-                        .setTitle(items[1])
-                        .setDescription(itemsdescrip[1])
-                        .setFooter(itemsrpice[0], "https://static.enmasse.com/images/Gifting/emp-icon.png")
-                        .setURL("https://store.enmasse.com/closers/items")
-                    bot.channels.get("440724107458379777").send(embedfreecode1);
-                }
-                if (numberchildren >= 2) {
-                    const embedfreecode2 = new Discord.RichEmbed()
-
-                        .setTitle(items[2])
-                        .setDescription(itemsdescrip[2])
-                        .setFooter(itemsrpice[1], "https://static.enmasse.com/images/Gifting/emp-icon.png")
-                        .setURL("https://store.enmasse.com/closers/items")
-                    bot.channels.get("440724107458379777").send(embedfreecode2);
-                }
-                if (numberchildren >= 3) {
-                    const embedfreecode3 = new Discord.RichEmbed()
-
-                        .setTitle(items[3])
-                        .setDescription(itemsdescrip[3])
-                        .setFooter(itemsrpice[2], "https://static.enmasse.com/images/Gifting/emp-icon.png")
-                        .setURL("https://store.enmasse.com/closers/items")
-                    bot.channels.get("440724107458379777").send(embedfreecode3);
-                }
-                if (numberchildren >= 4) {
-                    const embedfreecode4 = new Discord.RichEmbed()
-
-                        .setTitle(items[4])
-                        .setDescription(itemsdescrip[4])
-                        .setFooter(itemsrpice[3], "https://static.enmasse.com/images/Gifting/emp-icon.png")
-                        .setURL("https://store.enmasse.com/closers/items")
-                    bot.channels.get("440724107458379777").send(embedfreecode4);
-                }
-                if (numberchildren >= 5) {
-                    const embedfreecode5 = new Discord.RichEmbed()
-
-                        .setTitle(items[5])
-                        .setDescription(itemsdescrip[5])
-                        .setFooter(itemsrpice[4], "https://static.enmasse.com/images/Gifting/emp-icon.png")
-                        .setURL("https://store.enmasse.com/closers/items")
-                    bot.channels.get("440724107458379777").send(embedfreecode5);
-                }
-                if (numberchildren >= 6) {
-                    const embedfreecode6 = new Discord.RichEmbed()
-
-                        .setTitle(items[6])
-                        .setDescription(itemsdescrip[6])
-                        .setFooter(itemsrpice[5], "https://static.enmasse.com/images/Gifting/emp-icon.png")
-                        .setURL("https://store.enmasse.com/closers/items")
-                    bot.channels.get("440724107458379777").send(embedfreecode6);
-                }
-                if (numberchildren >= 7) {
-                    const embedfreecode7 = new Discord.RichEmbed()
-
-                        .setTitle(items[7])
-                        .setDescription(itemsdescrip[7])
-                        .setFooter(itemsrpice[6], "https://static.enmasse.com/images/Gifting/emp-icon.png")
-                        .setURL("https://store.enmasse.com/closers/items")
-                    bot.channels.get("440724107458379777").send(embedfreecode7);
-                }
-                if (numberchildren >= 8) {
-                    const embedfreecode8 = new Discord.RichEmbed()
-
-                        .setTitle(items[8])
-                        .setDescription(itemsdescrip[8])
-                        .setFooter(itemsrpice[7], "https://static.enmasse.com/images/Gifting/emp-icon.png")
-                        .setURL("https://store.enmasse.com/closers/items")
-                    bot.channels.get("440724107458379777").send(embedfreecode8);
-                }
-                if (numberchildren >= 9) {
-                    const embedfreecode9 = new Discord.RichEmbed()
-
-                        .setTitle(items[9])
-                        .setDescription(itemsdescrip[9])
-                        .setFooter(itemsrpice[8], "https://static.enmasse.com/images/Gifting/emp-icon.png")
-                        .setURL("https://store.enmasse.com/closers/items")
-                    bot.channels.get("440724107458379777").send(embedfreecode9);
-                }
-                if (numberchildren >= 10) {
-                    const embedfreecode10 = new Discord.RichEmbed()
-
-                        .setTitle(items[10])
-                        .setDescription(itemsdescrip[10])
-                        .setFooter(itemsrpice[9], "https://static.enmasse.com/images/Gifting/emp-icon.png")
-                        .setURL("https://store.enmasse.com/closers/items")
-                    bot.channels.get("440724107458379777").send(embedfreecode10);
-                }
-                if (numberchildren >= 11) {
-                    const embedfreecode11 = new Discord.RichEmbed()
-
-                        .setTitle(items[11])
-                        .setDescription(itemsdescrip[11])
-                        .setFooter(itemsrpice[10], "https://static.enmasse.com/images/Gifting/emp-icon.png")
-                        .setURL("https://store.enmasse.com/closers/items")
-                    bot.channels.get("440724107458379777").send(embedfreecode11);
-                }
-                if (numberchildren >= 12) {
-                    const embedfreecode12 = new Discord.RichEmbed()
-
-                        .setTitle(items[12])
-                        .setDescription(itemsdescrip[12])
-                        .setFooter(itemsrpice[11], "https://static.enmasse.com/images/Gifting/emp-icon.png")
-                        .setURL("https://store.enmasse.com/closers/items")
-                    bot.channels.get("440724107458379777").send(embedfreecode12);
-                }
-	               // } else {
-                  //  bot.channels.get("425266854014222377").send(bot.users.get("376344592049766401")+ " new html");
-                  //  bot.channels.get("425266854014222377").send("anywan here who can post the daily free code? from `https://store.enmasse.com/closers/items`  \nkindly post it on <#438689460016644097> <:tina11:392924198290587669>");
-              //  }
-
-
-            });
-
-        } catch (error) {
-            bot.channels.get("432775028757626890").send("Error: " + error);
-        }
+    
+            } catch (error) {
+                bot.channels.get("432775028757626890").send("Error: " + error);
+            }
 
     });
 }
