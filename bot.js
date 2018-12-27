@@ -130,7 +130,7 @@ function EMEDailycode() {
                             .setTitle(items[0] + " - for free!")
                             .setDescription(itemsdescrip[0])
                             .setURL("https://store.enmasse.com/closers/items")
-                            .setFooter("Click on the click above to claim! | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
+                            .setFooter("Click on the link above to claim! | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
                             .setImage(imagesrc1[0])
                             
                             bot.channels.get("438689460016644097").send(embedf1);
@@ -152,7 +152,7 @@ function EMEDailycode() {
                                 .setTitle(items[1] + " - for free!")
                                 .setDescription(itemsdescrip[1])
                                 .setURL("https://store.enmasse.com/closers/items")
-                                .setFooter("Click on the click above to claim! | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
+                                .setFooter("Click on the link above to claim! | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
                                 .setImage(imagesrc1[2])
                                 
                                 bot.channels.get("438689460016644097").send(embedf2);
@@ -174,7 +174,7 @@ function EMEDailycode() {
                                 .setTitle(items[2] + " - for free!")
                                 .setDescription(itemsdescrip[2])
                                 .setURL("https://store.enmasse.com/closers/items")
-                                .setFooter("Click on the click above to claim! | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
+                                .setFooter("Click on the link above to claim! | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
                                 .setImage(imagesrc1[4])
                                 
                                 bot.channels.get("438689460016644097").send(embedf3);
@@ -196,7 +196,7 @@ function EMEDailycode() {
                                 .setTitle(items[3] + " - for free!")
                                 .setDescription(itemsdescrip[3])
                                 .setURL("https://store.enmasse.com/closers/items")
-                                .setFooter("Click on the click above to claim! | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
+                                .setFooter("Click on the link above to claim! | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
                                 .setImage(imagesrc1[6])
                                 
                                 bot.channels.get("438689460016644097").send(embedf4);
@@ -217,7 +217,7 @@ function EMEDailycode() {
                                 .setTitle(items[4] + " - for free!")
                                 .setDescription(itemsdescrip[4])
                                 .setURL("https://store.enmasse.com/closers/items")
-                                .setFooter("Click on the click above to claim! | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
+                                .setFooter("Click on the link above to claim! | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
                                 .setImage(imagesrc1[8])
                                 
                                 bot.channels.get("438689460016644097").send(embedf5);
@@ -239,7 +239,7 @@ function EMEDailycode() {
                                 .setTitle(items[5] + " - for free!")
                                 .setDescription(itemsdescrip[5])
                                 .setURL("https://store.enmasse.com/closers/items")
-                                .setFooter("Click on the click above to claim! | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
+                                .setFooter("Click on the link above to claim! | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
                                 .setImage(imagesrc1[10])
                                 
                                 bot.channels.get("438689460016644097").send(embedf6);
@@ -261,7 +261,7 @@ function EMEDailycode() {
                                 .setTitle(items[6] + " - for free!")
                                 .setDescription(itemsdescrip[6])
                                 .setURL("https://store.enmasse.com/closers/items")
-                                .setFooter("Click on the click above to claim! | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
+                                .setFooter("Click on the link above to claim! | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
                                 .setImage(imagesrc1[12])
                                 
                                 bot.channels.get("438689460016644097").send(embedf7);
@@ -284,7 +284,7 @@ function EMEDailycode() {
                                 .setTitle(items[7] + " - for free!")
                                 .setDescription(itemsdescrip[7])
                                 .setURL("https://store.enmasse.com/closers/items")
-                                .setFooter("Click on the click above to claim! | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
+                                .setFooter("Click on the link above to claim! | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
                                 .setImage(imagesrc1[14])
                                 
                                 bot.channels.get("438689460016644097").send(embedf8);
@@ -306,7 +306,7 @@ function EMEDailycode() {
                                 .setTitle(items[8] + " - for free!")
                                 .setDescription(itemsdescrip[8])
                                 .setURL("https://store.enmasse.com/closers/items")
-                                .setFooter("Click on the click above to claim! | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
+                                .setFooter("Click on the link above to claim! | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
                                 .setImage(imagesrc1[16])
                                 
                                 bot.channels.get("438689460016644097").send(embedf9);
@@ -328,7 +328,7 @@ function EMEDailycode() {
                                 .setTitle(items[9] + " - for free!")
                                 .setDescription(itemsdescrip[9])
                                 .setURL("https://store.enmasse.com/closers/items")
-                                .setFooter("Click on the click above to claim! | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
+                                .setFooter("Click on the link above to claim! | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
                                 .setImage(imagesrc1[18])
                                 
                                 bot.channels.get("438689460016644097").send(embedf10);
@@ -350,7 +350,7 @@ function EMEDailycode() {
                                 .setTitle(items[10] + " - for free!")
                                 .setDescription(itemsdescrip[10])
                                 .setURL("https://store.enmasse.com/closers/items")
-                                .setFooter("Click on the click above to claim! | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
+                                .setFooter("Click on the link above to claim! | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
                                 .setImage(imagesrc1[20])
                                 
                                 bot.channels.get("438689460016644097").send(embedf11);
@@ -372,7 +372,7 @@ function EMEDailycode() {
                                 .setTitle(items[11] + " - for free!")
                                 .setDescription(itemsdescrip[11])
                                 .setURL("https://store.enmasse.com/closers/items")
-                                .setFooter("Click on the click above to claim! | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
+                                .setFooter("Click on the link above to claim! | CLOSERS Daily Deals", "https://imgur.com/N6mZgoz.png")
                                 .setImage(imagesrc1[22])
                                 
                                 bot.channels.get("438689460016644097").send(embedf12);
