@@ -1,16 +1,1 @@
-{
-  "name": "dailycodetesting",
-  "version": "1.0.0",
-  "description": "",
-  "main": "bot.js",
-  "scripts": {
-    "start": "node bot.js"
-  },
-   "dependencies": {
-    "cheerio": "^1.0.0-rc.2",
-    "discord.js": "^11.3.2",
-    "ffmpeg-binaries": "^3.2.2-3",
-    "node-schedule": "^1.3.0",
-    "request": "^2.85.0"
-  }
-}
+
